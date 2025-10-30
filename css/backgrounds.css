@@ -1,12 +1,12 @@
-/* Fundos temáticos para as perguntas do quiz - Cores vibrantes e sem filtros escuros */
+/* Fundos temáticos para as perguntas do quiz - Imagens de alta resolução */
 
-/* Base style for all backgrounds - sem overlay escuro */
+/* Base style for all backgrounds */
 [class*="bg-"] {
     position: relative;
     overflow: hidden;
 }
 
-/* Pseudo-elemento para a imagem/cor de fundo SEM filtros escuros */
+/* Pseudo-elemento para a imagem de fundo - OCUPA A TELA TODA */
 [class*="bg-"]::after {
     content: '';
     position: absolute;
@@ -14,13 +14,14 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-size: cover;          /* Cobre toda a área */
+    background-position: center;      /* Centraliza a imagem */
+    background-repeat: no-repeat;     /* Não repete */
+    background-attachment: fixed;     /* Imagem fixa ao rolar */
     z-index: -2;
 }
 
-/* Overlay leve APENAS para garantir legibilidade do texto - muito mais claro */
+/* Overlay leve APENAS para garantir legibilidade do texto */
 [class*="bg-"]::before {
     content: '';
     position: absolute;
@@ -28,7 +29,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.2); /* overlay muito leve - apenas 20% */
+    background: rgba(0, 0, 0, 0.25); /* overlay leve - 25% */
     pointer-events: none;
     z-index: -1;
 }
@@ -40,187 +41,90 @@
 }
 
 /* ========================================
-   BACKGROUNDS COLORIDOS POR CALENDÁRIO
+   BACKGROUNDS COM IMAGENS REAIS
    ======================================== */
 
-/* Calendário Geral - Gradient azul e roxo vibrante */
+/* Calendário Geral */
 .bg-general::after {
-    background: linear-gradient(135deg,
-        #667eea 0%,
-        #764ba2 50%,
-        #f093fb 100%);
+    background-image: url('../images/backgrounds/general.jpg');
 }
 
-.bg-general::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Chinês - Vermelho e dourado (cores tradicionais chinesas) */
+/* Calendário Chinês */
 .bg-chinese::after {
-    background: linear-gradient(135deg,
-        #c21500 0%,
-        #ffc500 50%,
-        #ff6b6b 100%);
+    background-image: url('../images/backgrounds/chinese.jpg');
 }
 
-.bg-chinese::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Islâmico - Verde esmeralda e dourado */
+/* Calendário Islâmico */
 .bg-islamic::after {
-    background: linear-gradient(135deg,
-        #11998e 0%,
-        #38ef7d 50%,
-        #ffd700 100%);
+    background-image: url('../images/backgrounds/islamic.jpg');
 }
 
-.bg-islamic::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Maia - Turquesa, laranja e terracota (cores maias) */
+/* Calendário Maia */
 .bg-mayan::after {
-    background: linear-gradient(135deg,
-        #00c9ff 0%,
-        #92fe9d 30%,
-        #ff9a56 70%,
-        #ee5a6f 100%);
+    background-image: url('../images/backgrounds/mayan.jpg');
 }
 
-.bg-mayan::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Juliano - Roxo imperial e dourado */
+/* Calendário Juliano */
 .bg-julian::after {
-    background: linear-gradient(135deg,
-        #5f2c82 0%,
-        #49a09d 50%,
-        #ffd89b 100%);
+    background-image: url('../images/backgrounds/julian.jpg');
 }
 
-.bg-julian::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Gregoriano - Azul céu e branco (cores papais/ocidentais) */
+/* Calendário Gregoriano */
 .bg-gregorian::after {
-    background: linear-gradient(135deg,
-        #4facfe 0%,
-        #00f2fe 50%,
-        #fff 100%);
+    background-image: url('../images/backgrounds/gregorian.jpg');
 }
 
-.bg-gregorian::before {
-    background: rgba(0, 0, 0, 0.2); /* um pouco mais escuro para legibilidade no branco */
-}
-
-/* Calendário Etíope - Verde, amarelo e vermelho (cores da bandeira etíope) */
+/* Calendário Etíope */
 .bg-ethiopian::after {
-    background: linear-gradient(135deg,
-        #56ab2f 0%,
-        #a8e063 33%,
-        #ffe000 66%,
-        #ff416c 100%);
+    background-image: url('../images/backgrounds/ethiopian.jpg');
 }
 
-.bg-ethiopian::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Judaico - Azul e branco (cores de Israel) com dourado */
+/* Calendário Judaico */
 .bg-jewish::after {
-    background: linear-gradient(135deg,
-        #4158d0 0%,
-        #c850c0 50%,
-        #ffcc70 100%);
+    background-image: url('../images/backgrounds/jewish.jpg');
 }
 
-.bg-jewish::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Juche - Vermelho intenso (cor da bandeira norte-coreana) */
+/* Calendário Juche */
 .bg-juche::after {
-    background: linear-gradient(135deg,
-        #eb3349 0%,
-        #f45c43 50%,
-        #ff6b6b 100%);
+    background-image: url('../images/backgrounds/juche.jpg');
 }
 
-.bg-juche::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Egípcio - Dourado e areia (cores do deserto e pirâmides) */
+/* Calendário Egípcio */
 .bg-egyptian::after {
-    background: linear-gradient(135deg,
-        #f09819 0%,
-        #edde5d 50%,
-        #ff8177 100%);
+    background-image: url('../images/backgrounds/egyptian.jpg');
 }
 
-.bg-egyptian::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Lunar (conceito) - Azul noturno e prata (cor da lua) */
+/* Calendário Lunar (conceito) */
 .bg-lunar-concept::after {
-    background: linear-gradient(135deg,
-        #0f2027 0%,
-        #203a43 30%,
-        #2c5364 60%,
-        #c0c0c0 100%);
+    background-image: url('../images/backgrounds/lunar.jpg');
 }
 
-.bg-lunar-concept::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Solar (conceito) - Laranja, amarelo e vermelho (cores do sol) */
+/* Calendário Solar (conceito) */
 .bg-solar-concept::after {
-    background: linear-gradient(135deg,
-        #ff512f 0%,
-        #f09819 30%,
-        #ffcc00 60%,
-        #ffd700 100%);
+    background-image: url('../images/backgrounds/solar.jpg');
 }
 
-.bg-solar-concept::before {
-    background: rgba(0, 0, 0, 0.15);
-}
-
-/* Calendário Lunissolar (conceito) - Mistura de sol (laranja/amarelo) e lua (azul/prata) */
+/* Calendário Lunissolar (conceito) */
 .bg-lunisolar-concept::after {
-    background: linear-gradient(135deg,
-        #ff8a00 0%,
-        #e52e71 30%,
-        #654ea3 60%,
-        #eaafc8 100%);
-}
-
-.bg-lunisolar-concept::before {
-    background: rgba(0, 0, 0, 0.15);
+    background-image: url('../images/backgrounds/lunisolar.jpg');
 }
 
 /* ========================================
-   ANIMAÇÃO SUTIL PARA OS BACKGROUNDS
+   AJUSTES DE OVERLAY POR CATEGORIA
+   (para melhorar legibilidade em imagens claras)
    ======================================== */
 
-@keyframes gradient-shift {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+.bg-gregorian::before,
+.bg-solar-concept::before {
+    background: rgba(0, 0, 0, 0.35); /* Um pouco mais escuro para imagens muito claras */
 }
 
-[class*="bg-"]::after {
-    background-size: 200% 200%;
-    animation: gradient-shift 15s ease infinite;
+/* ========================================
+   RESPONSIVIDADE
+   ======================================== */
+
+@media (max-width: 768px) {
+    [class*="bg-"]::after {
+        background-attachment: scroll; /* Remove fixed em mobile para melhor performance */
+    }
 }
