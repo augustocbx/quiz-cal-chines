@@ -1,139 +1,56 @@
 // Banco de perguntas sobre os 12 tipos de calendários mais famosos do mundo
 const QUESTION_BANK = [
-    // CALENDÁRIO GREGORIANO (5 perguntas)
+    // PERGUNTA GERAL SOBRE USO DOS CALENDÁRIOS (1 pergunta)
     {
-        question: "Qual calendário é tradicionalmente usado no Brasil e no Ocidente?",
-        answers: ["Gregoriano", "Juliano", "Islâmico", "Chinês"],
+        question: "De acordo com o texto, além de planejar rotinas, qual é outro uso dos calendários?",
+        answers: ["Para organizar compromissos, saber os dias, marcar datas, celebrações e outros eventos importantes", "Apenas para contar os anos", "Somente para fins religiosos", "Exclusivamente para agricultura"],
         correctIndex: 0,
-        backgroundClass: "bg-gregorian"
-    },
-    {
-        question: "Quem instituiu o calendário Gregoriano em 1582?",
-        answers: ["Papa Gregório XIII", "Júlio César", "Imperador Chinês", "Profeta Maomé"],
-        correctIndex: 0,
-        backgroundClass: "bg-gregorian",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias tem um ano no calendário Gregoriano?",
-        answers: ["365 dias (366 em anos bissextos)", "354 dias", "360 dias", "400 dias"],
-        correctIndex: 0,
-        backgroundClass: "bg-gregorian"
-    },
-    {
-        question: "Por que existem anos bissextos no calendário Gregoriano?",
-        answers: ["Para ajustar as 6 horas extras do ano solar", "Para celebrar datas especiais", "Por tradição religiosa", "Para facilitar os cálculos"],
-        correctIndex: 0,
-        backgroundClass: "bg-gregorian",
-        difficulty: "hard"
-    },
-    {
-        question: "Em que o calendário Gregoriano é baseado?",
-        answers: ["No movimento da Terra ao redor do Sol", "Nas fases da Lua", "Nas estrelas", "Nos planetas"],
-        correctIndex: 0,
-        backgroundClass: "bg-gregorian"
+        backgroundClass: "bg-general"
     },
 
-    // CALENDÁRIO JULIANO (5 perguntas)
+    // CALENDÁRIO CHINÊS (4 perguntas)
     {
-        question: "Em que ano foi instituído o calendário Juliano?",
-        answers: ["46 a.C.", "1582 d.C.", "622 d.C.", "2697 a.C."],
-        correctIndex: 0,
-        backgroundClass: "bg-julian",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual calendário substituiu o calendário Romano?",
-        answers: ["Juliano", "Gregoriano", "Islâmico", "Maia"],
-        correctIndex: 0,
-        backgroundClass: "bg-julian"
-    },
-    {
-        question: "Por que o calendário Juliano foi substituído?",
-        answers: ["Apresentava falhas na contagem do tempo", "Era muito complicado", "Não tinha anos bissextos", "Tinha poucos meses"],
-        correctIndex: 0,
-        backgroundClass: "bg-julian",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias de diferença existem hoje entre o Juliano e o Gregoriano?",
-        answers: ["13 dias", "7 dias", "1 dia", "30 dias"],
-        correctIndex: 0,
-        backgroundClass: "bg-julian",
-        difficulty: "veryHard"
-    },
-    {
-        question: "O calendário Juliano é do tipo:",
-        answers: ["Solar", "Lunar", "Lunissolar", "Estelar"],
-        correctIndex: 0,
-        backgroundClass: "bg-julian"
-    },
-
-    // CALENDÁRIO CHINÊS (5 perguntas)
-    {
-        question: "O calendário Chinês é de que tipo?",
-        answers: ["Lunissolar", "Apenas Lunar", "Apenas Solar", "Estelar"],
+        question: "O Calendário Chinês é orientado por quais ciclos?",
+        answers: ["Pelos ciclos da Lua e do Sol", "Apenas pelo ciclo do Sol", "Apenas pelo ciclo da Lua", "Pelos ciclos das estrelas"],
         correctIndex: 0,
         backgroundClass: "bg-chinese"
     },
     {
-        question: "Quantos animais fazem parte do horóscopo chinês?",
-        answers: ["12 animais", "10 animais", "8 animais", "15 animais"],
+        question: "A cada quantos anos o ciclo do horóscopo chinês se completa?",
+        answers: ["A cada 12 anos", "A cada 10 anos", "A cada 5 anos", "A cada 20 anos"],
         correctIndex: 0,
         backgroundClass: "bg-chinese"
     },
     {
-        question: "Em quanto tempo se completa o ciclo dos animais no calendário Chinês?",
-        answers: ["12 anos", "10 anos", "5 anos", "365 dias"],
+        question: "Qual é o outro nome dado ao Ano Novo Chinês?",
+        answers: ["Ano Novo Lunar ou Festival da Primavera", "Festival do Sol", "Festival do Dragão", "Ano Novo Gregoriano"],
         correctIndex: 0,
         backgroundClass: "bg-chinese"
-    },
-    {
-        question: "Quando foi criado o calendário Chinês?",
-        answers: ["Há mais de 4000 anos", "Há 500 anos", "Há 2000 anos", "Há 1000 anos"],
-        correctIndex: 0,
-        backgroundClass: "bg-chinese",
-        difficulty: "hard"
-    },
-    {
-        question: "Como é chamado o Ano Novo Chinês?",
-        answers: ["Festival da Primavera", "Festival da Lua", "Festival do Sol", "Festival do Dragão"],
-        correctIndex: 0,
-        backgroundClass: "bg-chinese",
-        difficulty: "hard"
     },
 
-    // CALENDÁRIO ISLÂMICO (5 perguntas)
+    // CALENDÁRIO ISLÂMICO (4 perguntas)
     {
-        question: "O calendário Islâmico é baseado em quê?",
-        answers: ["No ciclo da Lua", "No movimento do Sol", "Nas estações do ano", "Nos planetas"],
+        question: "Qual ciclo o Calendário Islâmico segue como base?",
+        answers: ["O ciclo lunar", "O ciclo solar", "Os ciclos lunar e solar", "O ciclo das estrelas"],
         correctIndex: 0,
         backgroundClass: "bg-islamic"
     },
     {
-        question: "Quantos dias tem um ano no calendário Islâmico?",
+        question: "Quantos dias o ano tem no Calendário Islâmico?",
         answers: ["354 dias", "365 dias", "360 dias", "366 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-islamic",
-        difficulty: "hard"
+        backgroundClass: "bg-islamic"
     },
     {
-        question: "Quando começou o calendário Islâmico?",
-        answers: ["No ano 622 d.C.", "No ano 1582 d.C.", "No ano 1 d.C.", "No ano 1000 d.C."],
+        question: "O primeiro ano do Calendário Islâmico teve início em que data do calendário gregoriano?",
+        answers: ["16 de julho de 622 d.C.", "1 de janeiro de 622 d.C.", "25 de dezembro de 622 d.C.", "15 de agosto de 622 d.C."],
         correctIndex: 0,
         backgroundClass: "bg-islamic",
         difficulty: "hard"
     },
     {
-        question: "Como se chama o Ano Novo Islâmico?",
-        answers: ["Al-Hijra", "Ramadã", "Eid", "Hajj"],
-        correctIndex: 0,
-        backgroundClass: "bg-islamic",
-        difficulty: "hard"
-    },
-    {
-        question: "Quando começa um novo mês no calendário Islâmico?",
-        answers: ["Após a fase da lua crescente", "No dia 1º de cada mês", "Na lua cheia", "No domingo"],
+        question: "O Ano Novo Islâmico (Al-Hijra) é uma data fixa ou móvel?",
+        answers: ["É uma data móvel (variável)", "É sempre dia 1º de janeiro", "É sempre dia 16 de julho", "É uma data fixa em cada país"],
         correctIndex: 0,
         backgroundClass: "bg-islamic",
         difficulty: "hard"
@@ -141,278 +58,252 @@ const QUESTION_BANK = [
 
     // CALENDÁRIO MAIA (5 perguntas)
     {
-        question: "Quantas partes principais tem o calendário Maia?",
-        answers: ["Duas: Haab e Tzolkin", "Uma única parte", "Três partes", "Quatro partes"],
-        correctIndex: 0,
-        backgroundClass: "bg-mayan",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias tem o calendário Haab (Maia)?",
-        answers: ["365 dias", "260 dias", "354 dias", "360 dias"],
+        question: "Quais são as duas partes em que o Calendário Maia é dividido?",
+        answers: ["Haab e Tzolkin", "Sol e Lua", "Dia e Noite", "Norte e Sul"],
         correctIndex: 0,
         backgroundClass: "bg-mayan"
     },
     {
-        question: "No calendário Haab, quantos meses existem?",
-        answers: ["18 meses de 20 dias", "12 meses de 30 dias", "13 meses de 28 dias", "20 meses de 18 dias"],
+        question: "No Calendário Maia, qual parte é considerada o calendário religioso?",
+        answers: ["O Tzolkin", "O Haab", "O calendário solar", "O calendário lunar"],
         correctIndex: 0,
-        backgroundClass: "bg-mayan",
-        difficulty: "veryHard"
+        backgroundClass: "bg-mayan"
     },
     {
-        question: "Quantos dias tem o Tzolkin (calendário religioso Maia)?",
-        answers: ["260 dias", "365 dias", "354 dias", "180 dias"],
+        question: "Como o calendário Haab (Maia) é dividido?",
+        answers: ["18 meses de 20 dias cada (e 5 dias que 'ficam de fora')", "12 meses de 30 dias cada", "13 meses de 28 dias cada", "20 meses de 18 dias cada"],
         correctIndex: 0,
         backgroundClass: "bg-mayan",
         difficulty: "hard"
     },
     {
-        question: "O que acontece com os 5 dias restantes do calendário Haab?",
-        answers: ["Ficam de fora e não pertencem a nenhum mês", "São adicionados ao último mês", "Formam um mês extra", "São considerados feriados"],
+        question: "Qual calendário tem 18 meses de 20 dias, mais 5 dias que 'ficam de fora'?",
+        answers: ["O calendário Haab (parte do Calendário Maia)", "O Calendário Gregoriano", "O Calendário Juliano", "O Calendário Etíope"],
+        correctIndex: 0,
+        backgroundClass: "bg-mayan",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual calendário tem 13 meses de 20 dias, totalizando 260 dias?",
+        answers: ["O calendário Tzolkin (a parte religiosa do Calendário Maia)", "O Calendário Etíope", "O Calendário Islâmico", "O Calendário Judaico"],
         correctIndex: 0,
         backgroundClass: "bg-mayan",
         difficulty: "veryHard"
+    },
+
+    // CALENDÁRIO JULIANO (4 perguntas)
+    {
+        question: "Qual calendário o Calendário Juliano substituiu em 46 a.C.?",
+        answers: ["O calendário romano", "O Calendário Gregoriano", "O Calendário Egípcio", "O Calendário Maia"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian"
+    },
+    {
+        question: "O Calendário Juliano é considerado um calendário de que tipo?",
+        answers: ["Solar", "Lunar", "Lunissolar", "Estelar"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian"
+    },
+    {
+        question: "Qual é a diferença de dias na contagem mencionada entre o Calendário Juliano e o Gregoriano?",
+        answers: ["13 dias", "7 dias", "1 dia", "30 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual calendário foi instituído em 46 a.C. e apresentava falhas na contagem do tempo?",
+        answers: ["O Calendário Juliano", "O Calendário Gregoriano", "O Calendário Islâmico", "O Calendário Maia"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian"
+    },
+
+    // CALENDÁRIO GREGORIANO (3 perguntas)
+    {
+        question: "Quem instituiu o Calendário Gregoriano e em que ano?",
+        answers: ["O Papa Gregório XIII em 1582", "Júlio César em 46 a.C.", "O Imperador Chinês em 2697 a.C.", "Kim Il-sung em 1912"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian"
+    },
+    {
+        question: "O Calendário Gregoriano é baseado no movimento da Terra ao redor de qual astro?",
+        answers: ["Do Sol", "Da Lua", "Das estrelas", "De Júpiter"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian"
+    },
+    {
+        question: "Como o Calendário Gregoriano forma o dia a mais incluído nos anos bissextos?",
+        answers: ["Pelo acúmulo das 6 horas 'sobrantes' de cada ano (pois o ciclo solar tem 365 dias e 6 horas)", "Por tradição religiosa", "Por decisão do Papa", "Para alinhar com a Lua"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian",
+        difficulty: "hard"
     },
 
     // CALENDÁRIO ETÍOPE (5 perguntas)
     {
-        question: "Quantos meses tem o calendário Etíope?",
-        answers: ["13 meses", "12 meses", "10 meses", "18 meses"],
-        correctIndex: 0,
-        backgroundClass: "bg-ethiopian",
-        difficulty: "hard"
-    },
-    {
-        question: "O calendário Etíope é baseado em qual outro calendário?",
-        answers: ["Juliano", "Gregoriano", "Islâmico", "Chinês"],
-        correctIndex: 0,
-        backgroundClass: "bg-ethiopian",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias têm os primeiros 12 meses do calendário Etíope?",
-        answers: ["30 dias cada", "28 dias cada", "29 dias cada", "31 dias cada"],
-        correctIndex: 0,
-        backgroundClass: "bg-ethiopian",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias tem o 13º mês do calendário Etíope em anos normais?",
-        answers: ["5 dias", "6 dias", "7 dias", "10 dias"],
-        correctIndex: 0,
-        backgroundClass: "bg-ethiopian",
-        difficulty: "veryHard"
-    },
-    {
-        question: "O calendário Etíope é de que tipo?",
-        answers: ["Solar", "Lunar", "Lunissolar", "Estelar"],
+        question: "Em qual país o Calendário Etíope é usado?",
+        answers: ["Na Etiópia", "No Egito", "Em Israel", "Na Coreia do Norte"],
         correctIndex: 0,
         backgroundClass: "bg-ethiopian"
     },
-
-    // CALENDÁRIO JUDAICO (5 perguntas)
     {
-        question: "O calendário Judaico é de que tipo?",
-        answers: ["Lunissolar", "Apenas Solar", "Apenas Lunar", "Estelar"],
+        question: "Quantos meses tem o ano no Calendário Etíope?",
+        answers: ["13 meses", "12 meses", "10 meses", "18 meses"],
+        correctIndex: 0,
+        backgroundClass: "bg-ethiopian"
+    },
+    {
+        question: "Qual é a estrutura dos meses no Calendário Etíope?",
+        answers: ["12 meses com 30 dias e 1 mês (o último) com 5 dias", "13 meses com 28 dias cada", "12 meses com 31 dias cada", "10 meses com 36 dias cada"],
+        correctIndex: 0,
+        backgroundClass: "bg-ethiopian"
+    },
+    {
+        question: "O que acontece com o último mês do Calendário Etíope nos anos bissextos?",
+        answers: ["Ele recebe mais um dia (totalizando 6 dias)", "Ele continua com 5 dias", "Ele é eliminado", "Ele passa a ter 10 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-ethiopian",
+        difficulty: "hard"
+    },
+    {
+        question: "O Calendário Etíope tem sua organização parecida com a de qual outro calendário?",
+        answers: ["Com a do Calendário Juliano", "Com a do Calendário Gregoriano", "Com a do Calendário Islâmico", "Com a do Calendário Chinês"],
+        correctIndex: 0,
+        backgroundClass: "bg-ethiopian",
+        difficulty: "hard"
+    },
+
+    // CALENDÁRIO JUDAICO (3 perguntas)
+    {
+        question: "O Calendário Judaico é classificado como solar, lunar ou lunissolar?",
+        answers: ["Lunissolar", "Solar", "Lunar", "Estelar"],
         correctIndex: 0,
         backgroundClass: "bg-jewish"
     },
     {
-        question: "Quando foi criado o calendário Judaico?",
-        answers: ["Há mais de 3000 anos", "Há 500 anos", "Há 1000 anos", "Há 4000 anos"],
+        question: "Quantos meses um ano pode ter no Calendário Judaico?",
+        answers: ["12 ou 13 meses", "Sempre 12 meses", "Sempre 13 meses", "10 ou 11 meses"],
         correctIndex: 0,
-        backgroundClass: "bg-jewish",
-        difficulty: "hard"
+        backgroundClass: "bg-jewish"
     },
     {
-        question: "Há quantos anos o calendário Judaico é usado em Israel?",
-        answers: ["Mais de 3 mil anos", "500 anos", "1000 anos", "100 anos"],
-        correctIndex: 0,
-        backgroundClass: "bg-jewish",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que o calendário Judaico pode ter 12 ou 13 meses?",
-        answers: ["Para ajustar os ciclos lunar e solar", "Por motivos religiosos", "Para ter mais feriados", "Por erro de cálculo"],
-        correctIndex: 0,
-        backgroundClass: "bg-jewish",
-        difficulty: "hard"
-    },
-    {
-        question: "A quantidade de dias no ano judaico:",
-        answers: ["Pode variar de ano para ano", "É sempre 365 dias", "É sempre 354 dias", "É sempre 360 dias"],
+        question: "Qual calendário, criado aproximadamente em 1447 a.C., é usado em Israel há mais de 3 mil anos?",
+        answers: ["O Calendário Judaico", "O Calendário Gregoriano", "O Calendário Islâmico", "O Calendário Egípcio"],
         correctIndex: 0,
         backgroundClass: "bg-jewish",
         difficulty: "hard"
     },
 
-    // CALENDÁRIO JUCHE (2 perguntas simplificadas)
+    // CALENDÁRIO JUCHE (4 perguntas)
     {
-        question: "Onde é usado o calendário Juche?",
-        answers: ["Apenas na Coreia do Norte", "Em toda a Ásia", "No mundo todo", "Na China"],
+        question: "Em qual país o Calendário Juche é utilizado?",
+        answers: ["Na Coreia do Norte", "Na China", "No Japão", "Na Coreia do Sul"],
+        correctIndex: 0,
+        backgroundClass: "bg-juche"
+    },
+    {
+        question: "O Calendário Juche é classificado como solar ou lunar?",
+        answers: ["Solar", "Lunar", "Lunissolar", "Estelar"],
+        correctIndex: 0,
+        backgroundClass: "bg-juche"
+    },
+    {
+        question: "O que marca o Ano 1 no Calendário Juche?",
+        answers: ["O nascimento do líder Kim Il-sung em 1912", "A fundação da Coreia do Norte", "O nascimento de Jesus", "A criação do calendário"],
+        correctIndex: 0,
+        backgroundClass: "bg-juche"
+    },
+    {
+        question: "Em qual calendário o Ano 1 é marcado pelo nascimento de Kim Il-sung em 1912?",
+        answers: ["No Calendário Juche", "No Calendário Chinês", "No Calendário Gregoriano", "No Calendário Islâmico"],
         correctIndex: 0,
         backgroundClass: "bg-juche",
         difficulty: "hard"
     },
-    {
-        question: "O calendário Juche é de que tipo?",
-        answers: ["Solar (como o Gregoriano)", "Lunar", "Lunissolar", "Misto"],
-        correctIndex: 0,
-        backgroundClass: "bg-juche"
-    },
 
-    // CALENDÁRIO EGÍPCIO (5 perguntas)
+    // CALENDÁRIO EGÍPCIO (3 perguntas)
     {
-        question: "O calendário Egípcio é um dos:",
-        answers: ["Mais antigos da história", "Mais modernos", "Mais complexos", "Menos usados"],
+        question: "Qual era a estrutura do ano no Calendário Egípcio?",
+        answers: ["12 meses de 30 dias, mais 5 dias extras", "13 meses de 28 dias", "12 meses de 31 dias", "10 meses de 36 dias"],
         correctIndex: 0,
         backgroundClass: "bg-egyptian"
     },
     {
-        question: "O calendário Egípcio está ligado a qual rio?",
-        answers: ["Rio Nilo", "Rio Amazonas", "Rio Ganges", "Rio Amarelo"],
-        correctIndex: 0,
-        backgroundClass: "bg-egyptian",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias tinha o ano no calendário Egípcio?",
-        answers: ["365 dias", "354 dias", "360 dias", "366 dias"],
+        question: "Para que serviam os 5 dias extras no Calendário Egípcio?",
+        answers: ["Para homenagear os deuses", "Para celebrar o faraó", "Para fazer festas", "Para ajustar o ano"],
         correctIndex: 0,
         backgroundClass: "bg-egyptian"
     },
     {
-        question: "Quantos meses tinha o calendário Egípcio?",
-        answers: ["12 meses de 30 dias", "13 meses", "10 meses", "18 meses"],
+        question: "A criação do Calendário Egípcio está diretamente relacionada a qual evento natural?",
+        answers: ["Ao Rio Nilo e suas variações (cheia, plantio e colheita)", "Às fases da Lua", "Ao movimento do Sol", "Às tempestades de areia"],
         correctIndex: 0,
-        backgroundClass: "bg-egyptian",
-        difficulty: "hard"
-    },
-    {
-        question: "Para que serviam os 5 dias extras no calendário Egípcio?",
-        answers: ["Homenagear os deuses", "Celebrar o faraó", "Fazer festas", "Ajustar o ano"],
-        correctIndex: 0,
-        backgroundClass: "bg-egyptian",
-        difficulty: "hard"
+        backgroundClass: "bg-egyptian"
     },
 
-    // CALENDÁRIOS LUNAR, SOLAR E LUNISSOLAR (10 perguntas conceituais)
+    // CALENDÁRIOS CONCEITUAIS: LUNAR (4 perguntas)
     {
-        question: "Um calendário Lunar é baseado em quê?",
-        answers: ["Nas fases da Lua", "No movimento do Sol", "Nas estrelas", "Nos planetas"],
+        question: "O Calendário Lunar (conceito) segue as fases de qual astro?",
+        answers: ["Da Lua", "Do Sol", "Das estrelas", "Dos planetas"],
         correctIndex: 0,
         backgroundClass: "bg-lunar-concept"
     },
     {
-        question: "Quantos dias tem aproximadamente um ano em calendários Lunares?",
-        answers: ["354 ou 355 dias", "365 dias", "360 dias", "400 dias"],
-        correctIndex: 0,
-        backgroundClass: "bg-lunar-concept",
-        difficulty: "hard"
-    },
-    {
-        question: "Quando começa um novo mês em calendários Lunares?",
-        answers: ["Com a lua nova", "No primeiro dia do mês", "Com a lua cheia", "A qualquer momento"],
+        question: "Em um Calendário Lunar, quantos dias os meses costumam ter?",
+        answers: ["Intercaladamente 29 e 30 dias", "Sempre 30 dias", "Sempre 31 dias", "Sempre 28 dias"],
         correctIndex: 0,
         backgroundClass: "bg-lunar-concept"
     },
     {
-        question: "Um calendário Solar é baseado em quê?",
-        answers: ["No ciclo do Sol", "Nas fases da Lua", "Nas estrelas", "Nos planetas"],
+        question: "Com qual fase da lua os meses se iniciam em um Calendário Lunar?",
+        answers: ["Com a lua nova", "Com a lua cheia", "Com a lua crescente", "Com a lua minguante"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-concept"
+    },
+    {
+        question: "Quantos dias no total o ano costuma ter em um Calendário Lunar?",
+        answers: ["354 ou 355 dias", "365 dias", "360 dias", "366 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-concept"
+    },
+
+    // CALENDÁRIOS CONCEITUAIS: SOLAR (3 perguntas)
+    {
+        question: "O Calendário Solar (conceito) segue o ciclo de qual astro?",
+        answers: ["Do Sol", "Da Lua", "Das estrelas", "Dos planetas"],
         correctIndex: 0,
         backgroundClass: "bg-solar-concept"
     },
     {
-        question: "Qual é o modelo de calendário que usamos no Ocidente?",
-        answers: ["Solar (Gregoriano)", "Lunar", "Lunissolar", "Estelar"],
+        question: "Quais são os dois exemplos de calendários SOLARES citados no texto?",
+        answers: ["Gregoriano e Juliano", "Chinês e Judaico", "Islâmico e Egípcio", "Maia e Etíope"],
         correctIndex: 0,
         backgroundClass: "bg-solar-concept"
     },
     {
-        question: "Quantos meses tem um calendário Solar típico?",
-        answers: ["12 meses", "13 meses", "10 meses", "18 meses"],
+        question: "Qual é a estrutura típica de um Calendário Solar, como o usado no Ocidente?",
+        answers: ["12 meses, 365 dias e anos bissextos a cada 4 anos", "13 meses, 360 dias", "10 meses, 354 dias", "18 meses, 365 dias"],
         correctIndex: 0,
         backgroundClass: "bg-solar-concept"
     },
+
+    // CALENDÁRIOS CONCEITUAIS: LUNISSOLAR (3 perguntas)
     {
-        question: "O que é um calendário Lunissolar?",
-        answers: ["Usa o Sol e a Lua como base", "Usa apenas a Lua", "Usa apenas o Sol", "Usa as estrelas"],
+        question: "O Calendário Lunissolar (conceito) usa quais astros como base?",
+        answers: ["O Sol e a Lua", "Apenas o Sol", "Apenas a Lua", "As estrelas"],
         correctIndex: 0,
         backgroundClass: "bg-lunisolar-concept"
     },
     {
-        question: "Quais calendários são exemplos de Lunissolar?",
+        question: "Quais são os dois exemplos de calendários LUNISSOLARES citados no texto?",
         answers: ["Judaico e Chinês", "Gregoriano e Juliano", "Islâmico e Egípcio", "Maia e Etíope"],
         correctIndex: 0,
-        backgroundClass: "bg-lunisolar-concept",
-        difficulty: "hard"
+        backgroundClass: "bg-lunisolar-concept"
     },
     {
-        question: "Por que calendários Lunissolares precisam de ajustes?",
-        answers: ["Para alinhar o ano solar com as fases da lua", "Por tradição", "Para ter mais feriados", "Para facilitar cálculos"],
+        question: "Qual ajuste é necessário fazer em calendários lunissolares?",
+        answers: ["A inclusão de um mês extra periodicamente", "A remoção de um mês", "A mudança da ordem dos meses", "Nenhum ajuste é necessário"],
         correctIndex: 0,
-        backgroundClass: "bg-lunisolar-concept",
-        difficulty: "hard"
-    },
-    {
-        question: "Como se faz o ajuste em calendários Lunissolares?",
-        answers: ["Incluindo um mês extra periodicamente", "Tirando dias", "Mudando a ordem dos meses", "Não há ajustes"],
-        correctIndex: 0,
-        backgroundClass: "bg-lunisolar-concept",
-        difficulty: "veryHard"
-    },
-
-    // PERGUNTAS GERAIS E COMPARATIVAS (8 perguntas)
-    {
-        question: "Para que foram desenvolvidos os calendários?",
-        answers: ["Para medir o tempo e organizar rotinas", "Apenas para festas religiosas", "Para navegação", "Para matemática"],
-        correctIndex: 0,
-        backgroundClass: "bg-general"
-    },
-    {
-        question: "Os calendários são pautados por:",
-        answers: ["Cultura e tradições de cada povo", "Apenas pela ciência", "Apenas pela religião", "Por regras universais"],
-        correctIndex: 0,
-        backgroundClass: "bg-general"
-    },
-    {
-        question: "Quantos tipos principais de calendários existem?",
-        answers: ["Três: Solar, Lunar e Lunissolar", "Dois: Antigo e Moderno", "Um único tipo", "Cinco tipos"],
-        correctIndex: 0,
-        backgroundClass: "bg-general",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual destes calendários NÃO é Solar?",
-        answers: ["Islâmico", "Gregoriano", "Juliano", "Etíope"],
-        correctIndex: 0,
-        backgroundClass: "bg-general"
-    },
-    {
-        question: "Qual calendário tem um sistema mais complexo, com duas partes?",
-        answers: ["Maia", "Gregoriano", "Islâmico", "Etíope"],
-        correctIndex: 0,
-        backgroundClass: "bg-general",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual é o calendário mais antigo mencionado no quiz?",
-        answers: ["Egípcio", "Gregoriano", "Islâmico", "Etíope"],
-        correctIndex: 0,
-        backgroundClass: "bg-general"
-    },
-    {
-        question: "Por que diferentes povos criaram calendários diferentes?",
-        answers: ["Cada cultura observava o tempo de forma única", "Por falta de comunicação", "Por erro de cálculo", "Apenas por religião"],
-        correctIndex: 0,
-        backgroundClass: "bg-general"
-    },
-    {
-        question: "Quais calendários usam tanto o Sol quanto a Lua?",
-        answers: ["Chinês e Judaico", "Gregoriano e Juliano", "Islâmico e Egípcio", "Maia e Etíope"],
-        correctIndex: 0,
-        backgroundClass: "bg-general",
-        difficulty: "hard"
+        backgroundClass: "bg-lunisolar-concept"
     }
 ];
