@@ -1,390 +1,420 @@
-// Banco de perguntas sobre o Calendário Chinês
+// Banco de perguntas sobre os 12 tipos de calendários mais famosos do mundo
 const QUESTION_BANK = [
+    // CALENDÁRIO GREGORIANO (5 perguntas)
     {
-        question: "Quantos animais fazem parte do zodíaco chinês?",
+        question: "Qual calendário é tradicionalmente usado no Brasil e no Ocidente?",
+        answers: ["Gregoriano", "Juliano", "Islâmico", "Chinês"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian"
+    },
+    {
+        question: "Quem instituiu o calendário Gregoriano em 1582?",
+        answers: ["Papa Gregório XIII", "Júlio César", "Imperador Chinês", "Profeta Maomé"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian",
+        difficulty: "hard"
+    },
+    {
+        question: "Quantos dias tem um ano no calendário Gregoriano?",
+        answers: ["365 dias (366 em anos bissextos)", "354 dias", "360 dias", "400 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian"
+    },
+    {
+        question: "Por que existem anos bissextos no calendário Gregoriano?",
+        answers: ["Para ajustar as 6 horas extras do ano solar", "Para celebrar datas especiais", "Por tradição religiosa", "Para facilitar os cálculos"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian",
+        difficulty: "hard"
+    },
+    {
+        question: "Em que o calendário Gregoriano é baseado?",
+        answers: ["No movimento da Terra ao redor do Sol", "Nas fases da Lua", "Nas estrelas", "Nos planetas"],
+        correctIndex: 0,
+        backgroundClass: "bg-gregorian"
+    },
+
+    // CALENDÁRIO JULIANO (5 perguntas)
+    {
+        question: "Em que ano foi instituído o calendário Juliano?",
+        answers: ["46 a.C.", "1582 d.C.", "622 d.C.", "2697 a.C."],
+        correctIndex: 0,
+        backgroundClass: "bg-julian",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual calendário substituiu o calendário Romano?",
+        answers: ["Juliano", "Gregoriano", "Islâmico", "Maia"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian"
+    },
+    {
+        question: "Por que o calendário Juliano foi substituído?",
+        answers: ["Apresentava falhas na contagem do tempo", "Era muito complicado", "Não tinha anos bissextos", "Tinha poucos meses"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian",
+        difficulty: "hard"
+    },
+    {
+        question: "Quantos dias de diferença existem hoje entre o Juliano e o Gregoriano?",
+        answers: ["13 dias", "7 dias", "1 dia", "30 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian",
+        difficulty: "veryHard"
+    },
+    {
+        question: "O calendário Juliano é do tipo:",
+        answers: ["Solar", "Lunar", "Lunissolar", "Estelar"],
+        correctIndex: 0,
+        backgroundClass: "bg-julian"
+    },
+
+    // CALENDÁRIO CHINÊS (5 perguntas)
+    {
+        question: "O calendário Chinês é de que tipo?",
+        answers: ["Lunissolar", "Apenas Lunar", "Apenas Solar", "Estelar"],
+        correctIndex: 0,
+        backgroundClass: "bg-chinese"
+    },
+    {
+        question: "Quantos animais fazem parte do horóscopo chinês?",
         answers: ["12 animais", "10 animais", "8 animais", "15 animais"],
         correctIndex: 0,
-        backgroundClass: "bg-zodiac-wheel"
+        backgroundClass: "bg-chinese"
     },
     {
-        question: "Qual é o primeiro animal do zodíaco chinês?",
-        answers: ["Rato", "Dragão", "Tigre", "Boi"],
+        question: "Em quanto tempo se completa o ciclo dos animais no calendário Chinês?",
+        answers: ["12 anos", "10 anos", "5 anos", "365 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-rat"
+        backgroundClass: "bg-chinese"
     },
     {
-        question: "O calendário chinês é baseado principalmente em qual astro?",
-        answers: ["Lua", "Sol", "Estrelas", "Planetas"],
+        question: "Quando foi criado o calendário Chinês?",
+        answers: ["Entre 2697 a.C. e 2597 a.C.", "Em 1582 d.C.", "Em 46 a.C.", "Em 622 d.C."],
         correctIndex: 0,
-        backgroundClass: "bg-moon-calendar"
-    },
-    {
-        question: "Qual animal representa força e trabalho duro no zodíaco chinês?",
-        answers: ["Boi", "Tigre", "Cavalo", "Cachorro"],
-        correctIndex: 0,
-        backgroundClass: "bg-ox"
-    },
-    {
-        question: "Em que mês geralmente acontece o Ano Novo Chinês?",
-        answers: ["Entre janeiro e fevereiro", "Sempre em janeiro", "Sempre em dezembro", "Em março"],
-        correctIndex: 0,
-        backgroundClass: "bg-new-year"
-    },
-    {
-        question: "Quantos elementos existem na filosofia chinesa?",
-        answers: ["5 elementos", "4 elementos", "7 elementos", "3 elementos"],
-        correctIndex: 0,
-        backgroundClass: "bg-five-elements"
-    },
-    {
-        question: "Qual animal é considerado símbolo de sabedoria e longevidade?",
-        answers: ["Dragão", "Serpente", "Macaco", "Galo"],
-        correctIndex: 0,
-        backgroundClass: "bg-dragon"
-    },
-    {
-        question: "Qual cor é tradicionalmente usada nas celebrações do Ano Novo Chinês?",
-        answers: ["Vermelho", "Azul", "Verde", "Amarelo"],
-        correctIndex: 0,
-        backgroundClass: "bg-red-celebration"
-    },
-    {
-        question: "Quantos anos tem um ciclo completo do zodíaco chinês?",
-        answers: ["12 anos", "10 anos", "15 anos", "20 anos"],
-        correctIndex: 0,
-        backgroundClass: "bg-zodiac-wheel"
-    },
-    {
-        question: "Qual animal representa coragem e força no zodíaco?",
-        answers: ["Tigre", "Leão", "Urso", "Lobo"],
-        correctIndex: 0,
-        backgroundClass: "bg-tiger"
-    },
-    {
-        question: "O que são os 'envelopes vermelhos' dados no Ano Novo Chinês?",
-        answers: ["Presentes com dinheiro para boa sorte", "Cartas", "Convites", "Mapas"],
-        correctIndex: 0,
-        backgroundClass: "bg-red-envelope",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual destes NÃO é um dos cinco elementos chineses?",
-        answers: ["Ar", "Água", "Fogo", "Madeira"],
-        correctIndex: 0,
-        backgroundClass: "bg-five-elements"
-    },
-    {
-        question: "Qual animal é conhecido por sua astúcia e agilidade?",
-        answers: ["Coelho", "Cachorro", "Porco", "Boi"],
-        correctIndex: 0,
-        backgroundClass: "bg-rabbit"
-    },
-    {
-        question: "O calendário chinês combina qual tipo de ciclos?",
-        answers: ["Lunar e solar", "Apenas lunar", "Apenas solar", "Estelar"],
-        correctIndex: 0,
-        backgroundClass: "bg-moon-sun",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual animal representa a realeza e o poder imperial?",
-        answers: ["Dragão", "Tigre", "Boi", "Cavalo"],
-        correctIndex: 0,
-        backgroundClass: "bg-dragon"
-    },
-    {
-        question: "Quantos dias dura a celebração tradicional do Ano Novo Chinês?",
-        answers: ["15 dias", "7 dias", "3 dias", "1 dia"],
-        correctIndex: 0,
-        backgroundClass: "bg-new-year",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual animal representa a sabedoria e a transformação?",
-        answers: ["Serpente", "Dragão", "Macaco", "Tigre"],
-        correctIndex: 0,
-        backgroundClass: "bg-snake"
-    },
-    {
-        question: "O que é pendurado nas portas durante o Ano Novo Chinês para afastar má sorte?",
-        answers: ["Papel vermelho com dizeres de boa sorte", "Flores", "Frutas", "Lanternas"],
-        correctIndex: 0,
-        backgroundClass: "bg-decorations"
-    },
-    {
-        question: "Qual animal simboliza velocidade e liberdade?",
-        answers: ["Cavalo", "Tigre", "Coelho", "Galo"],
-        correctIndex: 0,
-        backgroundClass: "bg-horse"
-    },
-    {
-        question: "Os cinco elementos chineses são: madeira, fogo, terra, metal e...",
-        answers: ["Água", "Ar", "Éter", "Luz"],
-        correctIndex: 0,
-        backgroundClass: "bg-five-elements"
-    },
-    {
-        question: "Qual animal representa paz e tranquilidade?",
-        answers: ["Cabra", "Porco", "Cachorro", "Coelho"],
-        correctIndex: 0,
-        backgroundClass: "bg-goat"
-    },
-    {
-        question: "Por que o gato não está no zodíaco chinês, segundo a lenda?",
-        answers: ["O rato enganou o gato e ele perdeu a corrida", "O gato não quis participar", "O gato chegou atrasado", "Não gostavam de gatos"],
-        correctIndex: 0,
-        backgroundClass: "bg-zodiac-legend",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual animal é símbolo de inteligência e criatividade?",
-        answers: ["Macaco", "Rato", "Serpente", "Tigre"],
-        correctIndex: 0,
-        backgroundClass: "bg-monkey"
-    },
-    {
-        question: "Qual é o último animal do ciclo do zodíaco chinês?",
-        answers: ["Porco", "Cachorro", "Galo", "Cavalo"],
-        correctIndex: 0,
-        backgroundClass: "bg-pig"
-    },
-    {
-        question: "Qual animal representa vigilância e lealdade?",
-        answers: ["Galo", "Cachorro", "Tigre", "Cavalo"],
-        correctIndex: 0,
-        backgroundClass: "bg-rooster"
-    },
-    {
-        question: "Quantos anos tem o ciclo completo combinando os 12 animais e 5 elementos?",
-        answers: ["60 anos", "50 anos", "100 anos", "12 anos"],
-        correctIndex: 0,
-        backgroundClass: "bg-complete-cycle",
+        backgroundClass: "bg-chinese",
         difficulty: "veryHard"
     },
     {
-        question: "Qual animal é símbolo de fidelidade e honestidade?",
-        answers: ["Cachorro", "Cavalo", "Boi", "Porco"],
+        question: "Como é chamado o Ano Novo Chinês?",
+        answers: ["Festival da Primavera", "Festival da Lua", "Festival do Sol", "Festival do Dragão"],
         correctIndex: 0,
-        backgroundClass: "bg-dog"
+        backgroundClass: "bg-chinese",
+        difficulty: "hard"
+    },
+
+    // CALENDÁRIO ISLÂMICO (5 perguntas)
+    {
+        question: "O calendário Islâmico é baseado em quê?",
+        answers: ["No ciclo da Lua", "No movimento do Sol", "Nas estações do ano", "Nos planetas"],
+        correctIndex: 0,
+        backgroundClass: "bg-islamic"
     },
     {
-        question: "O que são as lanternas vermelhas penduradas durante as festividades?",
-        answers: ["Decorações que simbolizam prosperidade", "Luzes para iluminar", "Enfeites comuns", "Presentes"],
+        question: "Quantos dias tem um ano no calendário Islâmico?",
+        answers: ["354 dias", "365 dias", "360 dias", "366 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-lanterns"
-    },
-    {
-        question: "Em qual fase da Lua começa o Ano Novo Chinês?",
-        answers: ["Lua Nova", "Lua Cheia", "Quarto Crescente", "Quarto Minguante"],
-        correctIndex: 0,
-        backgroundClass: "bg-new-moon",
+        backgroundClass: "bg-islamic",
         difficulty: "hard"
     },
     {
-        question: "Qual animal simboliza generosidade e sinceridade?",
-        answers: ["Porco", "Boi", "Cabra", "Cachorro"],
+        question: "Quando começou o calendário Islâmico?",
+        answers: ["16 de julho de 622 d.C. (Hégira)", "No nascimento de Maomé", "Em 1582 d.C.", "No ano 1"],
         correctIndex: 0,
-        backgroundClass: "bg-pig"
-    },
-    {
-        question: "Segundo a lenda, quem organizou a corrida que determinou a ordem dos animais?",
-        answers: ["O Imperador de Jade", "Um sábio chinês", "Um monge budista", "O povo chinês"],
-        correctIndex: 0,
-        backgroundClass: "bg-jade-emperor",
+        backgroundClass: "bg-islamic",
         difficulty: "veryHard"
     },
     {
-        question: "Por que o Rato é o primeiro animal do zodíaco?",
-        answers: ["Ele foi esperto e chegou primeiro na corrida", "Era o favorito do imperador", "Era o menor animal", "Foi escolhido por sorteio"],
+        question: "Como se chama o Ano Novo Islâmico?",
+        answers: ["Al-Hijra", "Ramadã", "Eid", "Hajj"],
         correctIndex: 0,
-        backgroundClass: "bg-rat-story",
+        backgroundClass: "bg-islamic",
         difficulty: "hard"
     },
     {
-        question: "O que o dragão simboliza na cultura chinesa?",
-        answers: ["Poder, boa sorte e força", "Medo e perigo", "Sabedoria apenas", "Velocidade"],
+        question: "Quando começa um novo mês no calendário Islâmico?",
+        answers: ["Após a fase da lua crescente", "No dia 1º de cada mês", "Na lua cheia", "No domingo"],
         correctIndex: 0,
-        backgroundClass: "bg-dragon"
+        backgroundClass: "bg-islamic",
+        difficulty: "hard"
     },
+
+    // CALENDÁRIO MAIA (5 perguntas)
     {
-        question: "Qual elemento é associado à cor verde ou azul?",
-        answers: ["Madeira", "Água", "Terra", "Metal"],
+        question: "Quantas partes principais tem o calendário Maia?",
+        answers: ["Duas: Haab e Tzolkin", "Uma única parte", "Três partes", "Quatro partes"],
         correctIndex: 0,
-        backgroundClass: "bg-wood-element",
+        backgroundClass: "bg-mayan",
         difficulty: "hard"
     },
     {
-        question: "O que é o Festival das Lanternas?",
-        answers: ["Marca o fim das celebrações do Ano Novo", "É uma festa de aniversário", "Celebração da colheita", "Festival de fogos"],
+        question: "Quantos dias tem o calendário Haab (Maia)?",
+        answers: ["365 dias", "260 dias", "354 dias", "360 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-lantern-festival",
-        difficulty: "hard"
+        backgroundClass: "bg-mayan"
     },
     {
-        question: "Qual elemento é associado à cor vermelha?",
-        answers: ["Fogo", "Madeira", "Metal", "Terra"],
+        question: "No calendário Haab, quantos meses existem?",
+        answers: ["18 meses de 20 dias", "12 meses de 30 dias", "13 meses de 28 dias", "20 meses de 18 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-fire-element"
-    },
-    {
-        question: "Como o Boi ajudou o Rato na lenda do zodíaco?",
-        answers: ["Carregou o rato nas costas através do rio", "Ensinou o rato a nadar", "Deu comida ao rato", "Empurrou o rato"],
-        correctIndex: 0,
-        backgroundClass: "bg-ox-rat-story",
+        backgroundClass: "bg-mayan",
         difficulty: "veryHard"
     },
     {
-        question: "Qual animal cruzou o rio com muita dificuldade por causa de seu peso?",
-        answers: ["Porco", "Boi", "Tigre", "Cavalo"],
+        question: "Quantos dias tem o Tzolkin (calendário religioso Maia)?",
+        answers: ["260 dias", "365 dias", "354 dias", "180 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-pig-story",
+        backgroundClass: "bg-mayan",
         difficulty: "hard"
     },
     {
-        question: "Qual elemento está associado à cor amarela ou marrom?",
-        answers: ["Terra", "Madeira", "Metal", "Água"],
+        question: "O que acontece com os 5 dias restantes do calendário Haab?",
+        answers: ["Ficam de fora e não pertencem a nenhum mês", "São adicionados ao último mês", "Formam um mês extra", "São considerados feriados"],
         correctIndex: 0,
-        backgroundClass: "bg-earth-element",
+        backgroundClass: "bg-mayan",
+        difficulty: "veryHard"
+    },
+
+    // CALENDÁRIO ETÍOPE (5 perguntas)
+    {
+        question: "Quantos meses tem o calendário Etíope?",
+        answers: ["13 meses", "12 meses", "10 meses", "18 meses"],
+        correctIndex: 0,
+        backgroundClass: "bg-ethiopian",
         difficulty: "hard"
     },
     {
-        question: "Que tipo de dança tradicional é realizada no Ano Novo Chinês?",
-        answers: ["Dança do Leão e Dança do Dragão", "Dança do Urso", "Dança do Pavão", "Dança da Serpente"],
+        question: "O calendário Etíope é baseado em qual outro calendário?",
+        answers: ["Juliano", "Gregoriano", "Islâmico", "Chinês"],
         correctIndex: 0,
-        backgroundClass: "bg-lion-dance"
-    },
-    {
-        question: "O calendário chinês tem quantos meses em um ano normal?",
-        answers: ["12 meses lunares", "10 meses", "13 meses sempre", "14 meses"],
-        correctIndex: 0,
-        backgroundClass: "bg-lunar-months"
-    },
-    {
-        question: "Qual elemento é associado às cores branca e dourada?",
-        answers: ["Metal", "Terra", "Madeira", "Fogo"],
-        correctIndex: 0,
-        backgroundClass: "bg-metal-element",
+        backgroundClass: "bg-ethiopian",
         difficulty: "hard"
     },
     {
-        question: "Por que ocasionalmente há um '13º mês' no calendário chinês?",
-        answers: ["Para alinhar os ciclos lunares com as estações solares", "Por erro de cálculo", "Para comemorar eventos especiais", "Não existe 13º mês"],
+        question: "Quantos dias têm os primeiros 12 meses do calendário Etíope?",
+        answers: ["30 dias cada", "28 dias cada", "29 dias cada", "31 dias cada"],
         correctIndex: 0,
-        backgroundClass: "bg-leap-month",
+        backgroundClass: "bg-ethiopian",
+        difficulty: "hard"
+    },
+    {
+        question: "Quantos dias tem o 13º mês do calendário Etíope em anos normais?",
+        answers: ["5 dias", "6 dias", "7 dias", "10 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-ethiopian",
         difficulty: "veryHard"
     },
     {
-        question: "Qual elemento é associado à cor preta ou azul escuro?",
-        answers: ["Água", "Metal", "Terra", "Madeira"],
+        question: "O calendário Etíope é de que tipo?",
+        answers: ["Solar", "Lunar", "Lunissolar", "Estelar"],
         correctIndex: 0,
-        backgroundClass: "bg-water-element",
-        difficulty: "hard"
+        backgroundClass: "bg-ethiopian"
+    },
+
+    // CALENDÁRIO JUDAICO (5 perguntas)
+    {
+        question: "O calendário Judaico é de que tipo?",
+        answers: ["Lunissolar", "Apenas Solar", "Apenas Lunar", "Estelar"],
+        correctIndex: 0,
+        backgroundClass: "bg-jewish"
     },
     {
-        question: "O que significa 'Kung Hei Fat Choi'?",
-        answers: ["Feliz Ano Novo em cantonês", "Boa sorte", "Felicidades", "Até logo"],
+        question: "Quando foi criado o calendário Judaico?",
+        answers: ["Aproximadamente em 1447 a.C.", "Em 622 d.C.", "Em 1582 d.C.", "Em 2697 a.C."],
         correctIndex: 0,
-        backgroundClass: "bg-greetings",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual animal o Tigre teve que enfrentar na corrida?",
-        answers: ["Uma forte correnteza de água", "Outro tigre", "Um dragão", "Nenhum obstáculo"],
-        correctIndex: 0,
-        backgroundClass: "bg-tiger-story",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantas constelações ou 'mansões lunares' existem na astronomia chinesa?",
-        answers: ["28 mansões", "12 mansões", "24 mansões", "30 mansões"],
-        correctIndex: 0,
-        backgroundClass: "bg-lunar-mansions",
+        backgroundClass: "bg-jewish",
         difficulty: "veryHard"
     },
     {
-        question: "Segundo a lenda, como o Dragão, sendo poderoso, não chegou em primeiro?",
-        answers: ["Parou para ajudar pessoas em necessidade", "Ficou dormindo", "Se perdeu no caminho", "Não quis participar"],
+        question: "Há quantos anos o calendário Judaico é usado em Israel?",
+        answers: ["Mais de 3 mil anos", "500 anos", "1000 anos", "100 anos"],
         correctIndex: 0,
-        backgroundClass: "bg-dragon-story",
+        backgroundClass: "bg-jewish",
         difficulty: "hard"
     },
     {
-        question: "Qual fruta é considerada símbolo de sorte e prosperidade?",
-        answers: ["Tangerina ou laranja", "Maçã", "Uva", "Morango"],
+        question: "Por que o calendário Judaico pode ter 12 ou 13 meses?",
+        answers: ["Para ajustar os ciclos lunar e solar", "Por motivos religiosos", "Para ter mais feriados", "Por erro de cálculo"],
         correctIndex: 0,
-        backgroundClass: "bg-oranges"
-    },
-    {
-        question: "O que são os 'Nian'?",
-        answers: ["Monstros da lenda que são afastados por barulho e vermelho", "Deuses da sorte", "Animais sagrados", "Mestres do calendário"],
-        correctIndex: 0,
-        backgroundClass: "bg-nian-monster",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Como o Coelho atravessou o rio na lenda?",
-        answers: ["Pulando de pedra em pedra", "Nadando rapidamente", "Voando", "No lombo do Dragão"],
-        correctIndex: 0,
-        backgroundClass: "bg-rabbit-story",
+        backgroundClass: "bg-jewish",
         difficulty: "hard"
     },
     {
-        question: "Quantos termos solares (estações) existem no calendário chinês?",
-        answers: ["24 termos solares", "12 termos", "4 termos", "8 termos"],
+        question: "A quantidade de dias no ano judaico:",
+        answers: ["Pode variar de ano para ano", "É sempre 365 dias", "É sempre 354 dias", "É sempre 360 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-solar-terms",
-        difficulty: "veryHard"
+        backgroundClass: "bg-jewish",
+        difficulty: "hard"
     },
+
+    // CALENDÁRIO JUCHE (5 perguntas)
     {
-        question: "Qual animal representa o ano 2024 no zodíaco chinês?",
-        answers: ["Dragão", "Coelho", "Tigre", "Serpente"],
+        question: "Onde é usado o calendário Juche?",
+        answers: ["Apenas na Coreia do Norte", "Em toda a Ásia", "No mundo todo", "Na China e Coreia"],
         correctIndex: 0,
-        backgroundClass: "bg-dragon"
-    },
-    {
-        question: "Na dança do Dragão, quantas pessoas normalmente seguram o dragão?",
-        answers: ["Entre 9 e 15 pessoas", "2 pessoas", "1 pessoa", "Mais de 50 pessoas"],
-        correctIndex: 0,
-        backgroundClass: "bg-dragon-dance",
+        backgroundClass: "bg-juche",
         difficulty: "hard"
     },
     {
-        question: "O que é Yin e Yang?",
-        answers: ["Conceito de forças opostas e complementares", "Dois deuses", "Dois dragões", "Duas montanhas"],
+        question: "O Ano 1 do calendário Juche marca:",
+        answers: ["O nascimento de Kim Il-sung em 1912", "O nascimento de Jesus", "A fundação da Coreia do Norte", "A criação do calendário"],
         correctIndex: 0,
-        backgroundClass: "bg-yin-yang"
+        backgroundClass: "bg-juche",
+        difficulty: "veryHard"
     },
     {
-        question: "Qual alimento tem formato arredondado e simboliza união familiar?",
-        answers: ["Bolinhos de arroz (tangyuan)", "Macarrão", "Peixe", "Frango"],
+        question: "O calendário Juche é baseado em qual ideologia?",
+        answers: ["Ideologia Juche", "Budismo", "Confucionismo", "Islamismo"],
         correctIndex: 0,
-        backgroundClass: "bg-tangyuan",
+        backgroundClass: "bg-juche",
+        difficulty: "veryHard"
+    },
+    {
+        question: "O calendário Juche é de que tipo?",
+        answers: ["Solar (como o Gregoriano)", "Lunar", "Lunissolar", "Único"],
+        correctIndex: 0,
+        backgroundClass: "bg-juche"
+    },
+    {
+        question: "Quem fundou a ideologia Juche?",
+        answers: ["Kim Il-sung", "Kim Jong-un", "Mao Tsé-Tung", "Stalin"],
+        correctIndex: 0,
+        backgroundClass: "bg-juche",
+        difficulty: "veryHard"
+    },
+
+    // CALENDÁRIO EGÍPCIO (5 perguntas)
+    {
+        question: "O calendário Egípcio é um dos:",
+        answers: ["Mais antigos da história", "Mais modernos", "Mais complexos", "Menos usados"],
+        correctIndex: 0,
+        backgroundClass: "bg-egyptian"
+    },
+    {
+        question: "O calendário Egípcio está ligado a qual rio?",
+        answers: ["Rio Nilo", "Rio Amazonas", "Rio Ganges", "Rio Amarelo"],
+        correctIndex: 0,
+        backgroundClass: "bg-egyptian",
         difficulty: "hard"
     },
     {
-        question: "O que significa comer peixe no Ano Novo Chinês?",
-        answers: ["Abundância e prosperidade para o ano que vem", "Boa saúde", "Longevidade", "Sabedoria"],
+        question: "Quantos dias tinha o ano no calendário Egípcio?",
+        answers: ["365 dias", "354 dias", "360 dias", "366 dias"],
         correctIndex: 0,
-        backgroundClass: "bg-fish-dish"
+        backgroundClass: "bg-egyptian"
     },
     {
-        question: "Por que macarrão longo é servido durante o aniversário?",
-        answers: ["Simboliza longevidade e vida longa", "É mais gostoso", "É tradição sem significado", "É mais fácil de fazer"],
+        question: "Quantos meses tinha o calendário Egípcio?",
+        answers: ["12 meses de 30 dias", "13 meses", "10 meses", "18 meses"],
         correctIndex: 0,
-        backgroundClass: "bg-longevity-noodles"
+        backgroundClass: "bg-egyptian",
+        difficulty: "hard"
     },
     {
-        question: "Quando começou a ser usado o calendário chinês?",
-        answers: ["Há mais de 4000 anos", "Há 100 anos", "Há 500 anos", "Há 1000 anos"],
+        question: "Para que serviam os 5 dias extras no calendário Egípcio?",
+        answers: ["Homenagear os deuses", "Celebrar o faraó", "Fazer festas", "Ajustar o ano"],
         correctIndex: 0,
-        backgroundClass: "bg-ancient-calendar",
+        backgroundClass: "bg-egyptian",
+        difficulty: "hard"
+    },
+
+    // CALENDÁRIOS LUNAR, SOLAR E LUNISSOLAR (10 perguntas conceituais)
+    {
+        question: "Um calendário Lunar é baseado em quê?",
+        answers: ["Nas fases da Lua", "No movimento do Sol", "Nas estrelas", "Nos planetas"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-concept"
+    },
+    {
+        question: "Quantos dias tem aproximadamente um ano em calendários Lunares?",
+        answers: ["354 ou 355 dias", "365 dias", "360 dias", "400 dias"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-concept",
+        difficulty: "hard"
+    },
+    {
+        question: "Quando começa um novo mês em calendários Lunares?",
+        answers: ["Com a lua nova", "No primeiro dia do mês", "Com a lua cheia", "A qualquer momento"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-concept"
+    },
+    {
+        question: "Um calendário Solar é baseado em quê?",
+        answers: ["No ciclo do Sol", "Nas fases da Lua", "Nas estrelas", "Nos planetas"],
+        correctIndex: 0,
+        backgroundClass: "bg-solar-concept"
+    },
+    {
+        question: "Qual é o modelo de calendário que usamos no Ocidente?",
+        answers: ["Solar (Gregoriano)", "Lunar", "Lunissolar", "Estelar"],
+        correctIndex: 0,
+        backgroundClass: "bg-solar-concept"
+    },
+    {
+        question: "Quantos meses tem um calendário Solar típico?",
+        answers: ["12 meses", "13 meses", "10 meses", "18 meses"],
+        correctIndex: 0,
+        backgroundClass: "bg-solar-concept"
+    },
+    {
+        question: "O que é um calendário Lunissolar?",
+        answers: ["Usa o Sol e a Lua como base", "Usa apenas a Lua", "Usa apenas o Sol", "Usa as estrelas"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunisolar-concept"
+    },
+    {
+        question: "Quais calendários são exemplos de Lunissolar?",
+        answers: ["Judaico e Chinês", "Gregoriano e Juliano", "Islâmico e Egípcio", "Maia e Etíope"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunisolar-concept",
+        difficulty: "hard"
+    },
+    {
+        question: "Por que calendários Lunissolares precisam de ajustes?",
+        answers: ["Para alinhar o ano solar com as fases da lua", "Por tradição", "Para ter mais feriados", "Para facilitar cálculos"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunisolar-concept",
+        difficulty: "hard"
+    },
+    {
+        question: "Como se faz o ajuste em calendários Lunissolares?",
+        answers: ["Incluindo um mês extra periodicamente", "Tirando dias", "Mudando a ordem dos meses", "Não há ajustes"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunisolar-concept",
         difficulty: "veryHard"
     },
+
+    // PERGUNTAS GERAIS E COMPARATIVAS (5 perguntas)
     {
-        question: "Qual imperador lendário é creditado com a criação do calendário chinês?",
-        answers: ["Imperador Amarelo (Huangdi)", "Imperador de Jade", "Imperador Qin", "Imperador Ming"],
+        question: "Para que foram desenvolvidos os calendários?",
+        answers: ["Para medir o tempo e organizar rotinas", "Apenas para festas religiosas", "Para navegação", "Para matemática"],
         correctIndex: 0,
-        backgroundClass: "bg-yellow-emperor",
-        difficulty: "veryHard"
+        backgroundClass: "bg-general"
+    },
+    {
+        question: "Os calendários são pautados por:",
+        answers: ["Cultura e tradições de cada povo", "Apenas pela ciência", "Apenas pela religião", "Por regras universais"],
+        correctIndex: 0,
+        backgroundClass: "bg-general"
+    },
+    {
+        question: "Quantos tipos principais de calendários existem?",
+        answers: ["Três: Solar, Lunar e Lunissolar", "Dois: Antigo e Moderno", "Um único tipo", "Cinco tipos"],
+        correctIndex: 0,
+        backgroundClass: "bg-general",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual destes calendários NÃO é Solar?",
+        answers: ["Islâmico", "Gregoriano", "Juliano", "Etíope"],
+        correctIndex: 0,
+        backgroundClass: "bg-general"
+    },
+    {
+        question: "Qual calendário tem um sistema mais complexo, com duas partes?",
+        answers: ["Maia", "Gregoriano", "Islâmico", "Etíope"],
+        correctIndex: 0,
+        backgroundClass: "bg-general",
+        difficulty: "hard"
     }
 ];
