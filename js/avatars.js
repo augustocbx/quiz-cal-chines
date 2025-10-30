@@ -27,7 +27,7 @@ class AvatarSystem {
     }
 
     loadSavedAvatar() {
-        const saved = localStorage.getItem('selectedAvatar');
+        const saved = StorageManager.getItem('selectedAvatar');
         if (saved) {
             const avatarId = saved;
             return this.avatars.find(a => a.id === avatarId) || null;
@@ -39,7 +39,7 @@ class AvatarSystem {
         const avatar = this.avatars.find(a => a.id === avatarId);
         if (avatar) {
             this.selectedAvatar = avatar;
-            localStorage.setItem('selectedAvatar', avatarId);
+            StorageManager.setItem('selectedAvatar', avatarId);
             return true;
         }
         return false;
