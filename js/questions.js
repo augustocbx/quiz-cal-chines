@@ -1,761 +1,390 @@
-// Banco de perguntas sobre orientação e navegação
+// Banco de perguntas sobre o Calendário Chinês
 const QUESTION_BANK = [
     {
-        question: "O que significa GPS?",
-        answers: ["Sistema de Posicionamento Global", "Guia de Pontos no Solo", "Grande Plano de Satélites", "Geografia por Satélite"],
+        question: "Quantos animais fazem parte do zodíaco chinês?",
+        answers: ["12 animais", "10 animais", "8 animais", "15 animais"],
         correctIndex: 0,
-        backgroundClass: "bg-gps-satellite"
+        backgroundClass: "bg-zodiac-wheel"
     },
     {
-        question: "Qual direção você está olhando quando vê o Sol nascer pela manhã?",
-        answers: ["Leste", "Oeste", "Norte", "Sul"],
+        question: "Qual é o primeiro animal do zodíaco chinês?",
+        answers: ["Rato", "Dragão", "Tigre", "Boi"],
         correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
+        backgroundClass: "bg-rat"
     },
     {
-        question: "Quantos satélites são necessários para o GPS determinar sua posição?",
-        answers: ["No mínimo 4", "Apenas 1", "Exatamente 2", "No mínimo 10"],
+        question: "O calendário chinês é baseado principalmente em qual astro?",
+        answers: ["Lua", "Sol", "Estrelas", "Planetas"],
         correctIndex: 0,
-        backgroundClass: "bg-gps-satellite",
+        backgroundClass: "bg-moon-calendar"
+    },
+    {
+        question: "Qual animal representa força e trabalho duro no zodíaco chinês?",
+        answers: ["Boi", "Tigre", "Cavalo", "Cachorro"],
+        correctIndex: 0,
+        backgroundClass: "bg-ox"
+    },
+    {
+        question: "Em que mês geralmente acontece o Ano Novo Chinês?",
+        answers: ["Entre janeiro e fevereiro", "Sempre em janeiro", "Sempre em dezembro", "Em março"],
+        correctIndex: 0,
+        backgroundClass: "bg-new-year"
+    },
+    {
+        question: "Quantos elementos existem na filosofia chinesa?",
+        answers: ["5 elementos", "4 elementos", "7 elementos", "3 elementos"],
+        correctIndex: 0,
+        backgroundClass: "bg-five-elements"
+    },
+    {
+        question: "Qual animal é considerado símbolo de sabedoria e longevidade?",
+        answers: ["Dragão", "Serpente", "Macaco", "Galo"],
+        correctIndex: 0,
+        backgroundClass: "bg-dragon"
+    },
+    {
+        question: "Qual cor é tradicionalmente usada nas celebrações do Ano Novo Chinês?",
+        answers: ["Vermelho", "Azul", "Verde", "Amarelo"],
+        correctIndex: 0,
+        backgroundClass: "bg-red-celebration"
+    },
+    {
+        question: "Quantos anos tem um ciclo completo do zodíaco chinês?",
+        answers: ["12 anos", "10 anos", "15 anos", "20 anos"],
+        correctIndex: 0,
+        backgroundClass: "bg-zodiac-wheel"
+    },
+    {
+        question: "Qual animal representa coragem e força no zodíaco?",
+        answers: ["Tigre", "Leão", "Urso", "Lobo"],
+        correctIndex: 0,
+        backgroundClass: "bg-tiger"
+    },
+    {
+        question: "O que são os 'envelopes vermelhos' dados no Ano Novo Chinês?",
+        answers: ["Presentes com dinheiro para boa sorte", "Cartas", "Convites", "Mapas"],
+        correctIndex: 0,
+        backgroundClass: "bg-red-envelope",
         difficulty: "hard"
     },
     {
-        question: "Qual constelação é mais usada para orientação no Hemisfério Sul?",
-        answers: ["Cruzeiro do Sul", "Ursa Maior", "Órion", "Escorpião"],
+        question: "Qual destes NÃO é um dos cinco elementos chineses?",
+        answers: ["Ar", "Água", "Fogo", "Madeira"],
         correctIndex: 0,
-        backgroundClass: "bg-southern-cross"
+        backgroundClass: "bg-five-elements"
     },
     {
-        question: "O que é uma bússola?",
-        answers: ["Instrumento que aponta para o Norte magnético", "Mapa do céu", "Tipo de telescópio", "Relógio antigo"],
+        question: "Qual animal é conhecido por sua astúcia e agilidade?",
+        answers: ["Coelho", "Cachorro", "Porco", "Boi"],
         correctIndex: 0,
-        backgroundClass: "bg-compass"
+        backgroundClass: "bg-rabbit"
     },
     {
-        question: "Qual astro os navegadores usavam durante o dia para se orientar?",
-        answers: ["O Sol", "A Lua", "Vênus", "Marte"],
+        question: "O calendário chinês combina qual tipo de ciclos?",
+        answers: ["Lunar e solar", "Apenas lunar", "Apenas solar", "Estelar"],
         correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
+        backgroundClass: "bg-moon-sun",
+        difficulty: "hard"
     },
     {
-        question: "Qual aplicativo moderno usa GPS para navegação?",
-        answers: ["Google Maps", "WhatsApp", "Instagram", "Netflix"],
+        question: "Qual animal representa a realeza e o poder imperial?",
+        answers: ["Dragão", "Tigre", "Boi", "Cavalo"],
         correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
+        backgroundClass: "bg-dragon"
     },
     {
-        question: "O que as pessoas observavam nas estrelas para navegar?",
-        answers: ["Constelações e posições", "Cores das estrelas", "Tamanho das estrelas", "Quantidade de brilho"],
+        question: "Quantos dias dura a celebração tradicional do Ano Novo Chinês?",
+        answers: ["15 dias", "7 dias", "3 dias", "1 dia"],
         correctIndex: 0,
-        backgroundClass: "bg-stars-night"
+        backgroundClass: "bg-new-year",
+        difficulty: "hard"
     },
     {
-        question: "Em que ano o GPS foi disponibilizado para uso civil?",
-        answers: ["2000", "1995", "1980", "2010"],
+        question: "Qual animal representa a sabedoria e a transformação?",
+        answers: ["Serpente", "Dragão", "Macaco", "Tigre"],
         correctIndex: 0,
-        backgroundClass: "bg-gps-history",
+        backgroundClass: "bg-snake"
+    },
+    {
+        question: "O que é pendurado nas portas durante o Ano Novo Chinês para afastar má sorte?",
+        answers: ["Papel vermelho com dizeres de boa sorte", "Flores", "Frutas", "Lanternas"],
+        correctIndex: 0,
+        backgroundClass: "bg-decorations"
+    },
+    {
+        question: "Qual animal simboliza velocidade e liberdade?",
+        answers: ["Cavalo", "Tigre", "Coelho", "Galo"],
+        correctIndex: 0,
+        backgroundClass: "bg-horse"
+    },
+    {
+        question: "Os cinco elementos chineses são: madeira, fogo, terra, metal e...",
+        answers: ["Água", "Ar", "Éter", "Luz"],
+        correctIndex: 0,
+        backgroundClass: "bg-five-elements"
+    },
+    {
+        question: "Qual animal representa paz e tranquilidade?",
+        answers: ["Cabra", "Porco", "Cachorro", "Coelho"],
+        correctIndex: 0,
+        backgroundClass: "bg-goat"
+    },
+    {
+        question: "Por que o gato não está no zodíaco chinês, segundo a lenda?",
+        answers: ["O rato enganou o gato e ele perdeu a corrida", "O gato não quis participar", "O gato chegou atrasado", "Não gostavam de gatos"],
+        correctIndex: 0,
+        backgroundClass: "bg-zodiac-legend",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual animal é símbolo de inteligência e criatividade?",
+        answers: ["Macaco", "Rato", "Serpente", "Tigre"],
+        correctIndex: 0,
+        backgroundClass: "bg-monkey"
+    },
+    {
+        question: "Qual é o último animal do ciclo do zodíaco chinês?",
+        answers: ["Porco", "Cachorro", "Galo", "Cavalo"],
+        correctIndex: 0,
+        backgroundClass: "bg-pig"
+    },
+    {
+        question: "Qual animal representa vigilância e lealdade?",
+        answers: ["Galo", "Cachorro", "Tigre", "Cavalo"],
+        correctIndex: 0,
+        backgroundClass: "bg-rooster"
+    },
+    {
+        question: "Quantos anos tem o ciclo completo combinando os 12 animais e 5 elementos?",
+        answers: ["60 anos", "50 anos", "100 anos", "12 anos"],
+        correctIndex: 0,
+        backgroundClass: "bg-complete-cycle",
         difficulty: "veryHard"
     },
     {
-        question: "Para que lado a bússola sempre aponta?",
-        answers: ["Norte", "Sul", "Leste", "Oeste"],
+        question: "Qual animal é símbolo de fidelidade e honestidade?",
+        answers: ["Cachorro", "Cavalo", "Boi", "Porco"],
         correctIndex: 0,
-        backgroundClass: "bg-compass"
+        backgroundClass: "bg-dog"
     },
     {
-        question: "O que os navegadores antigos usavam para saber as horas durante a viagem?",
-        answers: ["Ampulheta (relógio de areia)", "Celular", "Relógio digital", "Calculadora"],
+        question: "O que são as lanternas vermelhas penduradas durante as festividades?",
+        answers: ["Decorações que simbolizam prosperidade", "Luzes para iluminar", "Enfeites comuns", "Presentes"],
         correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation"
+        backgroundClass: "bg-lanterns"
     },
     {
-        question: "Como os navegadores determinavam as horas antes dos relógios precisos?",
-        answers: ["Pela posição do Sol e das estrelas", "Contando os dias", "Usando velas", "Medindo a temperatura"],
+        question: "Em qual fase da Lua começa o Ano Novo Chinês?",
+        answers: ["Lua Nova", "Lua Cheia", "Quarto Crescente", "Quarto Minguante"],
         correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Qual país desenvolveu o sistema GPS?",
-        answers: ["Estados Unidos", "Brasil", "China", "Rússia"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-satellite"
-    },
-    {
-        question: "O que significa latitude?",
-        answers: ["Distância em relação ao Equador", "Distância em relação ao Polo Norte", "Altura do mar", "Profundidade do oceano"],
-        correctIndex: 0,
-        backgroundClass: "bg-map-coordinates"
-    },
-    {
-        question: "Onde ficam os satélites que fazem o GPS funcionar?",
-        answers: ["No espaço, muito acima das nuvens", "No fundo do mar", "Dentro da Terra", "Em prédios muito altos"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-satellite"
-    },
-    {
-        question: "Qual fenômeno natural pode atrapalhar sinais de GPS?",
-        answers: ["Tempestades solares", "Chuva forte", "Vento", "Neblina"],
-        correctIndex: 0,
-        backgroundClass: "bg-solar-storm",
+        backgroundClass: "bg-new-moon",
         difficulty: "hard"
     },
     {
-        question: "Como se chama a linha imaginária que divide a Terra em Norte e Sul?",
-        answers: ["Equador", "Meridiano", "Trópico", "Paralelo"],
+        question: "Qual animal simboliza generosidade e sinceridade?",
+        answers: ["Porco", "Boi", "Cabra", "Cachorro"],
         correctIndex: 0,
-        backgroundClass: "bg-earth-equator",
-        difficulty: "hard"
+        backgroundClass: "bg-pig"
     },
     {
-        question: "Qual civilização antiga era famosa por navegar usando as estrelas?",
-        answers: ["Fenícios", "Incas", "Maias", "Astecas"],
+        question: "Segundo a lenda, quem organizou a corrida que determinou a ordem dos animais?",
+        answers: ["O Imperador de Jade", "Um sábio chinês", "Um monge budista", "O povo chinês"],
         correctIndex: 0,
-        backgroundClass: "bg-stars-night",
-        difficulty: "hard"
-    },
-    {
-        question: "O que é longitude?",
-        answers: ["Distância em relação ao Meridiano de Greenwich", "Distância em relação ao Equador", "Altura da montanha", "Profundidade do mar"],
-        correctIndex: 0,
-        backgroundClass: "bg-map-coordinates",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual aplicação usa GPS para rastrear exercícios físicos?",
-        answers: ["Aplicativos de corrida e caminhada", "Redes sociais", "Jogos de tabuleiro", "Editores de texto"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
-    },
-    {
-        question: "O que os marinheiros antigos chamavam de 'Rosa dos Ventos'?",
-        answers: ["Diagrama que mostra as direções", "Tipo de estrela", "Constelação", "Instrumento de navegação"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass-rose",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual é a velocidade aproximada de um sinal de GPS?",
-        answers: ["Velocidade da luz", "Velocidade do som", "1000 km/h", "100 km/h"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-satellite",
+        backgroundClass: "bg-jade-emperor",
         difficulty: "veryHard"
     },
     {
-        question: "Como os povos originários brasileiros se orientavam nas florestas?",
-        answers: ["Observando o Sol, árvores e rios", "Usando bússolas", "Com GPS", "Com mapas de papel"],
+        question: "Por que o Rato é o primeiro animal do zodíaco?",
+        answers: ["Ele foi esperto e chegou primeiro na corrida", "Era o favorito do imperador", "Era o menor animal", "Foi escolhido por sorteio"],
         correctIndex: 0,
-        backgroundClass: "bg-forest-navigation"
-    },
-    {
-        question: "Qual fase da Lua ajudava os navegadores a ter mais luz à noite?",
-        answers: ["Lua Cheia", "Lua Nova", "Quarto Crescente", "Quarto Minguante"],
-        correctIndex: 0,
-        backgroundClass: "bg-full-moon"
-    },
-    {
-        question: "Onde fica o Meridiano de Greenwich?",
-        answers: ["Inglaterra", "Brasil", "Estados Unidos", "França"],
-        correctIndex: 0,
-        backgroundClass: "bg-greenwich",
+        backgroundClass: "bg-rat-story",
         difficulty: "hard"
     },
     {
-        question: "Qual estrela está mais próxima da Terra?",
-        answers: ["O Sol", "Sírius", "Estrela Polar", "Vega"],
+        question: "O que o dragão simboliza na cultura chinesa?",
+        answers: ["Poder, boa sorte e força", "Medo e perigo", "Sabedoria apenas", "Velocidade"],
         correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
+        backgroundClass: "bg-dragon"
+    },
+    {
+        question: "Qual elemento é associado à cor verde ou azul?",
+        answers: ["Madeira", "Água", "Terra", "Metal"],
+        correctIndex: 0,
+        backgroundClass: "bg-wood-element",
         difficulty: "hard"
     },
     {
-        question: "O que é necessário para usar o GPS no celular?",
-        answers: ["Sinal de satélite", "Internet sempre ligada", "Bateria de carro", "Cabo especial"],
+        question: "O que é o Festival das Lanternas?",
+        answers: ["Marca o fim das celebrações do Ano Novo", "É uma festa de aniversário", "Celebração da colheita", "Festival de fogos"],
         correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
+        backgroundClass: "bg-lantern-festival",
+        difficulty: "hard"
     },
     {
-        question: "Como se chama o movimento aparente das estrelas no céu?",
-        answers: ["Movimento diurno", "Órbita estelar", "Rotação estelar", "Translação celeste"],
+        question: "Qual elemento é associado à cor vermelha?",
+        answers: ["Fogo", "Madeira", "Metal", "Terra"],
         correctIndex: 0,
-        backgroundClass: "bg-stars-night",
+        backgroundClass: "bg-fire-element"
+    },
+    {
+        question: "Como o Boi ajudou o Rato na lenda do zodíaco?",
+        answers: ["Carregou o rato nas costas através do rio", "Ensinou o rato a nadar", "Deu comida ao rato", "Empurrou o rato"],
+        correctIndex: 0,
+        backgroundClass: "bg-ox-rat-story",
         difficulty: "veryHard"
     },
     {
-        question: "O que causa as marés que os navegadores precisam conhecer?",
-        answers: ["Atração gravitacional da Lua", "Vento forte", "Temperatura da água", "Rotação da Terra"],
+        question: "Qual animal cruzou o rio com muita dificuldade por causa de seu peso?",
+        answers: ["Porco", "Boi", "Tigre", "Cavalo"],
         correctIndex: 0,
-        backgroundClass: "bg-moon-tides",
+        backgroundClass: "bg-pig-story",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual elemento está associado à cor amarela ou marrom?",
+        answers: ["Terra", "Madeira", "Metal", "Água"],
+        correctIndex: 0,
+        backgroundClass: "bg-earth-element",
+        difficulty: "hard"
+    },
+    {
+        question: "Que tipo de dança tradicional é realizada no Ano Novo Chinês?",
+        answers: ["Dança do Leão e Dança do Dragão", "Dança do Urso", "Dança do Pavão", "Dança da Serpente"],
+        correctIndex: 0,
+        backgroundClass: "bg-lion-dance"
+    },
+    {
+        question: "O calendário chinês tem quantos meses em um ano normal?",
+        answers: ["12 meses lunares", "10 meses", "13 meses sempre", "14 meses"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-months"
+    },
+    {
+        question: "Qual elemento é associado às cores branca e dourada?",
+        answers: ["Metal", "Terra", "Madeira", "Fogo"],
+        correctIndex: 0,
+        backgroundClass: "bg-metal-element",
+        difficulty: "hard"
+    },
+    {
+        question: "Por que ocasionalmente há um '13º mês' no calendário chinês?",
+        answers: ["Para alinhar os ciclos lunares com as estações solares", "Por erro de cálculo", "Para comemorar eventos especiais", "Não existe 13º mês"],
+        correctIndex: 0,
+        backgroundClass: "bg-leap-month",
         difficulty: "veryHard"
     },
     {
-        question: "Qual o nome do sistema russo similar ao GPS?",
-        answers: ["GLONASS", "GALILEO", "BEIDOU", "NAVSTAR"],
+        question: "Qual elemento é associado à cor preta ou azul escuro?",
+        answers: ["Água", "Metal", "Terra", "Madeira"],
         correctIndex: 0,
-        backgroundClass: "bg-satellite-systems",
+        backgroundClass: "bg-water-element",
+        difficulty: "hard"
+    },
+    {
+        question: "O que significa 'Kung Hei Fat Choi'?",
+        answers: ["Feliz Ano Novo em cantonês", "Boa sorte", "Felicidades", "Até logo"],
+        correctIndex: 0,
+        backgroundClass: "bg-greetings",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual animal o Tigre teve que enfrentar na corrida?",
+        answers: ["Uma forte correnteza de água", "Outro tigre", "Um dragão", "Nenhum obstáculo"],
+        correctIndex: 0,
+        backgroundClass: "bg-tiger-story",
+        difficulty: "hard"
+    },
+    {
+        question: "Quantas constelações ou 'mansões lunares' existem na astronomia chinesa?",
+        answers: ["28 mansões", "12 mansões", "24 mansões", "30 mansões"],
+        correctIndex: 0,
+        backgroundClass: "bg-lunar-mansions",
         difficulty: "veryHard"
     },
     {
-        question: "Como os navegadores mediam a velocidade do navio antigamente?",
-        answers: ["Com a barquinha de arrasto", "Contando ondas", "Observando as estrelas", "Usando relógio"],
+        question: "Segundo a lenda, como o Dragão, sendo poderoso, não chegou em primeiro?",
+        answers: ["Parou para ajudar pessoas em necessidade", "Ficou dormindo", "Se perdeu no caminho", "Não quis participar"],
         correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
+        backgroundClass: "bg-dragon-story",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual fruta é considerada símbolo de sorte e prosperidade?",
+        answers: ["Tangerina ou laranja", "Maçã", "Uva", "Morango"],
+        correctIndex: 0,
+        backgroundClass: "bg-oranges"
+    },
+    {
+        question: "O que são os 'Nian'?",
+        answers: ["Monstros da lenda que são afastados por barulho e vermelho", "Deuses da sorte", "Animais sagrados", "Mestres do calendário"],
+        correctIndex: 0,
+        backgroundClass: "bg-nian-monster",
         difficulty: "veryHard"
     },
     {
-        question: "Por que as estrelas parecem se mover no céu?",
-        answers: ["Pela rotação da Terra", "Elas realmente se movem rápido", "Por causa do vento", "Por ilusão de ótica"],
+        question: "Como o Coelho atravessou o rio na lenda?",
+        answers: ["Pulando de pedra em pedra", "Nadando rapidamente", "Voando", "No lombo do Dragão"],
         correctIndex: 0,
-        backgroundClass: "bg-stars-night",
+        backgroundClass: "bg-rabbit-story",
         difficulty: "hard"
     },
     {
-        question: "Qual tecnologia moderna ajuda aviões a pousar com segurança?",
-        answers: ["GPS e sistemas de navegação", "Bússola magnética", "Observação de estrelas", "Mapas de papel"],
+        question: "Quantos termos solares (estações) existem no calendário chinês?",
+        answers: ["24 termos solares", "12 termos", "4 termos", "8 termos"],
         correctIndex: 0,
-        backgroundClass: "bg-airplane-gps"
-    },
-    {
-        question: "Se você colocar uma vara no chão pela manhã, em que direção a sombra dela aponta?",
-        answers: ["Para o Oeste", "Para o Leste", "Para o Norte", "Para o Sul"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Quando você vê o Sol se pôr no final do dia, você está olhando para qual direção?",
-        answers: ["Oeste", "Leste", "Norte", "Sul"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Qual destes instrumentos antigos era usado para desenhar mapas dos lugares descobertos?",
-        answers: ["Compasso (de desenho)", "Microscópio", "Termômetro", "Calculadora"],
-        correctIndex: 0,
-        backgroundClass: "bg-map-coordinates"
-    },
-    {
-        question: "Antes da bússola, os navegadores chineses se orientavam usando um objeto que flutuava na água. O que era?",
-        answers: ["Uma colher magnética de pedra-ímã", "Uma folha seca", "Um peixe de madeira", "Uma estrela de metal"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que os exploradores antigos preferiam viajar observando o céu em noites sem nuvens?",
-        answers: ["Para ver as estrelas e se orientar", "Para não pegar chuva", "Para economizar comida", "Para dormir melhor"],
-        correctIndex: 0,
-        backgroundClass: "bg-stars-night"
-    },
-    {
-        question: "Quantos satélites GPS estão orbitando a Terra neste momento?",
-        answers: ["Mais de 30 satélites", "Apenas 4 satélites", "Apenas 1 satélite", "Nenhum, o GPS usa torres"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-satellite",
-        difficulty: "hard"
-    },
-    {
-        question: "Como funcionam os relógios de sol que existem em praças e jardins?",
-        answers: ["A sombra de uma haste indica as horas conforme o Sol se move", "Eles têm pilhas escondidas", "Medem a temperatura", "Contam os pássaros que passam"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Em florestas úmidas, os musgos crescem mais no lado da árvore que recebe menos Sol. No Brasil, esse lado é:",
-        answers: ["Sul", "Norte", "Leste", "Oeste"],
-        correctIndex: 0,
-        backgroundClass: "bg-forest-navigation"
-    },
-    {
-        question: "O que o seu celular recebe do espaço para saber onde você está?",
-        answers: ["Sinais de satélites GPS", "Luz das estrelas", "Ondas de rádio FM", "Mensagens de outros celulares"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
-    },
-    {
-        question: "Os aviões modernos usam GPS para voar. O que aconteceria se o GPS parasse de funcionar?",
-        answers: ["Eles usariam outros sistemas de navegação como rádio e radar", "Todos os aviões cairiam", "Os aviões não poderiam mais voar", "Nada, aviões não usam GPS"],
-        correctIndex: 0,
-        backgroundClass: "bg-airplane-gps"
-    },
-    {
-        question: "Quando você abre o Google Maps no celular, o que o pontinho azul mostra?",
-        answers: ["Sua localização atual", "Sua casa", "O lugar mais próximo", "Onde tem Wi-Fi"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
-    },
-    {
-        question: "A bússola do celular funciona porque dentro dele existe um sensor que detecta o quê?",
-        answers: ["O campo magnético da Terra", "A luz do Sol", "O vento", "A chuva"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
-    },
-    {
-        question: "No modo avião, o que ainda funciona no seu celular?",
-        answers: ["A bússola", "As ligações telefônicas", "O WhatsApp", "O YouTube"],
-        correctIndex: 0,
-        backgroundClass: "bg-airplane-gps"
-    },
-    {
-        question: "Quando você compartilha sua localização com alguém pelo WhatsApp, você está enviando o quê?",
-        answers: ["Suas coordenadas (latitude e longitude)", "Uma foto sua", "Seu endereço de casa", "Seu número de telefone"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps",
-        difficulty: "hard"
-    },
-    {
-        question: "O GPS dos carros mostra o caminho na tela. Como ele sabe quando você vira uma esquina?",
-        answers: ["Ele detecta que sua posição mudou de direção", "Ele adivinha", "O motorista pressiona um botão", "Ele escuta o barulho do carro"],
-        correctIndex: 0,
-        backgroundClass: "bg-modern-navigation"
-    },
-    {
-        question: "Jogos como Pokémon GO usam GPS para fazer o quê?",
-        answers: ["Mostrar onde você está no mapa e colocar personagens em lugares reais", "Aumentar a velocidade do jogo", "Deixar o celular mais rápido", "Economizar bateria"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
-    },
-    {
-        question: "Qual região desenvolveu o sistema de navegação por satélite Galileo?",
-        answers: ["União Europeia", "Estados Unidos", "Japão", "Austrália"],
-        correctIndex: 0,
-        backgroundClass: "bg-satellite-systems",
+        backgroundClass: "bg-solar-terms",
         difficulty: "veryHard"
     },
     {
-        question: "Qual o nome do sistema de navegação por satélite da China?",
-        answers: ["BeiDou", "SkyMap", "ChinaGPS", "DragonSat"],
+        question: "Qual animal representa o ano 2024 no zodíaco chinês?",
+        answers: ["Dragão", "Coelho", "Tigre", "Serpente"],
         correctIndex: 0,
-        backgroundClass: "bg-satellite-systems",
+        backgroundClass: "bg-dragon"
+    },
+    {
+        question: "Na dança do Dragão, quantas pessoas normalmente seguram o dragão?",
+        answers: ["Entre 9 e 15 pessoas", "2 pessoas", "1 pessoa", "Mais de 50 pessoas"],
+        correctIndex: 0,
+        backgroundClass: "bg-dragon-dance",
+        difficulty: "hard"
+    },
+    {
+        question: "O que é Yin e Yang?",
+        answers: ["Conceito de forças opostas e complementares", "Dois deuses", "Dois dragões", "Duas montanhas"],
+        correctIndex: 0,
+        backgroundClass: "bg-yin-yang"
+    },
+    {
+        question: "Qual alimento tem formato arredondado e simboliza união familiar?",
+        answers: ["Bolinhos de arroz (tangyuan)", "Macarrão", "Peixe", "Frango"],
+        correctIndex: 0,
+        backgroundClass: "bg-tangyuan",
+        difficulty: "hard"
+    },
+    {
+        question: "O que significa comer peixe no Ano Novo Chinês?",
+        answers: ["Abundância e prosperidade para o ano que vem", "Boa saúde", "Longevidade", "Sabedoria"],
+        correctIndex: 0,
+        backgroundClass: "bg-fish-dish"
+    },
+    {
+        question: "Por que macarrão longo é servido durante o aniversário?",
+        answers: ["Simboliza longevidade e vida longa", "É mais gostoso", "É tradição sem significado", "É mais fácil de fazer"],
+        correctIndex: 0,
+        backgroundClass: "bg-longevity-noodles"
+    },
+    {
+        question: "Quando começou a ser usado o calendário chinês?",
+        answers: ["Há mais de 4000 anos", "Há 100 anos", "Há 500 anos", "Há 1000 anos"],
+        correctIndex: 0,
+        backgroundClass: "bg-ancient-calendar",
         difficulty: "veryHard"
     },
     {
-        question: "O que é um gnômon?",
-        answers: ["Uma haste vertical usada para observar sombras e marcar o tempo", "Um tipo de bússola", "Uma constelação", "Um satélite antigo"],
+        question: "Qual imperador lendário é creditado com a criação do calendário chinês?",
+        answers: ["Imperador Amarelo (Huangdi)", "Imperador de Jade", "Imperador Qin", "Imperador Ming"],
         correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que a sombra de uma árvore muda de posição durante o dia?",
-        answers: ["Porque o Sol se move no céu ao longo do dia", "Porque a árvore gira", "Porque o vento empurra a sombra", "Porque a Terra muda de cor"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Como os povos antigos usavam o céu para criar calendários?",
-        answers: ["Observando as fases da Lua e a posição do Sol", "Contando as estrelas", "Medindo a chuva", "Usando bússolas"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Para que serviam os calendários criados pelos povos antigos?",
-        answers: ["Para saber quando plantar, colher e fazer festas", "Para decorar paredes", "Para brincar", "Para fazer contas"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation"
-    },
-    {
-        question: "Como você pode encontrar o Sul usando o Cruzeiro do Sul?",
-        answers: ["Prolongando o braço maior da cruz 4,5 vezes", "Olhando para a estrela mais brilhante", "Contando todas as estrelas", "Esperando o nascer do Sol"],
-        correctIndex: 0,
-        backgroundClass: "bg-southern-cross",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual é a diferença entre o Polo Norte magnético e o Polo Norte geográfico?",
-        answers: ["O magnético fica em um lugar diferente e se move com o tempo", "São o mesmo lugar", "O geográfico não existe", "O magnético fica no espaço"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "O que faz a agulha da bússola sempre apontar para o Norte?",
-        answers: ["O magnetismo da Terra", "O vento", "A gravidade", "A luz do Sol"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "Como funcionava o astrolábio usado pelos navegadores antigos?",
-        answers: ["Media a altura das estrelas para determinar a latitude", "Mostrava o caminho no mapa", "Ligava para outros navios", "Iluminava o caminho"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
+        backgroundClass: "bg-yellow-emperor",
         difficulty: "veryHard"
-    },
-    {
-        question: "Quais são os quatro pontos cardeais principais?",
-        answers: ["Norte, Sul, Leste e Oeste", "Frente, trás, direita e esquerda", "Cima, baixo, lado e meio", "Terra, mar, céu e espaço"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass-rose"
-    },
-    {
-        question: "Em que momento do dia a sombra de um gnômon é mais curta?",
-        answers: ["Ao meio-dia, quando o Sol está mais alto", "De manhã cedo", "À tarde", "À noite"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "O que acontece com a posição onde o Sol nasce ao longo do ano?",
-        answers: ["Ela muda um pouco, não é sempre no mesmo ponto do horizonte", "É sempre exatamente no mesmo lugar", "O Sol para de nascer no inverno", "O Sol nasce em lugares aleatórios"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Como os navegadores antigos sabiam em que mês estavam durante longas viagens?",
-        answers: ["Observando as constelações visíveis no céu", "Contando os dias em um papel", "Perguntando para outras pessoas", "Não sabiam"],
-        correctIndex: 0,
-        backgroundClass: "bg-stars-night",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual instrumento moderno substitui a bússola, o astrolábio e os mapas de papel?",
-        answers: ["Smartphone com GPS", "Televisão", "Micro-ondas", "Geladeira"],
-        correctIndex: 0,
-        backgroundClass: "bg-smartphone-gps"
-    },
-    {
-        question: "Por que o GPS não funciona bem dentro de cavernas ou túneis profundos?",
-        answers: ["As ondas dos satélites não conseguem atravessar muita rocha e terra", "Os satélites ficam com medo de lugares fechados", "O GPS desliga automaticamente", "É proibido usar GPS nesses lugares"],
-        correctIndex: 0,
-        backgroundClass: "bg-modern-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual a diferença principal entre um gnômon e um relógio de Sol completo?",
-        answers: ["O relógio de Sol tem marcações das horas, o gnômon é apenas a haste", "São exatamente a mesma coisa", "O gnômon funciona à noite", "O relógio de Sol não usa sombras"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Como os navegadores antigos sabiam que estavam próximos da terra?",
-        answers: ["Observando pássaros, mudanças nas ondas e algas marinhas", "Usando GPS", "Ligando para casa", "Esperando ver prédios"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Além de indicar direções, para que mais as estrelas eram úteis aos navegadores?",
-        answers: ["Para saber o mês do ano e as horas da noite", "Para prever o clima", "Para fazer comida", "Para iluminar o caminho"],
-        correctIndex: 0,
-        backgroundClass: "bg-stars-night",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que um relógio de Sol não funciona à noite?",
-        answers: ["Porque não há Sol para fazer sombra", "Porque a Lua atrapalha", "Porque o vento apaga", "Porque congela"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Qual instrumento antigo media a altura das estrelas em relação ao horizonte?",
-        answers: ["Astrolábio", "Bússola", "Termômetro", "Telescópio"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Se você está perdido e não tem bússola, qual a melhor forma de encontrar o Norte à noite no Brasil?",
-        answers: ["Usando o Cruzeiro do Sul para achar o Sul, depois virar para o lado oposto", "Andando em círculos", "Gritando por ajuda", "Seguindo formigas"],
-        correctIndex: 0,
-        backgroundClass: "bg-southern-cross",
-        difficulty: "hard"
-    },
-    {
-        question: "Como os navegadores combinavam a bússola com o astrolábio?",
-        answers: ["A bússola dava a direção, o astrolábio dava a latitude", "Usavam só um de cada vez", "Não podiam usar juntos", "O astrolábio substituía a bússola"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Por que é importante conhecer as marés para navegar?",
-        answers: ["Para saber quando é seguro entrar ou sair de portos rasos", "Para pescar melhor", "Para economizar combustível", "Para limpar o navio"],
-        correctIndex: 0,
-        backgroundClass: "bg-moon-tides",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual é a limitação de usar apenas o Sol para se orientar?",
-        answers: ["Não funciona à noite e em dias nublados", "O Sol muda de cor", "O Sol se move muito rápido", "O Sol queima os olhos"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "O que acontece com a sombra do gnômon quando o Sol está exatamente ao meio-dia solar?",
-        answers: ["A sombra aponta exatamente para o Norte ou Sul", "A sombra desaparece completamente", "A sombra fica colorida", "A sombra gira rapidamente"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Como os navegadores antigos mediam distâncias no mar?",
-        answers: ["Usando a velocidade do navio e o tempo de viagem", "Contando ondas", "Medindo com régua", "Perguntando para peixes"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que a bússola pode não funcionar corretamente perto de ímãs ou objetos de ferro?",
-        answers: ["Porque esses objetos criam campos magnéticos que atrapalham a agulha", "Porque o ferro quebra a bússola", "Porque ímãs a fazem parar de girar", "Porque esquentam demais"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual vantagem o GPS tem sobre todos os métodos antigos de navegação?",
-        answers: ["Funciona em qualquer clima, dia ou noite, com precisão de metros", "É mais bonito", "É mais barato", "Não precisa de energia"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-satellite"
-    },
-    {
-        question: "Se você vê o Cruzeiro do Sul no céu, em qual hemisfério da Terra você está?",
-        answers: ["Hemisfério Sul", "Hemisfério Norte", "No Equador", "No Polo Norte"],
-        correctIndex: 0,
-        backgroundClass: "bg-southern-cross",
-        difficulty: "hard"
-    },
-    {
-        question: "Como os calendários lunares ajudavam os agricultores antigos?",
-        answers: ["Indicavam as melhores épocas para plantar e colher", "Mostravam quando ia chover", "Diziam o preço dos alimentos", "Contavam as sementes"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "O que é o movimento aparente do Sol?",
-        answers: ["É a impressão que temos de que o Sol se move no céu, causada pela rotação da Terra", "É quando o Sol realmente se move", "É quando o Sol muda de tamanho", "É quando o Sol fica colorido"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que os exploradores antigos preferiam viajar durante a Lua Cheia?",
-        answers: ["Porque tinha mais luz à noite para navegar", "Porque a Lua Cheia traz sorte", "Porque os ventos eram melhores", "Porque podiam dormir melhor"],
-        correctIndex: 0,
-        backgroundClass: "bg-full-moon"
-    },
-    {
-        question: "Qual instrumento você usaria se estivesse numa floresta sem bússola ou GPS?",
-        answers: ["Observaria o musgo nas árvores e a posição do Sol", "Ligaria para alguém", "Esperaria um helicóptero", "Seguiria qualquer animal"],
-        correctIndex: 0,
-        backgroundClass: "bg-forest-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Como você pode usar um relógio analógico (de ponteiros) e o Sol para encontrar o Norte?",
-        answers: ["Apontando o ponteiro das horas para o Sol e fazendo um cálculo", "Jogando o relógio para cima", "Olhando os números do relógio", "Não é possível usar relógio para isso"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Qual era a principal dificuldade dos navegadores antes da invenção da bússola?",
-        answers: ["Era difícil se orientar quando não conseguiam ver o céu", "Os navios eram muito lentos", "Não tinha comida", "O mar era muito fundo"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Como os povos indígenas brasileiros se orientavam pelos rios?",
-        answers: ["Observando a direção da correnteza e marcos naturais", "Usando bússolas", "Com mapas de papel", "Com celulares"],
-        correctIndex: 0,
-        backgroundClass: "bg-forest-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Qual rocha natural tem propriedades magnéticas e atrai ferro?",
-        answers: ["Magnetita", "Granito", "Mármore", "Quartzo"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "Quais metais formam o núcleo da Terra e fazem dela um grande ímã?",
-        answers: ["Ferro e níquel", "Ouro e prata", "Cobre e bronze", "Alumínio e chumbo"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Como os chineses antigos criaram as primeiras bússolas simples?",
-        answers: ["Colocando magnetita em cortiça flutuando em água ou azeite", "Usando GPS antigo", "Com pedras preciosas", "Com espelhos mágicos"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "veryHard"
-    },
-    {
-        question: "De que cor é pintada a extremidade da agulha da bússola que aponta para o Norte?",
-        answers: ["Vermelha", "Azul", "Verde", "Amarela"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass"
-    },
-    {
-        question: "Quando você faz a atividade do gnômon de manhã e à tarde, o que acontece com a sombra?",
-        answers: ["Ela muda de posição porque a Terra gira", "Ela fica do mesmo tamanho", "Ela desaparece", "Ela muda de cor"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Se você traçar uma linha ligando as extremidades das sombras da manhã e da tarde no gnômon, que direção essa linha indica?",
-        answers: ["Leste-Oeste", "Norte-Sul", "Nordeste-Sudoeste", "Não indica nenhuma direção"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "veryHard"
-    },
-    {
-        question: "Por que pendurando um pedaço de magnetita em um fio ela sempre se orienta na mesma direção?",
-        answers: ["Porque ela é atraída pelo campo magnético da Terra", "Porque o vento a empurra", "Porque ela é pesada", "Porque tem medo do escuro"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass"
-    },
-    {
-        question: "Qual civilização já conhecia a magnetita há mais de 2 mil anos?",
-        answers: ["Os gregos", "Os brasileiros", "Os americanos", "Os australianos"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Como a bússola combina dois tipos de magnetismo?",
-        answers: ["O magnetismo da agulha com o magnetismo da Terra", "O magnetismo do Sol com o da Lua", "O magnetismo do ar com o da água", "O magnetismo das estrelas com o do céu"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que é importante alinhar a letra N da bússola com a ponta vermelha da agulha?",
-        answers: ["Para que a bússola mostre corretamente todas as direções", "Para economizar bateria", "Para a bússola não quebrar", "Para ela ficar mais bonita"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass"
-    },
-    {
-        question: "Como os navegadores antigos usavam a bússola para orientar viagens de navio?",
-        answers: ["Verificando a direção Norte e seguindo a rota desejada", "Jogando a bússola ao mar", "Apenas para decoração", "Para medir a profundidade"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation"
-    },
-    {
-        question: "Se a sombra do gnômon aponta para o Oeste de manhã, para onde ela aponta à tarde?",
-        answers: ["Para o Leste", "Para o mesmo lugar", "Para cima", "Desaparece"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Por que os povos antigos observavam o nascer e o pôr do Sol, as fases da Lua e o brilho das estrelas?",
-        answers: ["Para se orientar, marcar o tempo e planejar a agricultura", "Apenas por diversão", "Para tirar fotos", "Para fazer competições"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation"
-    },
-    {
-        question: "Como o relógio de Sol (gnômon) funciona ao longo do dia?",
-        answers: ["A sombra da haste se move conforme o Sol muda de posição no céu", "A haste gira sozinha", "O Sol para de brilhar", "O relógio faz barulho"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Qual é a característica especial da magnetita que permitiu criar a bússola?",
-        answers: ["Ela atrai objetos de ferro e se orienta para o Norte-Sul", "Ela brilha no escuro", "Ela é muito leve", "Ela muda de cor"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass",
-        difficulty: "hard"
-    },
-    {
-        question: "Como você pode determinar os pontos cardeais observando onde o Sol aparece de manhã?",
-        answers: ["O Sol nasce no Leste, então o Norte fica à sua esquerda se você olhar para o Sol", "O Sol nasce sempre no Norte", "O Sol nasce em lugares diferentes cada dia", "Não é possível usar o Sol"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Por que a Terra se comporta como um grande ímã?",
-        answers: ["Porque seu núcleo tem metais como ferro e níquel", "Porque tem muitas pedras", "Porque tem água nos oceanos", "Porque gira muito rápido"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass"
-    },
-    {
-        question: "Quando observamos o movimento do Sol no céu ao longo do dia, o que realmente está acontecendo?",
-        answers: ["A Terra está girando em torno de si mesma (rotação)", "O Sol está dançando", "As nuvens empurram o Sol", "O Sol viaja para outros planetas"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Como os navegadores antigos conseguiam saber a direção Norte-Sul sem bússola?",
-        answers: ["Pendurando um pedaço de magnetita em um fio e observando para onde ela aponta", "Adivinhando", "Perguntando para peixes", "Usando celulares"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "A que altitude os satélites GPS orbitam ao redor da Terra?",
-        answers: ["Aproximadamente 20.200 km", "Aproximadamente 400 km", "Aproximadamente 100 km", "Aproximadamente 50.000 km"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-satellite",
-        difficulty: "hard"
-    },
-    {
-        question: "Em qual década o sistema GPS começou a ser desenvolvido?",
-        answers: ["Década de 1960", "Década de 1990", "Década de 2000", "Década de 1950"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-history",
-        difficulty: "hard"
-    },
-    {
-        question: "Para que finalidade o GPS foi originalmente criado?",
-        answers: ["Para uso militar", "Para jogos de celular", "Para turismo", "Para redes sociais"],
-        correctIndex: 0,
-        backgroundClass: "bg-gps-history",
-        difficulty: "hard"
-    },
-    {
-        question: "Quantos dias dura um ciclo completo das fases da Lua?",
-        answers: ["Aproximadamente 28 dias", "Aproximadamente 7 dias", "Aproximadamente 14 dias", "Aproximadamente 30 dias"],
-        correctIndex: 0,
-        backgroundClass: "bg-moon-phases"
-    },
-    {
-        question: "Quais são os quatro pontos colaterais da rosa dos ventos?",
-        answers: ["Nordeste, Sudeste, Sudoeste e Noroeste", "Norte, Sul, Leste e Oeste", "Cima, baixo, esquerda e direita", "Frente, trás, lado e centro"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass-rose"
-    },
-    {
-        question: "Qual a principal vantagem da bússola em relação à orientação pelas estrelas?",
-        answers: ["Funciona em qualquer clima, inclusive com céu nublado", "É mais bonita", "É mais barata", "É mais pesada"],
-        correctIndex: 0,
-        backgroundClass: "bg-compass"
-    },
-    {
-        question: "Como você pode traçar a linha Leste-Oeste usando um gnômon?",
-        answers: ["Marcando a ponta da sombra de manhã e à tarde, depois ligando os pontos", "Olhando para as nuvens", "Usando uma bússola", "Esperando a noite chegar"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "Quais civilizações antigas usavam o gnômon para se orientar e medir o tempo?",
-        answers: ["Egípcios, babilônios e povos indígenas", "Apenas brasileiros", "Apenas americanos modernos", "Apenas europeus"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation"
-    },
-    {
-        question: "O que causa o 'movimento aparente do Sol' que observamos no céu?",
-        answers: ["A rotação da Terra em torno de si mesma", "O Sol realmente andando no céu", "A Lua empurrando o Sol", "O vento movendo o Sol"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation"
-    },
-    {
-        question: "Por que a sombra projetada pelo gnômon indica as direções cardeais?",
-        answers: ["Porque ela se move seguindo o movimento aparente do Sol no céu", "Porque a haste é mágica", "Porque o vento empurra a sombra", "Porque tem uma bússola escondida"],
-        correctIndex: 0,
-        backgroundClass: "bg-sun-navigation",
-        difficulty: "hard"
-    },
-    {
-        question: "O que os povos antigos observavam no céu para criar calendários e planejar a agricultura?",
-        answers: ["Fases da Lua, posição do Sol e constelações visíveis", "Apenas as nuvens", "Apenas a chuva", "Apenas o vento"],
-        correctIndex: 0,
-        backgroundClass: "bg-ancient-navigation"
     }
 ];

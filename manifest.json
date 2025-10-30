@@ -1,13 +1,13 @@
 {
-  "name": "Quiz: Navegando pelas Estrelas",
-  "short_name": "Quiz Navegação",
-  "description": "Quiz educativo sobre orientação por astros e sistemas modernos de localização",
-  "start_url": "/quiz-sistema-localizacao-pedro/",
+  "name": "Quiz: Calendário Chinês",
+  "short_name": "Quiz Calendário",
+  "description": "Quiz educativo sobre o Calendário Chinês e suas tradições milenares",
+  "start_url": "/quiz-cal-chines/",
   "display": "standalone",
-  "background_color": "#0f172a",
-  "theme_color": "#1e3a8a",
+  "background_color": "#8B0000",
+  "theme_color": "#DC143C",
   "orientation": "any",
-  "scope": "/quiz-sistema-localizacao-pedro/",
+  "scope": "/quiz-cal-chines/",
   "icons": [
     {
       "src": "images/icon.svg",
@@ -29,7 +29,7 @@
       "name": "Iniciar Quiz",
       "short_name": "Quiz",
       "description": "Iniciar novo quiz",
-      "url": "/quiz-sistema-localizacao-pedro/",
+      "url": "/quiz-cal-chines/",
       "icons": []
     }
   ]

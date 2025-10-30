@@ -1,195 +1,189 @@
 // Animações de comemoração (5 animações) - Versão otimizada e suave
 const CELEBRATION_ANIMATIONS = [
     {
-        name: "star",
+        name: "lantern",
         rarity: "common",
-        svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-rotate">
+        svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-bounce">
             <defs>
-                <linearGradient id="starGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+                <linearGradient id="lanternGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" style="stop-color:#FF0000;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#8B0000;stop-opacity:1" />
                 </linearGradient>
             </defs>
-            <path d="M100,20 L110,70 L160,80 L120,110 L130,160 L100,135 L70,160 L80,110 L40,80 L90,70 Z"
-                  fill="url(#starGrad)" stroke="#FF8C00" stroke-width="3"/>
-            <circle cx="100" cy="100" r="5" fill="#FFF" class="anim-pulse"/>
+            <rect x="70" y="50" width="60" height="80" rx="10" fill="url(#lanternGrad)" stroke="#FFD700" stroke-width="3"/>
+            <ellipse cx="100" cy="50" rx="30" ry="8" fill="#FFD700"/>
+            <ellipse cx="100" cy="130" rx="30" ry="8" fill="#FFD700"/>
+            <line x1="100" y1="35" x2="100" y2="50" stroke="#000" stroke-width="3"/>
+            <rect x="95" y="130" width="10" height="25" fill="#FFD700"/>
+            <path d="M85,155 Q100,165 115,155" fill="#FFD700"/>
+            <text x="100" y="95" text-anchor="middle" fill="#FFD700" font-size="24" font-weight="bold">福</text>
         </svg>`,
-        message: "Brilhou como uma estrela!"
+        message: "Sorte e prosperidade!"
     },
     {
-        name: "compass",
+        name: "yin-yang",
         rarity: "common",
         svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-rotate-slow">
-            <circle cx="100" cy="100" r="80" fill="none" stroke="#4169E1" stroke-width="4"/>
-            <circle cx="100" cy="100" r="70" fill="none" stroke="#1E90FF" stroke-width="2"/>
-            <path d="M100,30 L110,100 L100,105 L90,100 Z" fill="#DC143C"/>
-            <path d="M100,170 L110,100 L100,95 L90,100 Z" fill="#FFFFFF" stroke="#000" stroke-width="1"/>
-            <circle cx="100" cy="100" r="8" fill="#FFD700" stroke="#000" stroke-width="2"/>
-            <text x="100" y="25" text-anchor="middle" fill="#FFD700" font-size="20" font-weight="bold">N</text>
-            <text x="100" y="185" text-anchor="middle" fill="#CBD5E1" font-size="20" font-weight="bold">S</text>
-            <text x="180" y="105" text-anchor="middle" fill="#CBD5E1" font-size="20" font-weight="bold">L</text>
-            <text x="20" y="105" text-anchor="middle" fill="#CBD5E1" font-size="20" font-weight="bold">O</text>
+            <circle cx="100" cy="100" r="70" fill="#000"/>
+            <path d="M100,30 A70,70 0 0,1 100,170 A35,35 0 0,0 100,100 A35,35 0 0,1 100,30 Z" fill="#FFF"/>
+            <circle cx="100" cy="65" r="10" fill="#FFF"/>
+            <circle cx="100" cy="65" r="3" fill="#000"/>
+            <circle cx="100" cy="135" r="10" fill="#000"/>
+            <circle cx="100" cy="135" r="3" fill="#FFF"/>
         </svg>`,
-        message: "Na direção certa!"
+        message: "Equilíbrio perfeito!"
     },
     {
-        name: "constellation",
+        name: "zodiac-wheel",
         rarity: "common",
         svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-rotate-slow">
-            <circle cx="50" cy="50" r="6" fill="#FFD700" opacity="1">
-                <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-            </circle>
-            <circle cx="100" cy="40" r="6" fill="#FFD700" opacity="0.3">
-                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-            </circle>
-            <circle cx="150" cy="50" r="6" fill="#FFD700" opacity="1">
-                <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-            </circle>
-            <circle cx="80" cy="100" r="6" fill="#FFD700" opacity="0.3">
-                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-            </circle>
-            <circle cx="120" cy="100" r="6" fill="#FFD700" opacity="1">
-                <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-            </circle>
-            <circle cx="100" cy="150" r="6" fill="#FFD700" opacity="0.3">
-                <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite" calcMode="spline" keySplines="0.4 0 0.6 1; 0.4 0 0.6 1"/>
-            </circle>
-            <line x1="50" y1="50" x2="100" y2="40" stroke="#ADD8E6" stroke-width="2" opacity="0.7"/>
-            <line x1="100" y1="40" x2="150" y2="50" stroke="#ADD8E6" stroke-width="2" opacity="0.7"/>
-            <line x1="50" y1="50" x2="80" y2="100" stroke="#ADD8E6" stroke-width="2" opacity="0.7"/>
-            <line x1="150" y1="50" x2="120" y2="100" stroke="#ADD8E6" stroke-width="2" opacity="0.7"/>
-            <line x1="80" y1="100" x2="100" y2="150" stroke="#ADD8E6" stroke-width="2" opacity="0.7"/>
-            <line x1="120" y1="100" x2="100" y2="150" stroke="#ADD8E6" stroke-width="2" opacity="0.7"/>
+            <circle cx="100" cy="100" r="75" fill="none" stroke="#FFD700" stroke-width="4"/>
+            <circle cx="100" cy="100" r="65" fill="none" stroke="#FF0000" stroke-width="2"/>
+            <text x="100" y="50" text-anchor="middle" fill="#FF0000" font-size="28">🐀</text>
+            <text x="140" y="70" text-anchor="middle" fill="#FF0000" font-size="28">🐂</text>
+            <text x="160" y="105" text-anchor="middle" fill="#FF0000" font-size="28">🐅</text>
+            <text x="140" y="140" text-anchor="middle" fill="#FF0000" font-size="28">🐇</text>
+            <text x="100" y="160" text-anchor="middle" fill="#FF0000" font-size="28">🐉</text>
+            <text x="60" y="140" text-anchor="middle" fill="#FF0000" font-size="28">🐍</text>
+            <text x="40" y="105" text-anchor="middle" fill="#FF0000" font-size="28">🐎</text>
+            <text x="60" y="70" text-anchor="middle" fill="#FF0000" font-size="28">🐐</text>
+            <circle cx="100" cy="100" r="20" fill="#FFD700" class="anim-pulse"/>
         </svg>`,
-        message: "Constelação perfeita!"
+        message: "Ciclo completo!"
     },
     {
-        name: "super-star",
+        name: "dragon-dance",
         rarity: "rare",
         svg: `<svg viewBox="0 0 200 200" class="animation-svg">
             <defs>
-                <radialGradient id="superGlow">
+                <radialGradient id="dragonGlow">
                     <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#FF4500;stop-opacity:0" />
+                    <stop offset="100%" style="stop-color:#FF0000;stop-opacity:0" />
                 </radialGradient>
             </defs>
-            <circle cx="100" cy="100" r="90" fill="url(#superGlow)" opacity="0.3" class="anim-pulse"/>
-            <g class="anim-rotate-fast">
-                <path d="M100,10 L115,75 L180,85 L130,125 L145,190 L100,155 L55,190 L70,125 L20,85 L85,75 Z"
-                      fill="#FFD700" stroke="#FFA500" stroke-width="4"/>
+            <circle cx="100" cy="100" r="90" fill="url(#dragonGlow)" opacity="0.3" class="anim-pulse"/>
+            <g class="anim-bounce">
+                <text x="100" y="120" text-anchor="middle" font-size="80">🐉</text>
             </g>
-            <g class="anim-rotate-reverse">
-                <path d="M100,40 L108,70 L140,75 L115,95 L122,127 L100,110 L78,127 L85,95 L60,75 L92,70 Z"
-                      fill="#FFF" opacity="0.8"/>
+            <g class="anim-rotate">
+                <circle cx="50" cy="50" r="5" fill="#FFD700"/>
+                <circle cx="150" cy="50" r="5" fill="#FFD700"/>
+                <circle cx="150" cy="150" r="5" fill="#FFD700"/>
+                <circle cx="50" cy="150" r="5" fill="#FFD700"/>
             </g>
         </svg>`,
-        message: "Extraordinário! Quase perfeito!"
+        message: "Extraordinário! Poder do dragão!"
     },
     {
-        name: "legendary-star",
+        name: "legendary-fireworks",
         rarity: "legendary",
         svg: `<svg viewBox="0 0 200 200" class="animation-svg">
             <defs>
-                <radialGradient id="legendGlow">
+                <radialGradient id="fireGlow">
                     <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
-                    <stop offset="50%" style="stop-color:#FF69B4;stop-opacity:0.5" />
-                    <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:0" />
+                    <stop offset="50%" style="stop-color:#FF0000;stop-opacity:0.8" />
+                    <stop offset="100%" style="stop-color:#FF69B4;stop-opacity:0" />
                 </radialGradient>
             </defs>
-            <circle cx="100" cy="100" r="95" fill="url(#legendGlow)" class="anim-glow"/>
+            <circle cx="100" cy="100" r="95" fill="url(#fireGlow)" class="anim-glow"/>
             <g class="anim-rotate-fast">
-                <path d="M100,10 L115,75 L180,85 L130,125 L145,190 L100,155 L55,190 L70,125 L20,85 L85,75 Z"
-                      fill="#FFD700" stroke="#FF1493" stroke-width="5"/>
+                <line x1="100" y1="30" x2="100" y2="60" stroke="#FFD700" stroke-width="4"/>
+                <line x1="141" y1="59" x2="121" y2="79" stroke="#FF0000" stroke-width="4"/>
+                <line x1="170" y1="100" x2="140" y2="100" stroke="#FFD700" stroke-width="4"/>
+                <line x1="141" y1="141" x2="121" y2="121" stroke="#FF0000" stroke-width="4"/>
+                <line x1="100" y1="170" x2="100" y2="140" stroke="#FFD700" stroke-width="4"/>
+                <line x1="59" y1="141" x2="79" y2="121" stroke="#FF0000" stroke-width="4"/>
+                <line x1="30" y1="100" x2="60" y2="100" stroke="#FFD700" stroke-width="4"/>
+                <line x1="59" y1="59" x2="79" y2="79" stroke="#FF0000" stroke-width="4"/>
             </g>
             <g class="anim-rotate-reverse">
-                <path d="M100,30 L110,80 L160,88 L125,118 L135,168 L100,140 L65,168 L75,118 L40,88 L90,80 Z"
-                      fill="#FFF"/>
+                <circle cx="100" cy="40" r="8" fill="#FFD700" class="anim-pulse"/>
+                <circle cx="135" cy="65" r="8" fill="#FF0000" class="anim-pulse"/>
+                <circle cx="160" cy="100" r="8" fill="#FFD700" class="anim-pulse"/>
+                <circle cx="135" cy="135" r="8" fill="#FF0000" class="anim-pulse"/>
+                <circle cx="100" cy="160" r="8" fill="#FFD700" class="anim-pulse"/>
+                <circle cx="65" cy="135" r="8" fill="#FF0000" class="anim-pulse"/>
+                <circle cx="40" cy="100" r="8" fill="#FFD700" class="anim-pulse"/>
+                <circle cx="65" cy="65" r="8" fill="#FF0000" class="anim-pulse"/>
             </g>
-            <g class="anim-rotate">
-                <path d="M100,50 L105,85 L140,90 L115,110 L120,145 L100,125 L80,145 L85,110 L60,90 L95,85 Z"
-                      fill="#FF69B4"/>
-            </g>
+            <text x="100" y="110" text-anchor="middle" fill="#FFF" font-size="32" font-weight="bold">恭喜</text>
         </svg>`,
-        message: "PERFEITO! Navegador Mestre!"
+        message: "PERFEITO! Mestre do Calendário!"
     }
 ];
 
 // Animações de consolo (5 animações) - Versão otimizada e suave
 const CONSOLATION_ANIMATIONS = [
     {
-        name: "thinking-star",
+        name: "confused-dragon",
         frequency: 0.50, // 50%
         svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-wobble">
-            <circle cx="100" cy="100" r="60" fill="#87CEEB" stroke="#4682B4" stroke-width="3"/>
-            <circle cx="80" cy="90" r="8" fill="#000"/>
-            <circle cx="120" cy="90" r="8" fill="#000"/>
-            <path d="M75,130 Q100,140 125,130" stroke="#000" stroke-width="3" fill="none"/>
-            <text x="100" y="50" text-anchor="middle" fill="#FFD700" font-size="40" font-weight="bold">?</text>
+            <circle cx="100" cy="100" r="60" fill="#FFE4B5" stroke="#FF8C00" stroke-width="3"/>
+            <text x="100" y="130" text-anchor="middle" font-size="60">🐉</text>
+            <circle cx="80" cy="80" r="8" fill="#000"/>
+            <circle cx="120" cy="80" r="8" fill="#000"/>
+            <text x="100" y="50" text-anchor="middle" fill="#FF0000" font-size="40" font-weight="bold">?</text>
         </svg>`,
-        message: "Ops! Revise as estrelas..."
+        message: "Ops! Revise o zodíaco..."
     },
     {
-        name: "cloudy-night",
+        name: "cloudy-moon",
         frequency: 0.30, // 30%
         svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-wobble">
             <circle cx="80" cy="80" r="30" fill="#FFD700" opacity="0.7"/>
             <ellipse cx="120" cy="100" rx="50" ry="35" fill="#A9A9A9" opacity="0.8" class="anim-pulse"/>
             <ellipse cx="90" cy="110" rx="45" ry="30" fill="#B0C4DE" opacity="0.7" class="anim-pulse"/>
-            <text x="100" y="160" text-anchor="middle" fill="#4682B4" font-size="18">Nublado...</text>
+            <text x="100" y="160" text-anchor="middle" fill="#666" font-size="18">Lua escondida...</text>
         </svg>`,
-        message: "Céu nublado! Tente de novo..."
+        message: "Lua nublada! Tente de novo..."
     },
     {
-        name: "lost-compass",
+        name: "broken-lantern",
         frequency: 0.15, // 15%
         svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-rotate">
-            <circle cx="100" cy="100" r="70" fill="none" stroke="#CD5C5C" stroke-width="4" stroke-dasharray="10,5"/>
-            <path d="M100,40 L108,100 L100,102 L92,100 Z" fill="#8B0000" opacity="0.7"/>
-            <path d="M100,160 L108,100 L100,98 L92,100 Z" fill="#D3D3D3" opacity="0.7"/>
-            <line x1="95" y1="70" x2="105" y2="60" stroke="#000" stroke-width="3"/>
-            <circle cx="100" cy="100" r="6" fill="#CD5C5C"/>
-            <text x="100" y="25" text-anchor="middle" fill="#CD5C5C" font-size="20" font-weight="bold">?</text>
+            <rect x="70" y="60" width="60" height="70" rx="10" fill="#CD5C5C" stroke="#8B0000" stroke-width="3" opacity="0.6"/>
+            <line x1="70" y1="80" x2="130" y2="120" stroke="#000" stroke-width="3"/>
+            <line x1="130" y1="80" x2="70" y2="120" stroke="#000" stroke-width="3"/>
+            <ellipse cx="100" cy="60" rx="30" ry="8" fill="#8B0000" opacity="0.6"/>
+            <text x="100" y="160" text-anchor="middle" fill="#CD5C5C" font-size="20" font-weight="bold">!</text>
         </svg>`,
-        message: "Bússola perdida! Continue tentando..."
+        message: "Lanterna apagada! Continue tentando..."
     },
     {
-        name: "meteor",
+        name: "falling-petal",
         frequency: 0.03, // 3%
-        svg: `<svg viewBox="0 0 200 200" class="animation-svg anim-rotate">
-            <defs>
-                <linearGradient id="meteorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1" />
-                    <stop offset="100%" style="stop-color:#FF4500;stop-opacity:0" />
-                </linearGradient>
-            </defs>
-            <ellipse cx="130" cy="100" rx="25" ry="15" fill="url(#meteorGrad)" transform="rotate(-30 130 100)" class="anim-pulse"/>
-            <circle cx="150" cy="90" r="12" fill="#FFD700" class="anim-pulse"/>
-            <path d="M155,92 Q180,85 190,80" stroke="#FFA500" stroke-width="3" fill="none" opacity="0.6"/>
-            <path d="M153,95 Q175,100 185,105" stroke="#FF6347" stroke-width="2" fill="none" opacity="0.5"/>
+        svg: `<svg viewBox="0 0 200 200" class="animation-svg">
+            <g class="anim-float">
+                <ellipse cx="100" cy="80" rx="15" ry="25" fill="#FFB6C1" transform="rotate(45 100 80)" opacity="0.8"/>
+                <ellipse cx="100" cy="80" rx="15" ry="25" fill="#FFB6C1" transform="rotate(135 100 80)" opacity="0.8"/>
+                <ellipse cx="100" cy="80" rx="15" ry="25" fill="#FF69B4" transform="rotate(90 100 80)" opacity="0.9"/>
+                <ellipse cx="100" cy="80" rx="15" ry="25" fill="#FF69B4" transform="rotate(0 100 80)" opacity="0.9"/>
+                <circle cx="100" cy="80" r="8" fill="#FFD700"/>
+            </g>
+            <path d="M100,100 Q95,120 100,140 Q105,120 100,100" stroke="#FFB6C1" stroke-width="2" fill="none" opacity="0.6" stroke-dasharray="3,3"/>
         </svg>`,
-        message: "Passou rápido como um meteoro!"
+        message: "Passou rápido como uma pétala!"
     },
     {
-        name: "black-hole",
+        name: "yin-yang-unbalanced",
         frequency: 0.02, // 2%
         svg: `<svg viewBox="0 0 200 200" class="animation-svg">
             <defs>
-                <radialGradient id="blackHole">
-                    <stop offset="0%" style="stop-color:#000000;stop-opacity:1" />
-                    <stop offset="60%" style="stop-color:#4B0082;stop-opacity:1" />
+                <radialGradient id="unbalanced">
+                    <stop offset="0%" style="stop-color:#4B0082;stop-opacity:1" />
                     <stop offset="100%" style="stop-color:#8A2BE2;stop-opacity:0.3" />
                 </radialGradient>
             </defs>
-            <circle cx="100" cy="100" r="80" fill="url(#blackHole)" class="anim-pulse"/>
-            <circle cx="100" cy="100" r="20" fill="#000"/>
-            <g class="anim-rotate">
-                <ellipse cx="100" cy="100" rx="60" ry="15" fill="none" stroke="#9370DB" stroke-width="3" opacity="0.7"/>
+            <circle cx="100" cy="100" r="70" fill="url(#unbalanced)" class="anim-pulse"/>
+            <g class="anim-wobble">
+                <circle cx="100" cy="100" r="50" fill="#000" opacity="0.3"/>
+                <path d="M100,50 A50,50 0 0,1 100,150" fill="#FFF" opacity="0.3"/>
+                <circle cx="100" cy="75" r="8" fill="#FFF" opacity="0.3"/>
+                <circle cx="100" cy="125" r="8" fill="#000" opacity="0.3"/>
             </g>
-            <g class="anim-rotate-reverse">
-                <ellipse cx="100" cy="100" rx="45" ry="12" fill="none" stroke="#BA55D3" stroke-width="2" opacity="0.6"/>
-            </g>
+            <text x="100" y="190" text-anchor="middle" fill="#8A2BE2" font-size="16">Desequilíbrio</text>
         </svg>`,
-        message: "Buraco negro! Não desista!"
+        message: "Desequilibrado! Não desista!"
     }
 ];
 
@@ -197,29 +191,66 @@ const CONSOLATION_ANIMATIONS = [
 function getCelebrationAnimation(correctAnswers, totalQuestions) {
     if (correctAnswers === totalQuestions) {
         // 10/10 - Lendária
-        return CELEBRATION_ANIMATIONS[4];
+        return CELEBRATION_ANIMATIONS.find(anim => anim.rarity === "legendary");
     } else if (correctAnswers === totalQuestions - 1) {
         // 9/10 - Rara
-        return CELEBRATION_ANIMATIONS[3];
+        return CELEBRATION_ANIMATIONS.find(anim => anim.rarity === "rare");
     } else {
-        // Escolhe aleatoriamente entre as 3 comuns
-        const commonAnimations = CELEBRATION_ANIMATIONS.slice(0, 3);
-        return commonAnimations[Math.floor(Math.random() * commonAnimations.length)];
+        // Comum - escolhe aleatoriamente entre as 3 comuns
+        const commonAnims = CELEBRATION_ANIMATIONS.filter(anim => anim.rarity === "common");
+        return commonAnims[Math.floor(Math.random() * commonAnims.length)];
     }
 }
 
-// Função para selecionar animação de consolo baseada nas frequências
+// Função para selecionar animação de consolo baseada em frequência
 function getConsolationAnimation() {
     const rand = Math.random();
     let cumulative = 0;
 
-    for (const animation of CONSOLATION_ANIMATIONS) {
-        cumulative += animation.frequency;
+    for (const anim of CONSOLATION_ANIMATIONS) {
+        cumulative += anim.frequency;
         if (rand <= cumulative) {
-            return animation;
+            return anim;
         }
     }
 
     // Fallback para a primeira animação
     return CONSOLATION_ANIMATIONS[0];
+}
+
+// Função principal para mostrar animação
+function showAnimation(isCorrect, correctAnswers = 0, totalQuestions = 10) {
+    const container = document.getElementById('animation-container');
+    const element = document.getElementById('animation-element');
+
+    if (!container || !element) return;
+
+    let animation;
+    if (isCorrect) {
+        animation = getCelebrationAnimation(correctAnswers, totalQuestions);
+    } else {
+        animation = getConsolationAnimation();
+    }
+
+    // Limpa conteúdo anterior
+    element.innerHTML = '';
+
+    // Adiciona SVG
+    element.innerHTML = animation.svg;
+
+    // Adiciona mensagem
+    const messageDiv = document.createElement('div');
+    messageDiv.className = 'animation-message';
+    messageDiv.textContent = animation.message;
+    element.appendChild(messageDiv);
+
+    // Mostra container
+    container.classList.remove('hidden');
+    container.classList.add('visible');
+
+    // Esconde após 2.5 segundos
+    setTimeout(() => {
+        container.classList.remove('visible');
+        container.classList.add('hidden');
+    }, 2500);
 }

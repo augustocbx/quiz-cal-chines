@@ -1,23 +1,23 @@
-// Service Worker para Quiz: Navegando pelas Estrelas
+// Service Worker para Quiz: Calendário Chinês
 // Aumente este número quando fizer atualizações: v1, v2, v3...
-const CACHE_NAME = 'quiz-navegacao-v24';
+const CACHE_NAME = 'quiz-calendario-chines-v1';
 
 const urlsToCache = [
-  '/quiz-sistema-localizacao-pedro/',
-  '/quiz-sistema-localizacao-pedro/index.html',
-  '/quiz-sistema-localizacao-pedro/css/styles.css',
-  '/quiz-sistema-localizacao-pedro/css/backgrounds.css',
-  '/quiz-sistema-localizacao-pedro/css/achievements.css',
-  '/quiz-sistema-localizacao-pedro/js/script.js',
-  '/quiz-sistema-localizacao-pedro/js/questions.js',
-  '/quiz-sistema-localizacao-pedro/js/animations.js',
-  '/quiz-sistema-localizacao-pedro/js/names.js',
-  '/quiz-sistema-localizacao-pedro/js/sound-manager.js',
-  '/quiz-sistema-localizacao-pedro/js/achievements.js',
-  '/quiz-sistema-localizacao-pedro/js/visual-effects.js',
-  '/quiz-sistema-localizacao-pedro/js/powerups.js',
-  '/quiz-sistema-localizacao-pedro/js/avatars.js',
-  '/quiz-sistema-localizacao-pedro/js/quiz-enhancements.js'
+  '/quiz-cal-chines/',
+  '/quiz-cal-chines/index.html',
+  '/quiz-cal-chines/css/styles.css',
+  '/quiz-cal-chines/css/backgrounds.css',
+  '/quiz-cal-chines/css/achievements.css',
+  '/quiz-cal-chines/js/script.js',
+  '/quiz-cal-chines/js/questions.js',
+  '/quiz-cal-chines/js/animations.js',
+  '/quiz-cal-chines/js/names.js',
+  '/quiz-cal-chines/js/sound-manager.js',
+  '/quiz-cal-chines/js/achievements.js',
+  '/quiz-cal-chines/js/visual-effects.js',
+  '/quiz-cal-chines/js/powerups.js',
+  '/quiz-cal-chines/js/avatars.js',
+  '/quiz-cal-chines/js/quiz-enhancements.js'
 ];
 
 // Instalação do Service Worker

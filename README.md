@@ -1,30 +1,36 @@
-# Quiz: Navegando pelas Estrelas
+# Quiz: Calendário Chinês
 
-Um quiz educativo e interativo sobre navegação por astros e sistemas modernos de localização, voltado para crianças até a 7ª série.
+Um quiz educativo e interativo sobre o Calendário Chinês, zodíaco e tradições milenares chinesas, voltado para crianças até a 7ª série.
 
 ## Características
 
-- 🌟 **60 perguntas** sobre orientação pelos astros e GPS (15 selecionadas aleatoriamente por sessão)
+- 🐉 **60 perguntas** sobre calendário chinês, zodíaco e cultura (15 selecionadas aleatoriamente por sessão)
 - 🎨 **Animações temáticas** de comemoração e consolo
 - 🎯 **Sistema de pontuação** com critério de desempate por tempo
 - 🏆 **Rankings**: temporário (últimos 5 jogadores) e permanente (top 10)
 - 💾 **Persistência de dados** via localStorage
 - 📱 **Design responsivo** para tablets e smartphones
-- 🎭 **Nomes aleatórios** com ícones temáticos
+- 🎭 **Nomes aleatórios** com ícones temáticos chineses
 
 ## Estrutura do Projeto
 
 ```
-quiz-orientacao/
+quiz-cal-chines/
 ├── index.html                 # Página principal
 ├── css/
 │   ├── styles.css            # Estilos principais
-│   └── backgrounds.css       # Fundos temáticos das perguntas
+│   ├── backgrounds.css       # Fundos temáticos das perguntas
+│   └── achievements.css      # Estilos de conquistas
 ├── js/
 │   ├── script.js             # Lógica principal do quiz
 │   ├── questions.js          # Banco de 60 perguntas
-│   ├── animations.js         # Animações SVG
-│   └── names.js              # Sistema de nomes aleatórios
+│   ├── animations.js         # Animações SVG temáticas
+│   ├── names.js              # Sistema de nomes aleatórios
+│   ├── achievements.js       # Sistema de conquistas
+│   ├── avatars.js            # Sistema de avatares
+│   ├── powerups.js           # Power-ups do quiz
+│   ├── sound-manager.js      # Gerenciador de sons
+│   └── visual-effects.js     # Efeitos visuais
 ├── images/                   # Pasta para imagens (opcional)
 └── README.md                 # Este arquivo
 ```
@@ -78,25 +84,6 @@ quiz-orientacao/
    - Acesse a URL do GitHub Pages no Safari do iPad
    - Siga os passos do Método 1 para adicionar à tela inicial
 
-#### Método 3: Usar Aplicativo Local
-
-1. **Instalar "Documents by Readdle"** (App Store - Gratuito)
-
-2. **Transferir arquivos**:
-   - Conecte o iPad ao computador via cabo ou use AirDrop
-   - Transfira a pasta `quiz-orientacao` para o app Documents
-
-3. **Iniciar servidor web local**:
-   - Abra Documents
-   - Localize a pasta do quiz
-   - Toque nos 3 pontinhos > "Share"
-   - Ative "Wi-Fi Transfer"
-   - Anote o endereço IP mostrado
-
-4. **Acessar no navegador**:
-   - Abra Safari e digite o endereço IP mostrado
-   - Adicione à tela inicial seguindo o Método 1
-
 ### Instalar em Tablet Android
 
 1. **Hospedar o arquivo** (mesmo do iOS)
@@ -116,21 +103,27 @@ quiz-orientacao/
 - 15 perguntas aleatórias de um banco de 60
 - Respostas embaralhadas para cada pergunta
 - Não mostra a resposta correta após erro
+- Perguntas sobre:
+  - 12 animais do zodíaco chinês
+  - 5 elementos (madeira, fogo, terra, metal, água)
+  - Festas e tradições chinesas
+  - Calendário lunissolar
+  - Lendas e histórias do zodíaco
 
 ### Animações
 
 **Comemoração (ao acertar)**:
-- 3 animações comuns (estrela, bússola, constelação)
-- 1 animação rara (aparece ao acertar 14/15)
-- 1 animação lendária (aparece ao acertar 15/15)
+- 3 animações comuns (lanterna, yin-yang, roda do zodíaco)
+- 1 animação rara (dança do dragão - aparece ao acertar 9/10)
+- 1 animação lendária (fogos de artifício com caracteres chineses - aparece ao acertar 10/10)
 
 **Consolo (ao errar)**:
 - 5 animações com frequências decrescentes:
-  - Estrela pensativa: 50%
-  - Noite nublada: 30%
-  - Bússola perdida: 15%
-  - Meteoro: 3%
-  - Buraco negro: 2%
+  - Dragão confuso: 50%
+  - Lua nublada: 30%
+  - Lanterna apagada: 15%
+  - Pétala caindo: 3%
+  - Yin-yang desequilibrado: 2%
 
 ### Sistema de Rankings
 
@@ -155,7 +148,7 @@ Todos os dados são salvos no localStorage do navegador:
 
 ## Funcionalidades
 
-- ✅ 60 perguntas sobre orientação e navegação
+- ✅ 60 perguntas sobre calendário chinês e cultura
 - ✅ Seleção aleatória de 15 perguntas por sessão
 - ✅ 4 respostas por pergunta, apenas 1 correta
 - ✅ Ordem aleatória das respostas
@@ -163,12 +156,16 @@ Todos os dados são salvos no localStorage do navegador:
 - ✅ Fundos temáticos para cada pergunta
 - ✅ Contador de acertos em tempo real
 - ✅ Botão para desistir a qualquer momento
-- ✅ Sistema de nomes aleatórios com ícones
+- ✅ Sistema de nomes aleatórios com ícones chineses
 - ✅ Cronômetro com décimos de segundo
 - ✅ Rankings temporário e permanente
 - ✅ Interface bonita e amigável
 - ✅ Responsivo para tablets e celulares
 - ✅ Modo tela cheia em tablets
+- ✅ Sistema de conquistas
+- ✅ Avatares personalizados
+- ✅ Power-ups especiais
+- ✅ Efeitos sonoros
 
 ## Requisitos
 
@@ -204,16 +201,17 @@ Testado e otimizado para:
    - Vercel
    - Firebase Hosting
 
-## Possíveis Melhorias Futuras
+## Conteúdo Didático
 
-- Adicionar sons e música de fundo
-- Implementar níveis de dificuldade
-- Adicionar mais perguntas ao banco
-- Criar categorias temáticas
-- Adicionar modo multiplayer
-- Implementar sistema de conquistas
-- Adicionar suporte a PWA (Progressive Web App)
-- Sincronizar rankings entre dispositivos
+O quiz aborda temas como:
+- **Zodíaco Chinês**: 12 animais e suas características
+- **Cinco Elementos**: madeira, fogo, terra, metal, água
+- **Calendário Lunissolar**: ciclos da lua e do sol
+- **Festas Tradicionais**: Ano Novo Chinês, Festival das Lanternas
+- **Lendas**: A corrida dos animais, origem do zodíaco
+- **Cultura**: símbolos, comidas, tradições
+- **Astronomia Chinesa**: mansões lunares, termos solares
+- **Filosofia**: Yin e Yang, harmonia, equilíbrio
 
 ## Licença
 
@@ -221,5 +219,4 @@ Este projeto foi criado para fins educacionais.
 
 ---
 
-Desenvolvido com 🌟 para ensinar sobre navegação e orientação de forma divertida!
-# quiz-cal-chines
+Desenvolvido com 🐉 para ensinar sobre a cultura chinesa de forma divertida!

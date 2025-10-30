@@ -8,10 +8,10 @@
     <meta name="mobile-web-app-capable" content="yes">
 
     <!-- PWA Meta Tags -->
-    <meta name="theme-color" content="#1e3a8a">
-    <meta name="description" content="Quiz educativo sobre orientação por astros e sistemas modernos de localização">
+    <meta name="theme-color" content="#DC143C">
+    <meta name="description" content="Quiz educativo sobre o Calendário Chinês e suas tradições milenares">
 
-    <title>Quiz: Navegando pelas Estrelas</title>
+    <title>Quiz: Calendário Chinês</title>
 
     <!-- PWA Manifest -->
     <link rel="manifest" href="manifest.json">
@@ -43,7 +43,7 @@
             <h2 class="qr-modal-title">📱 Compartilhe o Quiz</h2>
             <p class="qr-modal-subtitle">Aponte a câmera do celular para acessar</p>
             <div id="qrcode" class="qr-code-container"></div>
-            <div class="qr-modal-url">https://augustocbx.github.io/quiz-sistema-localizacao-pedro/</div>
+            <div class="qr-modal-url">https://augustocbx.github.io/quiz-cal-chines/</div>
         </div>
     </div>
 
@@ -102,8 +102,8 @@
     <!-- Tela Inicial -->
     <div id="start-screen" class="screen active">
         <div class="container">
-            <h1 class="title">Navegando pelas Estrelas</h1>
-            <p class="subtitle">Descubra como as pessoas se orientavam no passado e nos dias de hoje!</p>
+            <h1 class="title">Calendário Chinês</h1>
+            <p class="subtitle">Descubra os mistérios do zodíaco chinês, seus animais e tradições milenares!</p>
 
             <div class="start-actions">
                 <button id="start-btn" class="btn btn-primary">🚀 Iniciar Quiz</button>
@@ -306,7 +306,7 @@
             const qrcodeSmallElement = document.getElementById('qrcode-small');
 
             let qrCodeLargeGenerated = false;
-            const quizUrl = 'https://augustocbx.github.io/quiz-sistema-localizacao-pedro/';
+            const quizUrl = 'https://augustocbx.github.io/quiz-cal-chines/';
 
             // Gerar QR code pequeno flutuante
             if (qrcodeSmallElement && typeof QRCode !== 'undefined') {
@@ -371,7 +371,7 @@
 
             // Registra o Service Worker
             window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/quiz-sistema-localizacao-pedro/service-worker.js')
+                navigator.serviceWorker.register('/quiz-cal-chines/service-worker.js')
                     .then(registration => {
                         console.log('[App] Service Worker registrado:', registration.scope);
 
