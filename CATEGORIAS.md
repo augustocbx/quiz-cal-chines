@@ -1,181 +1,185 @@
 # Categorias de Perguntas e Backgrounds
 
-Este documento descreve as 9 categorias de perguntas do quiz e suas imagens de background correspondentes.
+Este documento descreve as categorias de perguntas do quiz sobre Calendário Chinês e suas imagens de background correspondentes.
 
 ## 📊 Resumo das Categorias
 
-| Categoria | Nº Perguntas | Imagem | Classes CSS |
-|-----------|--------------|--------|-------------|
-| Estrelas e Constelações | 19 | stars-constellations.jpg | bg-stars-night, bg-constellation, bg-southern-cross, bg-orion, bg-celestial-pole |
-| GPS e Satélites | 15 | gps-satellites.jpg | bg-gps-satellite, bg-satellite-systems, bg-gps-history, bg-solar-storm |
-| Smartphones e Apps | 8 | smartphone-navigation.jpg | bg-smartphone-gps |
-| Instrumentos Antigos | 7 | ancient-instruments.jpg | bg-ancient-navigation, bg-sextant, bg-compass, bg-compass-rose |
-| Sol (Orientação Solar) | 6 | sun-navigation.jpg | bg-sun-navigation |
-| Lua e Marés | 2 | moon-tides.jpg | bg-full-moon, bg-moon-tides |
-| Mapas e Geografia | 6 | maps-coordinates.jpg | bg-map-coordinates, bg-earth-equator, bg-greenwich |
-| Navegação Moderna/Aviação | 5 | modern-aviation.jpg | bg-modern-navigation, bg-airplane-gps |
-| Natureza | 2 | nature-forest.jpg | bg-forest-navigation |
+| Categoria | Nº Perguntas | Imagem Sugerida | Classes CSS |
+|-----------|--------------|-----------------|-------------|
+| Zodíaco - 12 Animais | 20 | zodiac-animals.jpg | bg-rat, bg-ox, bg-tiger, bg-rabbit, bg-dragon, bg-snake, bg-horse, bg-goat, bg-monkey, bg-rooster, bg-dog, bg-pig |
+| Cinco Elementos | 10 | five-elements.jpg | bg-wood-element, bg-fire-element, bg-earth-element, bg-metal-element, bg-water-element |
+| Festas e Tradições | 12 | chinese-festivals.jpg | bg-new-year, bg-lantern-festival, bg-red-celebration, bg-lanterns, bg-decorations |
+| Calendário Lunissolar | 8 | lunar-calendar.jpg | bg-moon-calendar, bg-moon-sun, bg-lunar-months, bg-new-moon |
+| Lendas do Zodíaco | 6 | zodiac-legend.jpg | bg-zodiac-legend, bg-rat-story, bg-ox-rat-story, bg-dragon-story, bg-rabbit-story, bg-tiger-story, bg-pig-story |
+| Cultura e Símbolos | 8 | chinese-culture.jpg | bg-yin-yang, bg-red-envelope, bg-oranges, bg-fish-dish, bg-tangyuan, bg-longevity-noodles |
+| Astronomia Chinesa | 4 | chinese-astronomy.jpg | bg-lunar-mansions, bg-solar-terms, bg-complete-cycle |
+| Filosofia e História | 2 | ancient-china.jpg | bg-jade-emperor, bg-yellow-emperor, bg-ancient-calendar |
 
-**Total: 60 perguntas em 9 categorias**
-
----
-
-## 🌟 Categoria 1: Estrelas e Constelações (19 perguntas)
-
-**Tópicos:**
-- Estrela Polar e sua importância
-- Sirius (estrela mais brilhante)
-- Constelações: Ursa Menor, Cruzeiro do Sul, Órion
-- Polo Norte Celeste
-- Movimento aparente das estrelas
-- Total de constelações oficiais (88)
-- Observação de estrelas para navegação
-- Civilizações antigas navegando pelas estrelas (Fenícios)
-
-**Imagem:** `stars-constellations.jpg`
-- Céu noturno com Via Láctea
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Azul escuro (rgba 0,5,15,0.75)
+**Total: 60 perguntas em 8 categorias principais**
 
 ---
 
-## 🛰️ Categoria 2: GPS e Satélites (15 perguntas)
+## 🐉 Categoria 1: Zodíaco - 12 Animais (20 perguntas)
 
 **Tópicos:**
-- Significado de GPS
-- Funcionamento do GPS (mínimo 4 satélites)
-- Altura orbital dos satélites (20.000 km)
-- Número de satélites em órbita (30+)
-- País desenvolvedor (EUA)
-- Ano de disponibilização civil (1995)
-- Sistemas alternativos (GLONASS, Galileo, BeiDou)
-- Velocidade dos sinais (velocidade da luz)
-- Tempestades solares
-- Interferências
+- Ordem dos 12 animais
+- Características de cada animal
+- Significados e simbolismos
+- Ciclo de 12 anos
+- Qual animal representa cada ano
+- Animais que faltam (gato)
 
-**Imagem:** `gps-satellites.jpg`
-- Satélite orbitando a Terra vista do espaço
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Azul/roxo escuro (rgba 10,10,30,0.75)
+**Animais:**
+1. Rato (鼠) - Inteligência
+2. Boi (牛) - Força
+3. Tigre (虎) - Coragem
+4. Coelho (兔) - Gentileza
+5. Dragão (龍) - Poder
+6. Serpente (蛇) - Sabedoria
+7. Cavalo (馬) - Liberdade
+8. Cabra (羊) - Criatividade
+9. Macaco (猴) - Inteligência
+10. Galo (雞) - Honestidade
+11. Cachorro (狗) - Lealdade
+12. Porco (豬) - Generosidade
+
+**Imagens Sugeridas:** Ilustrações dos animais em estilo tradicional chinês
 
 ---
 
-## 📱 Categoria 3: Smartphones e Apps (8 perguntas)
+## 🌟 Categoria 2: Cinco Elementos (10 perguntas)
 
 **Tópicos:**
-- Google Maps
-- Aplicativos de corrida e caminhada
-- Pokémon GO
-- GPS no celular
-- Localização no WhatsApp
-- Pontinho azul no mapa
-- Bússola do celular
-- Modo avião
-- GPS em shoppings e túneis
+- Madeira (木) - Verde/Azul, Primavera
+- Fogo (火) - Vermelho, Verão
+- Terra (土) - Amarelo/Marrom, Centro
+- Metal (金) - Branco/Dourado, Outono
+- Água (水) - Preto/Azul escuro, Inverno
+- Cores associadas a cada elemento
+- Ciclo de 60 anos (12 animais × 5 elementos)
+- Elemento que NÃO existe (Ar)
 
-**Imagem:** `smartphone-navigation.jpg`
-- Pessoa usando GPS no smartphone
+**Imagem Sugerida:** `five-elements.jpg`
+- Símbolos dos 5 elementos em círculo
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Preto (rgba 0,0,0,0.75)
+- Overlay: Dourado (rgba 50,40,0,0.7)
 
 ---
 
-## ⚓ Categoria 4: Instrumentos de Navegação Antiga (7 perguntas)
+## 🎊 Categoria 3: Festas e Tradições (12 perguntas)
 
 **Tópicos:**
-- Astrolábio
-- Sextante
-- Bússola (magnética e chinesa com colher)
-- Rosa dos Ventos
-- Ampulheta
-- Barquinha de arrasto
-- Substituição por GPS nos navios modernos
+- Ano Novo Chinês (15 dias de celebração)
+- Festival das Lanternas
+- Envelopes vermelhos (hongbao)
+- Cor tradicional (vermelho)
+- Lanternas vermelhas
+- Dança do Leão e Dragão
+- Papéis nas portas
+- Monstro Nian
+- Mês do Ano Novo (jan-fev)
 
-**Imagem:** `ancient-instruments.jpg`
-- Instrumentos de navegação vintage
+**Imagem Sugerida:** `chinese-festivals.jpg`
+- Decorações vermelhas, lanternas, fogos
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Marrom escuro (rgba 25,20,15,0.75)
+- Overlay: Vermelho (rgba 40,0,0,0.65)
 
 ---
 
-## ☀️ Categoria 5: Sol (Orientação Solar) (6 perguntas)
+## 🌙 Categoria 4: Calendário Lunissolar (8 perguntas)
 
 **Tópicos:**
-- Sol como astro de orientação diurna
-- Sombras (direção pela manhã/tarde)
-- Pôr do Sol (Oeste)
-- Relógio de sol
-- Sol como estrela mais próxima
-- Determinação de horas pelo Sol
+- Base do calendário (Lua)
+- Combinação Lunar + Solar
+- 12 meses lunares normais
+- 13º mês intercalar
+- Fase da Lua no Ano Novo (Nova)
+- Função dos termos solares
+- Diferença do calendário ocidental
 
-**Imagem:** `sun-navigation.jpg`
-- Nascer ou pôr do sol no horizonte
+**Imagem Sugerida:** `lunar-calendar.jpg`
+- Fases da Lua com calendário
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Amarelo escuro (rgba 40,30,0,0.65)
+- Overlay: Azul noturno (rgba 5,10,30,0.75)
 
 ---
 
-## 🌙 Categoria 6: Lua e Marés (2 perguntas)
+## 📖 Categoria 5: Lendas do Zodíaco (6 perguntas)
 
 **Tópicos:**
-- Lua Cheia (luz noturna)
-- Marés (atração gravitacional)
+- A corrida dos animais
+- Imperador de Jade
+- Por que Rato é primeiro
+- Como Boi ajudou Rato
+- Por que Dragão não chegou primeiro
+- Como Coelho atravessou o rio
+- Por que Porco demorou
+- Por que gato não está no zodíaco
 
-**Imagem:** `moon-tides.jpg`
-- Lua sobre oceano
+**Imagem Sugerida:** `zodiac-legend.jpg`
+- Ilustração da corrida dos animais
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Azul noturno (rgba 5,10,25,0.75)
+- Overlay: Dourado místico (rgba 30,20,0,0.7)
 
 ---
 
-## 🗺️ Categoria 7: Mapas e Geografia (6 perguntas)
+## 🎨 Categoria 6: Cultura e Símbolos (8 perguntas)
 
 **Tópicos:**
-- Latitude (distância do Equador)
-- Longitude (distância de Greenwich)
-- Equador (linha Norte-Sul)
-- Meridiano de Greenwich (Inglaterra)
-- Compasso de desenho
-- Coordenadas
-- Problema histórico da determinação de longitude
+- Yin e Yang (equilíbrio)
+- Alimentos simbólicos:
+  - Peixe (abundância)
+  - Tangerinas/Laranjas (sorte)
+  - Bolinhos de arroz (união familiar)
+  - Macarrão longo (longevidade)
+- Cumprimentos (Kung Hei Fat Choi)
+- Significado de símbolos
 
-**Imagem:** `maps-coordinates.jpg`
-- Mapa antigo ou globo terrestre
+**Imagem Sugerida:** `chinese-culture.jpg`
+- Símbolos culturais tradicionais
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Verde escuro (rgba 20,20,15,0.75)
+- Overlay: Vermelho escuro (rgba 30,10,10,0.7)
 
 ---
 
-## ✈️ Categoria 8: Navegação Moderna/Aviação (5 perguntas)
+## 🔭 Categoria 7: Astronomia Chinesa (4 perguntas)
 
 **Tópicos:**
-- GPS em aviões
-- Sistemas de backup (rádio, radar)
-- Substituição do sextante
-- GPS em carros
-- Navegação moderna
+- 28 Mansões Lunares
+- 24 Termos Solares
+- Ciclo de 60 anos completo
+- Observação ancestral
 
-**Imagem:** `modern-aviation.jpg`
-- Cockpit de avião ou aviação moderna
+**Imagem Sugerida:** `chinese-astronomy.jpg`
+- Mapa estelar chinês antigo
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Azul aviação (rgba 10,20,40,0.75)
+- Overlay: Roxo escuro (rgba 15,5,25,0.75)
 
 ---
 
-## 🌲 Categoria 9: Natureza (2 perguntas)
+## 🏛️ Categoria 8: Filosofia e História (2 perguntas)
 
 **Tópicos:**
-- Orientação indígena (Sol, árvores, rios)
-- Musgos (crescem no lado Sul no Brasil)
+- Imperador Amarelo (Huangdi)
+- Origem do calendário (4000+ anos)
+- Imperador de Jade
 
-**Imagem:** `nature-forest.jpg`
-- Floresta densa
+**Imagem Sugerida:** `ancient-china.jpg`
+- Arquitetura chinesa antiga
 - Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Verde escuro floresta (rgba 5,20,5,0.75)
+- Overlay: Sépia (rgba 25,20,10,0.75)
 
 ---
 
 ## 🎨 Características Visuais
+
+### Paleta de Cores Temática
+O quiz sobre Calendário Chinês utiliza cores tradicionais:
+- **Vermelho** (#DC143C): Sorte, prosperidade, celebração
+- **Dourado** (#FFD700): Riqueza, realeza, fortuna
+- **Preto** (#000000): Yin, água, inverno
+- **Branco** (#FFFFFF): Metal, pureza
+- **Verde/Azul**: Madeira, crescimento
 
 ### Filtros Aplicados
 Todas as imagens recebem os seguintes filtros CSS para mantê-las discretas:
@@ -184,10 +188,11 @@ Todas as imagens recebem os seguintes filtros CSS para mantê-las discretas:
 - **Blur**: 1.5px (leve desfoque)
 
 ### Overlays
-Cada categoria tem um overlay colorido específico com opacidade de 75% para:
+Cada categoria tem um overlay colorido específico com opacidade de 65-75% para:
 - Melhorar legibilidade do texto
-- Manter harmonia com o tema
+- Manter harmonia com o tema chinês
 - Criar atmosfera apropriada
+- Reforçar associação de cores
 
 ### Estrutura CSS
 ```css
@@ -208,27 +213,34 @@ Cada categoria tem um overlay colorido específico com opacidade de 75% para:
 
 ## 📁 Arquivos
 
-### Imagens
+### Imagens Sugeridas
 ```
 images/backgrounds/
-├── stars-constellations.jpg (384 KB)
-├── gps-satellites.jpg (585 KB)
-├── smartphone-navigation.jpg (259 KB)
-├── ancient-instruments.jpg (322 KB)
-├── sun-navigation.jpg (309 KB)
-├── moon-tides.jpg (527 KB)
-├── maps-coordinates.jpg (568 KB)
-├── modern-aviation.jpg (216 KB)
-└── nature-forest.jpg (713 KB)
+├── zodiac-wheel.jpg         (Roda do zodíaco)
+├── five-elements.jpg        (5 elementos)
+├── chinese-festivals.jpg    (Festas e lanternas)
+├── lunar-calendar.jpg       (Fases da Lua)
+├── zodiac-legend.jpg        (Lenda da corrida)
+├── chinese-culture.jpg      (Símbolos culturais)
+├── chinese-astronomy.jpg    (Astronomia antiga)
+└── ancient-china.jpg        (História)
 ```
-
-**Total:** ~3.8 MB de imagens
 
 ### CSS
 - `css/backgrounds.css` - Define todas as classes e estilos
 
 ### Fonte das Imagens
-Todas as imagens são provenientes do Unsplash (licença gratuita, sem necessidade de atribuição).
+Recomenda-se usar imagens de:
+- Unsplash (licença gratuita)
+- Pexels (licença gratuita)
+- Wikimedia Commons (domínio público)
+
+Buscar por termos:
+- "Chinese New Year"
+- "Chinese zodiac"
+- "Chinese lanterns"
+- "Yin Yang"
+- "Chinese culture"
 
 ---
 
@@ -237,7 +249,7 @@ Todas as imagens são provenientes do Unsplash (licença gratuita, sem necessida
 ### Para adicionar nova categoria:
 1. Adicionar imagem em `images/backgrounds/`
 2. Criar classe CSS em `backgrounds.css`
-3. Aplicar filtros e overlay apropriados
+3. Aplicar filtros e overlay apropriados (vermelho/dourado)
 4. Atualizar `questions.js` com `backgroundClass`
 5. Atualizar este documento
 
@@ -245,3 +257,10 @@ Todas as imagens são provenientes do Unsplash (licença gratuita, sem necessida
 - **Mais escuro:** Aumentar opacity do overlay (::before)
 - **Mais blur:** Aumentar valor de `blur()` no ::after
 - **Mais brilho:** Aumentar `brightness()` no ::after
+
+### Cores Recomendadas para Overlays:
+- Vermelho: rgba(40,0,0,0.65) - Festas, celebrações
+- Dourado: rgba(50,40,0,0.7) - Elementos, riqueza
+- Azul escuro: rgba(5,10,30,0.75) - Lua, noite
+- Roxo escuro: rgba(15,5,25,0.75) - Astronomia, mistério
+- Sépia: rgba(25,20,10,0.75) - História, antiguidade

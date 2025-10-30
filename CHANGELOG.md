@@ -1,80 +1,55 @@
-# Changelog - Reorganização dos Rankings
+# Changelog
 
-## Mudanças Implementadas
+Todas as alterações notáveis neste projeto serão documentadas neste arquivo.
 
-### 1. Tela Inicial
-- ✅ Adicionado **Ranking Temporário** na tela inicial
-- ✅ Mostra Top 3 dos últimos 5 jogadores
-- ✅ Atualizado automaticamente ao voltar para a tela inicial
-- ✅ Botão "Ver Ranking Permanente" na tela inicial
+## [2.0.0] - 2025-01-30
 
-### 2. Tela de Ranking Temporário
-- ✅ Tela dedicada para Ranking Temporário
-- ✅ Exibida após clicar em "Salvar e Ver Ranking"
-- ✅ Contém botões:
-  - "Jogar Novamente"
-  - "Ver Ranking Permanente"
-  - "Tela Inicial"
+### Mudança Major - Novo Tema
+- **Tema Completamente Redesenhado**: De "Navegando pelas Estrelas" para "Calendário Chinês"
+- Novo foco educacional em cultura chinesa milenar e zodíaco
 
-### 3. Tela de Ranking Permanente
-- ✅ Tela separada para Ranking Permanente (Top 10)
-- ✅ Acessível via:
-  - Botão na tela inicial
-  - Botão na tela de ranking temporário
-- ✅ Contém botão "Tela Inicial"
+### Adicionado
+- 60 novas perguntas sobre Calendário Chinês:
+  - 12 animais do zodíaco
+  - 5 elementos (madeira, fogo, terra, metal, água)
+  - Festas tradicionais (Ano Novo Chinês, Festival das Lanternas)
+  - Lendas do zodíaco (corrida dos animais)
+  - Cultura e simbolismo chinês
+  - Astronomia chinesa (28 mansões lunares, 24 termos solares)
 
-## Fluxo de Navegação
+- Novos nomes temáticos de jogadores:
+  - "Guardião do Dragão", "Mestre do Rato", "Sábio do Tigre", etc.
+  - 74 nomes com ícones relacionados à cultura chinesa
 
-```
-[Tela Inicial]
-    |
-    ├─> "Iniciar Quiz" ──> [Quiz] ──> [Resultado] ──> "Salvar" ──> [Ranking Temporário]
-    |                                                                       |
-    └─> "Ver Ranking Permanente" ──────────────────────────────────────────┼──> [Ranking Permanente]
-                                                                            |
-                                                                            └──> "Tela Inicial"
+- Novas animações SVG temáticas:
+  - **Comemoração**: Lanterna vermelha, Yin-Yang, Roda do Zodíaco, Dança do Dragão, Fogos de artifício com caracteres chineses
+  - **Consolo**: Dragão confuso, Lua nublada, Lanterna apagada, Pétala caindo, Yin-Yang desequilibrado
 
-[Ranking Temporário]
-    ├─> "Jogar Novamente" ──> [Quiz]
-    ├─> "Ver Ranking Permanente" ──> [Ranking Permanente]
-    └─> "Tela Inicial" ──> [Tela Inicial]
-```
+### Modificado
+- Título do quiz: "Quiz: Calendário Chinês"
+- Descrição: Foco em tradições milenares chinesas
+- Paleta de cores: Vermelho (#DC143C) e dourado como cores principais
+- Theme color do PWA: Alterado para vermelho tradicional
+- Manifest.json: Nome, descrição e cores atualizadas
+- Service Worker: Cache renomeado para 'quiz-calendario-chines-v1'
+- README.md: Documentação completa sobre o novo tema
+- CONTEUDO_DIDATICO.md: Material didático sobre calendário chinês
+- CATEGORIAS.md: Novas categorias de perguntas
 
-## Arquivos Modificados
+### Removido
+- Todas as 60 perguntas antigas sobre orientação e GPS
+- Nomes de jogadores com tema de navegação espacial
+- Animações antigas (estrela, bússola, constelação)
+- Referências a GPS, satélites, navegação marítima
+- Arquivos markdown obsoletos do tema anterior
 
-1. **index.html**
-   - Adicionada seção de ranking temporário na tela inicial
-   - Separadas as telas de ranking (temporário e permanente)
-   - Atualizados botões de navegação
+---
 
-2. **css/styles.css**
-   - Adicionados estilos para `.start-actions`
-   - Adicionados estilos para `.home-ranking`
-   - Ajustes de responsividade
+## [1.0.0] - Versão Anterior
 
-3. **js/script.js**
-   - Atualizado objeto `screens` com novas telas
-   - Atualizados event listeners dos botões
-   - Criadas funções:
-     - `updateHomeTempRanking()` - Atualiza ranking na tela inicial
-     - `displayTempRanking()` - Exibe tela de ranking temporário
-     - `displayPermanentRanking()` - Exibe tela de ranking permanente
-   - Modificada `showScreen()` para controlar exibição de rankings
-
-## Funcionalidades Mantidas
-
-✅ Sistema de pontuação
-✅ Cronômetro com décimos de segundo
-✅ 40 perguntas (20 aleatórias por sessão)
-✅ Animações de comemoração e consolo
-✅ Persistência de dados (localStorage)
-✅ Nomes aleatórios com ícones
-✅ Design responsivo
-✅ Botão de desistir
-
-## Testado
-
-✅ Sintaxe JavaScript válida
-✅ Todos os IDs no HTML correspondem ao JavaScript
-✅ Estrutura de navegação entre telas
-✅ Responsividade dos elementos
+### Características do tema anterior
+- Quiz sobre orientação por astros e GPS
+- 60 perguntas sobre navegação
+- Tema espacial e de navegação
+- Animações com estrelas e bússolas
+- Nomes relacionados a navegadores e exploradores
