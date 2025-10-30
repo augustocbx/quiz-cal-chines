@@ -6,19 +6,19 @@
 }
 
 :root {
-    --primary-color: #1e3a8a;
-    --secondary-color: #3b82f6;
-    --accent-color: #fbbf24;
+    --primary-color: #8B4513;
+    --secondary-color: #CD853F;
+    --accent-color: #FFD700;
     --success-color: #10b981;
     --danger-color: #ef4444;
-    --dark-bg: #0f172a;
+    --dark-bg: #1A1110;
     --light-text: #f1f5f9;
     --shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #334155 100%);
+    background: linear-gradient(135deg, #1A1110 0%, #3E2723 50%, #5D4037 100%);
     color: var(--light-text);
     min-height: 100vh;
     overflow-x: hidden;
@@ -70,12 +70,12 @@ body::before {
 .container {
     max-width: 800px;
     width: 100%;
-    background: rgba(15, 23, 42, 0.9);
+    background: rgba(26, 17, 16, 0.9);
     border-radius: 20px;
     padding: 40px;
     box-shadow: var(--shadow);
     backdrop-filter: blur(10px);
-    border: 2px solid rgba(59, 130, 246, 0.3);
+    border: 2px solid rgba(205, 133, 63, 0.3);
 }
 
 /* Títulos */

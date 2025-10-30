@@ -5,8 +5,8 @@
   "description": "Quiz educativo sobre os 12 tipos de calendários mais famosos do mundo",
   "start_url": "/quiz-cal-chines/",
   "display": "standalone",
-  "background_color": "#1e3a8a",
-  "theme_color": "#4169E1",
+  "background_color": "#1A1110",
+  "theme_color": "#8B4513",
   "orientation": "any",
   "scope": "/quiz-cal-chines/",
   "icons": [
