@@ -2,54 +2,123 @@
 
 Todas as alterações notáveis neste projeto serão documentadas neste arquivo.
 
-## [2.0.0] - 2025-01-30
+## [3.0.0] - 2025-01-30
 
-### Mudança Major - Novo Tema
-- **Tema Completamente Redesenhado**: De "Navegando pelas Estrelas" para "Calendário Chinês"
-- Novo foco educacional em cultura chinesa milenar e zodíaco
+### Mudança Major - Tema Correto: Os 12 Calendários do Mundo
+
+- **Tema Corrigido**: De "Calendário Chinês" para "**Os 12 Calendários do Mundo**"
+- Foco educacional nos 12 tipos de calendários mais famosos
 
 ### Adicionado
-- 60 novas perguntas sobre Calendário Chinês:
-  - 12 animais do zodíaco
-  - 5 elementos (madeira, fogo, terra, metal, água)
-  - Festas tradicionais (Ano Novo Chinês, Festival das Lanternas)
-  - Lendas do zodíaco (corrida dos animais)
-  - Cultura e simbolismo chinês
-  - Astronomia chinesa (28 mansões lunares, 24 termos solares)
 
-- Novos nomes temáticos de jogadores:
-  - "Guardião do Dragão", "Mestre do Rato", "Sábio do Tigre", etc.
-  - 74 nomes com ícones relacionados à cultura chinesa
+#### 60 Novas Perguntas
+Distribuídas por calendário:
+- **Gregoriano** (5): Papa Gregório XIII, 1582, anos bissextos
+- **Juliano** (5): 46 a.C., 13 dias de diferença
+- **Chinês** (5): 12 animais, ciclo de 12 anos, Festival da Primavera
+- **Islâmico** (5): Lunar, 354 dias, Hégira
+- **Maia** (5): Haab e Tzolkin, sistema complexo
+- **Etíope** (5): 13 meses, baseado no Juliano
+- **Judaico** (5): Lunissolar, 3000+ anos
+- **Juche** (5): Coreia do Norte, Kim Il-sung
+- **Egípcio** (5): Antigo, Rio Nilo
+- **Conceitos** (15): Lunar, Solar, Lunissolar, gerais
 
-- Novas animações SVG temáticas:
-  - **Comemoração**: Lanterna vermelha, Yin-Yang, Roda do Zodíaco, Dança do Dragão, Fogos de artifício com caracteres chineses
-  - **Consolo**: Dragão confuso, Lua nublada, Lanterna apagada, Pétala caindo, Yin-Yang desequilibrado
+#### Nomes Temáticos (100 nomes)
+- "Guardião do Gregoriano" 📅
+- "Mestre Solar" ☀️
+- "Guardião Lunar" 🌙
+- "Sábio Chinês" 🐉
+- "Guardião Islâmico" ☪️
+- "Escriba Maia" 📜
+- "Faraó do Nilo" 🏜️
+- "Guardião do Tempo" ⏰
+
+#### Avatares Atualizados (18 avatares)
+- Calendário 📅
+- Sol ☀️, Lua 🌙
+- Relógios (🕐 ⏰ ⌚ ⏱️)
+- Ampulheta ⌛
+- Dragão Chinês 🐉
+- Mesquita 🕌
+- Pirâmide 🏜️
+- Moai Maia 🗿
+- Estrela de Davi ✡️
+- Globo 🌍, Terra 🌎
+- Mapa Mundi 🗺️
+
+#### Animações Temáticas
+**Comemoração**:
+- Calendário virando páginas
+- Sol e Lua em equilíbrio
+- Relógio mundial
+- Globo cultural (rara - 9/10)
+- Mestre do Tempo (lendária - 10/10)
+
+**Consolo**:
+- Calendário confuso (50%)
+- Tempo nublado (30%)
+- Relógio quebrado (15%)
+- Folha caindo (3%)
+- Caos temporal (2%)
 
 ### Modificado
-- Título do quiz: "Quiz: Calendário Chinês"
-- Descrição: Foco em tradições milenares chinesas
-- Paleta de cores: Vermelho (#DC143C) e dourado como cores principais
-- Theme color do PWA: Alterado para vermelho tradicional
-- Manifest.json: Nome, descrição e cores atualizadas
-- Service Worker: Cache renomeado para 'quiz-calendario-chines-v1'
-- README.md: Documentação completa sobre o novo tema
-- CONTEUDO_DIDATICO.md: Material didático sobre calendário chinês
-- CATEGORIAS.md: Novas categorias de perguntas
 
-### Removido
-- Todas as 60 perguntas antigas sobre orientação e GPS
-- Nomes de jogadores com tema de navegação espacial
-- Animações antigas (estrela, bússola, constelação)
-- Referências a GPS, satélites, navegação marítima
-- Arquivos markdown obsoletos do tema anterior
+- **Título**: "Quiz: Calendários do Mundo"
+- **Descrição**: "Explore os 12 tipos de calendários mais famosos"
+- **Paleta de cores**: Azul (#4169E1) - representa diversidade global
+- **Theme color**: Alterado para azul
+- **Manifest.json**: Nome, descrição e cores atualizadas
+- **Service Worker**: Cache 'quiz-calendarios-mundo-v1'
+- **README.md**: Documentação completa sobre os 12 calendários
+- **CONTEUDO_DIDATICO.md**: Material didático detalhado de cada calendário
+- **CATEGORIAS.md**: Organização das 60 perguntas em 13 categorias
+
+### Documentação Completa
+
+- ✅ Descrição dos 12 calendários
+- ✅ Tabela resumo com tipos (Solar, Lunar, Lunissolar)
+- ✅ Histórico de cada calendário
+- ✅ Alinhamento com BNCC
+- ✅ Sugestões pedagógicas
 
 ---
 
-## [1.0.0] - Versão Anterior
+## [2.0.0] - 2025-01-30 (Versão Descontinuada)
 
-### Características do tema anterior
+### Tema Temporário - Calendário Chinês
+
+- Tema focado apenas no calendário chinês
+- 60 perguntas sobre zodíaco chinês
+- **Descontinuado**: Tema estava incorreto
+
+---
+
+## [1.0.0] - Versão Original
+
+### Características da versão original
 - Quiz sobre orientação por astros e GPS
 - 60 perguntas sobre navegação
 - Tema espacial e de navegação
-- Animações com estrelas e bússolas
-- Nomes relacionados a navegadores e exploradores
+
+---
+
+## Resumo das Versões
+
+| Versão | Tema | Data | Status |
+|--------|------|------|--------|
+| 3.0.0 | **12 Calendários do Mundo** | 2025-01-30 | ✅ Atual |
+| 2.0.0 | Calendário Chinês | 2025-01-30 | ❌ Descontinuada |
+| 1.0.0 | Navegação por Estrelas | Anterior | ❌ Descontinuada |
+
+---
+
+## Tipos de Mudanças
+
+- **MAJOR** (X.0.0): Mudanças incompatíveis, novo tema
+- **MINOR** (0.X.0): Novas funcionalidades compatíveis
+- **PATCH** (0.0.X): Correções de bugs
+
+---
+
+Desenvolvido com ⏰ para ensinar sobre a diversidade cultural de medição do tempo!

@@ -1,266 +1,292 @@
-# Categorias de Perguntas e Backgrounds
+# Categorias de Perguntas - Os 12 Calendários do Mundo
 
-Este documento descreve as categorias de perguntas do quiz sobre Calendário Chinês e suas imagens de background correspondentes.
+Este documento descreve a organização das 60 perguntas sobre os 12 tipos de calendários mais famosos do mundo.
 
 ## 📊 Resumo das Categorias
 
-| Categoria | Nº Perguntas | Imagem Sugerida | Classes CSS |
-|-----------|--------------|-----------------|-------------|
-| Zodíaco - 12 Animais | 20 | zodiac-animals.jpg | bg-rat, bg-ox, bg-tiger, bg-rabbit, bg-dragon, bg-snake, bg-horse, bg-goat, bg-monkey, bg-rooster, bg-dog, bg-pig |
-| Cinco Elementos | 10 | five-elements.jpg | bg-wood-element, bg-fire-element, bg-earth-element, bg-metal-element, bg-water-element |
-| Festas e Tradições | 12 | chinese-festivals.jpg | bg-new-year, bg-lantern-festival, bg-red-celebration, bg-lanterns, bg-decorations |
-| Calendário Lunissolar | 8 | lunar-calendar.jpg | bg-moon-calendar, bg-moon-sun, bg-lunar-months, bg-new-moon |
-| Lendas do Zodíaco | 6 | zodiac-legend.jpg | bg-zodiac-legend, bg-rat-story, bg-ox-rat-story, bg-dragon-story, bg-rabbit-story, bg-tiger-story, bg-pig-story |
-| Cultura e Símbolos | 8 | chinese-culture.jpg | bg-yin-yang, bg-red-envelope, bg-oranges, bg-fish-dish, bg-tangyuan, bg-longevity-noodles |
-| Astronomia Chinesa | 4 | chinese-astronomy.jpg | bg-lunar-mansions, bg-solar-terms, bg-complete-cycle |
-| Filosofia e História | 2 | ancient-china.jpg | bg-jade-emperor, bg-yellow-emperor, bg-ancient-calendar |
+| Calendário | Nº Perguntas | Background Sugerido |
+|------------|--------------|---------------------|
+| Gregoriano | 5 | bg-gregorian |
+| Juliano | 5 | bg-julian |
+| Chinês | 5 | bg-chinese |
+| Islâmico | 5 | bg-islamic |
+| Maia | 5 | bg-mayan |
+| Etíope | 5 | bg-ethiopian |
+| Judaico | 5 | bg-jewish |
+| Juche | 5 | bg-juche |
+| Egípcio | 5 | bg-egyptian |
+| Conceitos Lunares | 3 | bg-lunar-concept |
+| Conceitos Solares | 3 | bg-solar-concept |
+| Conceitos Lunissolares | 4 | bg-lunisolar-concept |
+| Perguntas Gerais | 5 | bg-general |
 
-**Total: 60 perguntas em 8 categorias principais**
+**Total: 60 perguntas em 13 categorias**
 
 ---
 
-## 🐉 Categoria 1: Zodíaco - 12 Animais (20 perguntas)
+## 📅 Calendário Gregoriano (5 perguntas)
 
-**Tópicos:**
-- Ordem dos 12 animais
-- Características de cada animal
-- Significados e simbolismos
+**Tipo**: Solar
+
+**Tópicos Abordados**:
+- Uso no Brasil e Ocidente
+- Papa Gregório XIII (1582)
+- 365 dias (366 em bissextos)
+- Anos bissextos e as 6 horas extras
+- Baseado no movimento da Terra ao redor do Sol
+
+**Dificuldades**: Normal, Hard
+
+---
+
+## ⏳ Calendário Juliano (5 perguntas)
+
+**Tipo**: Solar
+
+**Tópicos Abordados**:
+- Instituído em 46 a.C.
+- Substituiu o calendário Romano
+- Falhas na contagem do tempo
+- 13 dias de diferença do Gregoriano
+- Tipo: Solar
+
+**Dificuldades**: Normal, Hard, VeryHard
+
+---
+
+## 🐉 Calendário Chinês (5 perguntas)
+
+**Tipo**: Lunissolar
+
+**Tópicos Abordados**:
+- Tipo Lunissolar
+- 12 animais do horóscopo
 - Ciclo de 12 anos
-- Qual animal representa cada ano
-- Animais que faltam (gato)
+- Criação (2697-2597 a.C.)
+- Festival da Primavera (Ano Novo)
 
-**Animais:**
-1. Rato (鼠) - Inteligência
-2. Boi (牛) - Força
-3. Tigre (虎) - Coragem
-4. Coelho (兔) - Gentileza
-5. Dragão (龍) - Poder
-6. Serpente (蛇) - Sabedoria
-7. Cavalo (馬) - Liberdade
-8. Cabra (羊) - Criatividade
-9. Macaco (猴) - Inteligência
-10. Galo (雞) - Honestidade
-11. Cachorro (狗) - Lealdade
-12. Porco (豬) - Generosidade
-
-**Imagens Sugeridas:** Ilustrações dos animais em estilo tradicional chinês
+**Dificuldades**: Normal, Hard, VeryHard
 
 ---
 
-## 🌟 Categoria 2: Cinco Elementos (10 perguntas)
+## ☪️ Calendário Islâmico (5 perguntas)
 
-**Tópicos:**
-- Madeira (木) - Verde/Azul, Primavera
-- Fogo (火) - Vermelho, Verão
-- Terra (土) - Amarelo/Marrom, Centro
-- Metal (金) - Branco/Dourado, Outono
-- Água (水) - Preto/Azul escuro, Inverno
-- Cores associadas a cada elemento
-- Ciclo de 60 anos (12 animais × 5 elementos)
-- Elemento que NÃO existe (Ar)
+**Tipo**: Lunar
 
-**Imagem Sugerida:** `five-elements.jpg`
-- Símbolos dos 5 elementos em círculo
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Dourado (rgba 50,40,0,0.7)
+**Tópicos Abordados**:
+- Baseado no ciclo da Lua
+- 354 dias
+- Hégira (622 d.C.)
+- Al-Hijra (Ano Novo)
+- Início de meses com lua crescente
+
+**Dificuldades**: Normal, Hard, VeryHard
 
 ---
 
-## 🎊 Categoria 3: Festas e Tradições (12 perguntas)
+## 🗿 Calendário Maia (5 perguntas)
 
-**Tópicos:**
-- Ano Novo Chinês (15 dias de celebração)
-- Festival das Lanternas
-- Envelopes vermelhos (hongbao)
-- Cor tradicional (vermelho)
-- Lanternas vermelhas
-- Dança do Leão e Dragão
-- Papéis nas portas
-- Monstro Nian
-- Mês do Ano Novo (jan-fev)
+**Tipo**: Sistema complexo
 
-**Imagem Sugerida:** `chinese-festivals.jpg`
-- Decorações vermelhas, lanternas, fogos
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Vermelho (rgba 40,0,0,0.65)
+**Tópicos Abordados**:
+- Duas partes: Haab e Tzolkin
+- Haab: 365 dias, 18 meses de 20 dias
+- Tzolkin: 260 dias
+- 5 dias que "ficam de fora"
+- Sistema não puramente solar ou lunar
+
+**Dificuldades**: Normal, Hard, VeryHard
 
 ---
 
-## 🌙 Categoria 4: Calendário Lunissolar (8 perguntas)
+## 🦁 Calendário Etíope (5 perguntas)
 
-**Tópicos:**
-- Base do calendário (Lua)
-- Combinação Lunar + Solar
-- 12 meses lunares normais
-- 13º mês intercalar
-- Fase da Lua no Ano Novo (Nova)
-- Função dos termos solares
-- Diferença do calendário ocidental
+**Tipo**: Solar
 
-**Imagem Sugerida:** `lunar-calendar.jpg`
-- Fases da Lua com calendário
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Azul noturno (rgba 5,10,30,0.75)
+**Tópicos Abordados**:
+- 13 meses
+- Baseado no Juliano
+- 12 meses de 30 dias
+- 13º mês com 5 dias (6 em bissextos)
+- Tipo: Solar
+
+**Dificuldades**: Normal, Hard, VeryHard
 
 ---
 
-## 📖 Categoria 5: Lendas do Zodíaco (6 perguntas)
+## ✡️ Calendário Judaico (5 perguntas)
 
-**Tópicos:**
-- A corrida dos animais
-- Imperador de Jade
-- Por que Rato é primeiro
-- Como Boi ajudou Rato
-- Por que Dragão não chegou primeiro
-- Como Coelho atravessou o rio
-- Por que Porco demorou
-- Por que gato não está no zodíaco
+**Tipo**: Lunissolar
 
-**Imagem Sugerida:** `zodiac-legend.jpg`
-- Ilustração da corrida dos animais
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Dourado místico (rgba 30,20,0,0.7)
+**Tópicos Abordados**:
+- Tipo Lunissolar
+- Criado em ~1447 a.C.
+- Usado há mais de 3 mil anos
+- Pode ter 12 ou 13 meses
+- Quantidade de dias variável
+
+**Dificuldades**: Normal, Hard, VeryHard
 
 ---
 
-## 🎨 Categoria 6: Cultura e Símbolos (8 perguntas)
+## 🏛️ Calendário Juche (5 perguntas)
 
-**Tópicos:**
-- Yin e Yang (equilíbrio)
-- Alimentos simbólicos:
-  - Peixe (abundância)
-  - Tangerinas/Laranjas (sorte)
-  - Bolinhos de arroz (união familiar)
-  - Macarrão longo (longevidade)
-- Cumprimentos (Kung Hei Fat Choi)
-- Significado de símbolos
+**Tipo**: Solar
 
-**Imagem Sugerida:** `chinese-culture.jpg`
-- Símbolos culturais tradicionais
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Vermelho escuro (rgba 30,10,10,0.7)
+**Tópicos Abordados**:
+- Usado apenas na Coreia do Norte
+- Ano 1: nascimento de Kim Il-sung (1912)
+- Baseado na ideologia Juche
+- Tipo: Solar (como Gregoriano)
+- Fundador: Kim Il-sung
+
+**Dificuldades**: Normal, Hard, VeryHard
 
 ---
 
-## 🔭 Categoria 7: Astronomia Chinesa (4 perguntas)
+## 🏺 Calendário Egípcio (5 perguntas)
 
-**Tópicos:**
-- 28 Mansões Lunares
-- 24 Termos Solares
-- Ciclo de 60 anos completo
-- Observação ancestral
+**Tipo**: Solar
 
-**Imagem Sugerida:** `chinese-astronomy.jpg`
-- Mapa estelar chinês antigo
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Roxo escuro (rgba 15,5,25,0.75)
+**Tópicos Abordados**:
+- Um dos mais antigos
+- Ligado ao Rio Nilo
+- 365 dias
+- 12 meses de 30 dias
+- 5 dias extras para homenagear deuses
 
----
-
-## 🏛️ Categoria 8: Filosofia e História (2 perguntas)
-
-**Tópicos:**
-- Imperador Amarelo (Huangdi)
-- Origem do calendário (4000+ anos)
-- Imperador de Jade
-
-**Imagem Sugerida:** `ancient-china.jpg`
-- Arquitetura chinesa antiga
-- Filtros: Brightness 0.6, Contrast 0.9, Blur 1.5px
-- Overlay: Sépia (rgba 25,20,10,0.75)
+**Dificuldades**: Normal, Hard
 
 ---
 
-## 🎨 Características Visuais
+## 🌙 Conceitos: Calendário Lunar (3 perguntas)
 
-### Paleta de Cores Temática
-O quiz sobre Calendário Chinês utiliza cores tradicionais:
-- **Vermelho** (#DC143C): Sorte, prosperidade, celebração
-- **Dourado** (#FFD700): Riqueza, realeza, fortuna
-- **Preto** (#000000): Yin, água, inverno
-- **Branco** (#FFFFFF): Metal, pureza
-- **Verde/Azul**: Madeira, crescimento
+**Tópicos Abordados**:
+- Baseado nas fases da Lua
+- 354 ou 355 dias
+- Início de meses com lua nova
 
-### Filtros Aplicados
-Todas as imagens recebem os seguintes filtros CSS para mantê-las discretas:
-- **Brightness**: 0.6 (60% do brilho original)
-- **Contrast**: 0.9 (90% do contraste original)
-- **Blur**: 1.5px (leve desfoque)
-
-### Overlays
-Cada categoria tem um overlay colorido específico com opacidade de 65-75% para:
-- Melhorar legibilidade do texto
-- Manter harmonia com o tema chinês
-- Criar atmosfera apropriada
-- Reforçar associação de cores
-
-### Estrutura CSS
-```css
-/* Imagem de fundo (::after) */
-- background-image
-- filter (brightness, contrast, blur)
-- z-index: -2
-
-/* Overlay colorido (::before) */
-- background: rgba(...)
-- z-index: -1
-
-/* Conteúdo */
-- z-index: 1 (acima de tudo)
-```
+**Dificuldades**: Normal, Hard
 
 ---
 
-## 📁 Arquivos
+## ☀️ Conceitos: Calendário Solar (3 perguntas)
 
-### Imagens Sugeridas
+**Tópicos Abordados**:
+- Baseado no ciclo do Sol
+- Modelo usado no Ocidente
+- 12 meses, 365 dias
+
+**Dificuldades**: Normal
+
+---
+
+## 🌗 Conceitos: Calendário Lunissolar (4 perguntas)
+
+**Tópicos Abordados**:
+- Usa Sol e Lua como base
+- Exemplos: Judaico e Chinês
+- Necessita de ajustes
+- Mês extra periodicamente
+
+**Dificuldades**: Normal, Hard, VeryHard
+
+---
+
+## 🌍 Perguntas Gerais (5 perguntas)
+
+**Tópicos Abordados**:
+- Para que foram desenvolvidos os calendários
+- Cultura e tradições de cada povo
+- Três tipos principais
+- Comparação entre calendários
+- Sistema mais complexo (Maia)
+
+**Dificuldades**: Normal, Hard
+
+---
+
+## 🎨 Paleta de Cores por Tipo
+
+### Calendários Solares
+- **Cor Principal**: Dourado/Amarelo (☀️)
+- **Overlay**: rgba(255, 215, 0, 0.2)
+- **Calendários**: Gregoriano, Juliano, Etíope, Juche, Egípcio
+
+### Calendários Lunares
+- **Cor Principal**: Prata/Azul Claro (🌙)
+- **Overlay**: rgba(200, 200, 220, 0.2)
+- **Calendários**: Islâmico
+
+### Calendários Lunissolares
+- **Cor Principal**: Gradiente Dourado/Prata (🌗)
+- **Overlay**: rgba(220, 200, 180, 0.2)
+- **Calendários**: Chinês, Judaico
+
+### Sistema Complexo
+- **Cor Principal**: Verde/Marrom (Maia)
+- **Overlay**: rgba(150, 120, 90, 0.2)
+
+---
+
+## 📁 Sugestões de Imagens de Background
+
 ```
 images/backgrounds/
-├── zodiac-wheel.jpg         (Roda do zodíaco)
-├── five-elements.jpg        (5 elementos)
-├── chinese-festivals.jpg    (Festas e lanternas)
-├── lunar-calendar.jpg       (Fases da Lua)
-├── zodiac-legend.jpg        (Lenda da corrida)
-├── chinese-culture.jpg      (Símbolos culturais)
-├── chinese-astronomy.jpg    (Astronomia antiga)
-└── ancient-china.jpg        (História)
+├── gregorian-calendar.jpg    (Calendário moderno, páginas)
+├── julian-calendar.jpg       (Calendário romano antigo)
+├── chinese-zodiac.jpg        (12 animais, símbolos chineses)
+├── islamic-crescent.jpg      (Lua crescente, mesquita)
+├── mayan-calendar.jpg        (Pedra do sol, símbolos maias)
+├── ethiopian-cross.jpg       (Cruz etíope, manuscritos)
+├── jewish-calendar.jpg       (Estrela de Davi, hebraico)
+├── juche-korea.jpg           (Bandeira NK, Pyongyang)
+├── egyptian-nile.jpg         (Rio Nilo, hieróglifos)
+├── lunar-phases.jpg          (Fases da lua)
+├── solar-system.jpg          (Sol, planetas)
+├── lunisolar-concept.jpg     (Sol e lua juntos)
+└── world-time.jpg            (Relógios mundiais)
 ```
-
-### CSS
-- `css/backgrounds.css` - Define todas as classes e estilos
-
-### Fonte das Imagens
-Recomenda-se usar imagens de:
-- Unsplash (licença gratuita)
-- Pexels (licença gratuita)
-- Wikimedia Commons (domínio público)
-
-Buscar por termos:
-- "Chinese New Year"
-- "Chinese zodiac"
-- "Chinese lanterns"
-- "Yin Yang"
-- "Chinese culture"
 
 ---
 
-## 🔧 Manutenção
+## 🔧 Estrutura CSS
 
-### Para adicionar nova categoria:
-1. Adicionar imagem em `images/backgrounds/`
-2. Criar classe CSS em `backgrounds.css`
-3. Aplicar filtros e overlay apropriados (vermelho/dourado)
-4. Atualizar `questions.js` com `backgroundClass`
-5. Atualizar este documento
+```css
+.question-container {
+    position: relative;
+}
 
-### Para ajustar intensidade:
-- **Mais escuro:** Aumentar opacity do overlay (::before)
-- **Mais blur:** Aumentar valor de `blur()` no ::after
-- **Mais brilho:** Aumentar `brightness()` no ::after
+.question-container::after {
+    /* Imagem de fundo */
+    background-image: url(...);
+    filter: brightness(0.6) contrast(0.9) blur(1.5px);
+    z-index: -2;
+}
 
-### Cores Recomendadas para Overlays:
-- Vermelho: rgba(40,0,0,0.65) - Festas, celebrações
-- Dourado: rgba(50,40,0,0.7) - Elementos, riqueza
-- Azul escuro: rgba(5,10,30,0.75) - Lua, noite
-- Roxo escuro: rgba(15,5,25,0.75) - Astronomia, mistério
-- Sépia: rgba(25,20,10,0.75) - História, antiguidade
+.question-container::before {
+    /* Overlay colorido */
+    background: rgba(...);
+    z-index: -1;
+}
+```
+
+---
+
+## 📊 Distribuição de Dificuldade
+
+- **Normal**: 30 perguntas (50%)
+- **Hard**: 20 perguntas (33%)
+- **VeryHard**: 10 perguntas (17%)
+
+## 🎯 Objetivos Educacionais
+
+1. Conhecer os 12 tipos de calendários mais famosos
+2. Entender as diferenças entre Solar, Lunar e Lunissolar
+3. Aprender sobre diversidade cultural
+4. Compreender a história das civilizações
+5. Relacionar astronomia com medição do tempo
+
+---
+
+Este documento serve como guia para a organização das perguntas e futura implementação de backgrounds temáticos.

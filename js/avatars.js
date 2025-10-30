@@ -3,24 +3,24 @@
 class AvatarSystem {
     constructor() {
         this.avatars = [
-            { id: 'astronaut', emoji: '👨‍🚀', name: 'Astronauta' },
-            { id: 'explorer', emoji: '🧭', name: 'Explorador' },
-            { id: 'captain', emoji: '🧑‍✈️', name: 'Capitão' },
-            { id: 'scientist', emoji: '👨‍🔬', name: 'Cientista' },
-            { id: 'pirate', emoji: '🏴‍☠️', name: 'Pirata' },
-            { id: 'ninja', emoji: '🥷', name: 'Ninja' },
-            { id: 'robot', emoji: '🤖', name: 'Robô' },
-            { id: 'alien', emoji: '👽', name: 'Alienígena' },
-            { id: 'wizard', emoji: '🧙', name: 'Mago' },
-            { id: 'detective', emoji: '🕵️', name: 'Detetive' },
-            { id: 'superhero', emoji: '🦸', name: 'Super-Herói' },
-            { id: 'viking', emoji: '⚔️', name: 'Viking' },
-            { id: 'cowboy', emoji: '🤠', name: 'Cowboy' },
-            { id: 'knight', emoji: '🛡️', name: 'Cavaleiro' },
-            { id: 'pilot', emoji: '🛩️', name: 'Piloto' },
-            { id: 'sailor', emoji: '⚓', name: 'Marinheiro' },
-            { id: 'rocket', emoji: '🚀', name: 'Foguete' },
-            { id: 'telescope', emoji: '🔭', name: 'Telescópio' }
+            { id: 'calendar', emoji: '📅', name: 'Calendário' },
+            { id: 'clock', emoji: '🕐', name: 'Relógio' },
+            { id: 'hourglass', emoji: '⌛', name: 'Ampulheta' },
+            { id: 'sun', emoji: '☀️', name: 'Sol' },
+            { id: 'moon', emoji: '🌙', name: 'Lua' },
+            { id: 'dragon', emoji: '🐉', name: 'Dragão Chinês' },
+            { id: 'mosque', emoji: '🕌', name: 'Mesquita' },
+            { id: 'pyramid', emoji: '🏜️', name: 'Pirâmide' },
+            { id: 'mayan', emoji: '🗿', name: 'Moai Maia' },
+            { id: 'star-david', emoji: '✡️', name: 'Estrela de Davi' },
+            { id: 'globe', emoji: '🌍', name: 'Globo' },
+            { id: 'earth', emoji: '🌎', name: 'Terra' },
+            { id: 'time', emoji: '⏰', name: 'Despertador' },
+            { id: 'sundial', emoji: '🌅', name: 'Relógio Solar' },
+            { id: 'phases', emoji: '🌗', name: 'Fases Lunares' },
+            { id: 'world', emoji: '🗺️', name: 'Mapa Mundi' },
+            { id: 'watch', emoji: '⌚', name: 'Relógio de Pulso' },
+            { id: 'timer', emoji: '⏱️', name: 'Cronômetro' }
         ];
 
         this.selectedAvatar = this.loadSavedAvatar() || this.avatars[0];
