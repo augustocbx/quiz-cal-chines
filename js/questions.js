@@ -90,10 +90,10 @@ const QUESTION_BANK = [
     },
     {
         question: "Quando foi criado o calendário Chinês?",
-        answers: ["Entre 2697 a.C. e 2597 a.C.", "Em 1582 d.C.", "Em 46 a.C.", "Em 622 d.C."],
+        answers: ["Há mais de 4000 anos", "Há 500 anos", "Há 2000 anos", "Há 1000 anos"],
         correctIndex: 0,
         backgroundClass: "bg-chinese",
-        difficulty: "veryHard"
+        difficulty: "hard"
     },
     {
         question: "Como é chamado o Ano Novo Chinês?",
@@ -119,10 +119,10 @@ const QUESTION_BANK = [
     },
     {
         question: "Quando começou o calendário Islâmico?",
-        answers: ["16 de julho de 622 d.C. (Hégira)", "No nascimento de Maomé", "Em 1582 d.C.", "No ano 1"],
+        answers: ["No ano 622 d.C.", "No ano 1582 d.C.", "No ano 1 d.C.", "No ano 1000 d.C."],
         correctIndex: 0,
         backgroundClass: "bg-islamic",
-        difficulty: "veryHard"
+        difficulty: "hard"
     },
     {
         question: "Como se chama o Ano Novo Islâmico?",
@@ -220,10 +220,10 @@ const QUESTION_BANK = [
     },
     {
         question: "Quando foi criado o calendário Judaico?",
-        answers: ["Aproximadamente em 1447 a.C.", "Em 622 d.C.", "Em 1582 d.C.", "Em 2697 a.C."],
+        answers: ["Há mais de 3000 anos", "Há 500 anos", "Há 1000 anos", "Há 4000 anos"],
         correctIndex: 0,
         backgroundClass: "bg-jewish",
-        difficulty: "veryHard"
+        difficulty: "hard"
     },
     {
         question: "Há quantos anos o calendário Judaico é usado em Israel?",
@@ -247,40 +247,19 @@ const QUESTION_BANK = [
         difficulty: "hard"
     },
 
-    // CALENDÁRIO JUCHE (5 perguntas)
+    // CALENDÁRIO JUCHE (2 perguntas simplificadas)
     {
         question: "Onde é usado o calendário Juche?",
-        answers: ["Apenas na Coreia do Norte", "Em toda a Ásia", "No mundo todo", "Na China e Coreia"],
+        answers: ["Apenas na Coreia do Norte", "Em toda a Ásia", "No mundo todo", "Na China"],
         correctIndex: 0,
         backgroundClass: "bg-juche",
         difficulty: "hard"
     },
     {
-        question: "O Ano 1 do calendário Juche marca:",
-        answers: ["O nascimento de Kim Il-sung em 1912", "O nascimento de Jesus", "A fundação da Coreia do Norte", "A criação do calendário"],
-        correctIndex: 0,
-        backgroundClass: "bg-juche",
-        difficulty: "veryHard"
-    },
-    {
-        question: "O calendário Juche é baseado em qual ideologia?",
-        answers: ["Ideologia Juche", "Budismo", "Confucionismo", "Islamismo"],
-        correctIndex: 0,
-        backgroundClass: "bg-juche",
-        difficulty: "veryHard"
-    },
-    {
         question: "O calendário Juche é de que tipo?",
-        answers: ["Solar (como o Gregoriano)", "Lunar", "Lunissolar", "Único"],
+        answers: ["Solar (como o Gregoriano)", "Lunar", "Lunissolar", "Misto"],
         correctIndex: 0,
         backgroundClass: "bg-juche"
-    },
-    {
-        question: "Quem fundou a ideologia Juche?",
-        answers: ["Kim Il-sung", "Kim Jong-un", "Mao Tsé-Tung", "Stalin"],
-        correctIndex: 0,
-        backgroundClass: "bg-juche",
-        difficulty: "veryHard"
     },
 
     // CALENDÁRIO EGÍPCIO (5 perguntas)
@@ -384,7 +363,7 @@ const QUESTION_BANK = [
         difficulty: "veryHard"
     },
 
-    // PERGUNTAS GERAIS E COMPARATIVAS (5 perguntas)
+    // PERGUNTAS GERAIS E COMPARATIVAS (8 perguntas)
     {
         question: "Para que foram desenvolvidos os calendários?",
         answers: ["Para medir o tempo e organizar rotinas", "Apenas para festas religiosas", "Para navegação", "Para matemática"],
@@ -413,6 +392,25 @@ const QUESTION_BANK = [
     {
         question: "Qual calendário tem um sistema mais complexo, com duas partes?",
         answers: ["Maia", "Gregoriano", "Islâmico", "Etíope"],
+        correctIndex: 0,
+        backgroundClass: "bg-general",
+        difficulty: "hard"
+    },
+    {
+        question: "Qual é o calendário mais antigo mencionado no quiz?",
+        answers: ["Egípcio", "Gregoriano", "Islâmico", "Etíope"],
+        correctIndex: 0,
+        backgroundClass: "bg-general"
+    },
+    {
+        question: "Por que diferentes povos criaram calendários diferentes?",
+        answers: ["Cada cultura observava o tempo de forma única", "Por falta de comunicação", "Por erro de cálculo", "Apenas por religião"],
+        correctIndex: 0,
+        backgroundClass: "bg-general"
+    },
+    {
+        question: "Quais calendários usam tanto o Sol quanto a Lua?",
+        answers: ["Chinês e Judaico", "Gregoriano e Juliano", "Islâmico e Egípcio", "Maia e Etíope"],
         correctIndex: 0,
         backgroundClass: "bg-general",
         difficulty: "hard"
