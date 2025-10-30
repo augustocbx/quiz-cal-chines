@@ -31,6 +31,10 @@ class AvatarSystem {
         return this.avatars[randomIndex];
     }
 
+    selectRandomAvatar() {
+        this.selectedAvatar = this.getRandomAvatar();
+    }
+
     loadSavedAvatar() {
         const saved = StorageManager.getItem('selectedAvatar');
         if (saved) {

@@ -2,6 +2,9 @@
 
 // Exibir seleção de avatar
 function displayAvatarSelection() {
+    // Seleciona um avatar aleatório toda vez que a tela é exibida
+    avatarSystem.selectRandomAvatar();
+
     const wrapper = document.getElementById('avatar-selector-wrapper');
     wrapper.innerHTML = '';
     wrapper.appendChild(avatarSystem.createAvatarSelector());
