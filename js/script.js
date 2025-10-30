@@ -57,6 +57,7 @@ const backToStartFromPermanentBtn = document.getElementById('back-to-start-from-
 const backToStartFromAchievementsBtn = document.getElementById('back-to-start-from-achievements-btn');
 const soundToggleBtn = document.getElementById('sound-toggle-btn');
 const clearTempRankingBtn = document.getElementById('clear-temp-ranking-btn');
+const clearTempRankingBtn2 = document.getElementById('clear-temp-ranking-btn-2');
 
 // Event Listeners
 startBtn.addEventListener('click', () => showScreen('avatar'));
@@ -85,6 +86,9 @@ backToStartFromAchievementsBtn.addEventListener('click', () => showScreen('start
 soundToggleBtn.addEventListener('click', toggleSound);
 if (clearTempRankingBtn) {
     clearTempRankingBtn.addEventListener('click', clearTempRanking);
+}
+if (clearTempRankingBtn2) {
+    clearTempRankingBtn2.addEventListener('click', clearTempRanking);
 }
 
 // Event listener para o botão de reset
