@@ -1,11 +1,11 @@
 {
-  "name": "Quiz: Calendário Chinês",
-  "short_name": "Quiz Calendário",
-  "description": "Quiz educativo sobre o Calendário Chinês e suas tradições milenares",
+  "name": "Quiz: Calendários do Mundo",
+  "short_name": "Quiz Calendários",
+  "description": "Quiz educativo sobre os 12 tipos de calendários mais famosos do mundo",
   "start_url": "/quiz-cal-chines/",
   "display": "standalone",
-  "background_color": "#8B0000",
-  "theme_color": "#DC143C",
+  "background_color": "#1e3a8a",
+  "theme_color": "#4169E1",
   "orientation": "any",
   "scope": "/quiz-cal-chines/",
   "icons": [

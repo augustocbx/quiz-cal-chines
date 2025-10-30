@@ -1,16 +1,17 @@
-# Quiz: Calendário Chinês
+# Quiz: Calendários do Mundo
 
-Um quiz educativo e interativo sobre o Calendário Chinês, zodíaco e tradições milenares chinesas, voltado para crianças até a 7ª série.
+Um quiz educativo e interativo sobre os 12 tipos de calendários mais famosos do mundo, voltado para crianças até a 7ª série.
 
 ## Características
 
-- 🐉 **60 perguntas** sobre calendário chinês, zodíaco e cultura (15 selecionadas aleatoriamente por sessão)
+- 📅 **60 perguntas** sobre calendários mundiais (15 selecionadas aleatoriamente por sessão)
+- 🌍 **12 Calendários**: Gregoriano, Juliano, Chinês, Islâmico, Maia, Etíope, Judaico, Juche, Egípcio e conceitos (Solar, Lunar, Lunissolar)
 - 🎨 **Animações temáticas** de comemoração e consolo
 - 🎯 **Sistema de pontuação** com critério de desempate por tempo
 - 🏆 **Rankings**: temporário (últimos 5 jogadores) e permanente (top 10)
 - 💾 **Persistência de dados** via localStorage
 - 📱 **Design responsivo** para tablets e smartphones
-- 🎭 **Nomes aleatórios** com ícones temáticos chineses
+- 🎭 **Nomes aleatórios** com ícones temáticos de calendários
 
 ## Estrutura do Projeto
 
@@ -52,7 +53,6 @@ quiz-cal-chines/
 
 1. **Hospedar o arquivo**:
    - Coloque os arquivos em um servidor web (GitHub Pages, Netlify, Vercel, etc.)
-   - Ou use um aplicativo como "Documents by Readdle" para hospedar localmente
 
 2. **Adicionar à Tela Inicial**:
    - Abra o Safari no iPad
@@ -60,112 +60,79 @@ quiz-cal-chines/
    - Toque no ícone de **Compartilhar** (quadrado com seta)
    - Selecione **"Adicionar à Tela de Início"**
    - Escolha um nome e toque em **"Adicionar"**
-   - O ícone aparecerá na tela inicial como um app nativo
 
 3. **Modo Tela Cheia**:
-   - Ao abrir pelo ícone da tela inicial, o quiz abrirá em tela cheia automaticamente
-   - As meta tags já estão configuradas para isso
+   - Abrirá automaticamente em tela cheia
 
 #### Método 2: Usar GitHub Pages (Gratuito e Fácil)
 
-1. **Criar repositório no GitHub**:
-   - Acesse github.com e faça login
-   - Crie um novo repositório público
-   - Faça upload dos arquivos do quiz
-
-2. **Ativar GitHub Pages**:
-   - Vá em Settings > Pages
-   - Em "Source", selecione "main branch"
-   - Clique em "Save"
-   - Após alguns minutos, seu quiz estará disponível em:
-     `https://seu-usuario.github.io/nome-do-repositorio`
-
-3. **Adicionar ao iPad**:
-   - Acesse a URL do GitHub Pages no Safari do iPad
-   - Siga os passos do Método 1 para adicionar à tela inicial
+1. Crie um repositório público no GitHub
+2. Faça upload dos arquivos do quiz
+3. Ative GitHub Pages em Settings > Pages
+4. Acesse em: `https://seu-usuario.github.io/nome-do-repositorio`
 
 ### Instalar em Tablet Android
 
 1. **Hospedar o arquivo** (mesmo do iOS)
+2. Abra o Chrome no tablet
+3. Navegue até o endereço do quiz
+4. Toque no menu (3 pontinhos) > "Adicionar à tela inicial"
 
-2. **Adicionar à Tela Inicial**:
-   - Abra o Chrome no tablet
-   - Navegue até o endereço do quiz
-   - Toque no menu (3 pontinhos) > "Adicionar à tela inicial"
-   - Escolha um nome e toque em "Adicionar"
+## Conteúdo Educacional
 
-3. **Modo Tela Cheia**:
-   - Abrirá automaticamente em modo standalone
+### Os 12 Calendários
 
-## Características Técnicas
+1. **Gregoriano** - Solar, usado no Brasil e Ocidente
+2. **Juliano** - Solar, criado em 46 a.C.
+3. **Chinês** - Lunissolar, 12 animais do zodíaco
+4. **Islâmico** - Lunar, 354 dias
+5. **Maia** - Haab (365 dias) e Tzolkin (260 dias)
+6. **Etíope** - Solar, 13 meses
+7. **Judaico** - Lunissolar, mais de 3 mil anos
+8. **Juche** - Solar, usado na Coreia do Norte
+9. **Egípcio** - Solar, um dos mais antigos
+10. **Lunar** (conceito) - Baseado nas fases da Lua
+11. **Solar** (conceito) - Baseado no ciclo do Sol
+12. **Lunissolar** (conceito) - Combina Sol e Lua
+
+### Tipos de Calendários
+
+- **Solares**: Baseados no movimento da Terra ao redor do Sol (365 dias)
+- **Lunares**: Baseados nas fases da Lua (354-355 dias)
+- **Lunissolares**: Combinam ambos, com ajustes periódicos
+
+## Funcionalidades Técnicas
 
 ### Sistema de Perguntas
 - 15 perguntas aleatórias de um banco de 60
-- Respostas embaralhadas para cada pergunta
-- Não mostra a resposta correta após erro
-- Perguntas sobre:
-  - 12 animais do zodíaco chinês
-  - 5 elementos (madeira, fogo, terra, metal, água)
-  - Festas e tradições chinesas
-  - Calendário lunissolar
-  - Lendas e histórias do zodíaco
+- Respostas embaralhadas
+- 4 opções por pergunta, apenas 1 correta
+- Dificuldades: normal, hard, veryHard
 
 ### Animações
 
 **Comemoração (ao acertar)**:
-- 3 animações comuns (lanterna, yin-yang, roda do zodíaco)
-- 1 animação rara (dança do dragão - aparece ao acertar 9/10)
-- 1 animação lendária (fogos de artifício com caracteres chineses - aparece ao acertar 10/10)
+- 3 animações comuns (calendário, sol/lua, relógio)
+- 1 animação rara (globo cultural - 9/10)
+- 1 animação lendária (mestre do tempo - 10/10)
 
 **Consolo (ao errar)**:
-- 5 animações com frequências decrescentes:
-  - Dragão confuso: 50%
-  - Lua nublada: 30%
-  - Lanterna apagada: 15%
-  - Pétala caindo: 3%
-  - Yin-yang desequilibrado: 2%
+- Calendário confuso: 50%
+- Tempo nublado: 30%
+- Relógio quebrado: 15%
+- Folha caindo: 3%
+- Caos temporal: 2%
 
 ### Sistema de Rankings
 
 **Ranking Temporário**:
-- Mostra os 3 melhores dos últimos 5 jogadores
-- Reinicia automaticamente a cada 5 participantes
-- Armazenado em localStorage
+- Top 3 dos últimos 5 jogadores
+- Reinicia automaticamente
 
-**Ranking Geral**:
+**Ranking Permanente**:
 - Top 10 de todos os tempos
 - Persistente no localStorage
-- Critério de desempate: tempo em décimos de segundo
-
-### Persistência de Dados
-
-Todos os dados são salvos no localStorage do navegador:
-- `generalRanking`: Ranking geral (top 10)
-- `tempRanking`: Ranking temporário (top 3 dos últimos 5)
-- `tempRankingCount`: Contador de jogadores para reset
-
-**Nota**: Os dados persistem mesmo após fechar o navegador, mas são específicos do dispositivo/navegador.
-
-## Funcionalidades
-
-- ✅ 60 perguntas sobre calendário chinês e cultura
-- ✅ Seleção aleatória de 15 perguntas por sessão
-- ✅ 4 respostas por pergunta, apenas 1 correta
-- ✅ Ordem aleatória das respostas
-- ✅ Animações temáticas com rotação
-- ✅ Fundos temáticos para cada pergunta
-- ✅ Contador de acertos em tempo real
-- ✅ Botão para desistir a qualquer momento
-- ✅ Sistema de nomes aleatórios com ícones chineses
-- ✅ Cronômetro com décimos de segundo
-- ✅ Rankings temporário e permanente
-- ✅ Interface bonita e amigável
-- ✅ Responsivo para tablets e celulares
-- ✅ Modo tela cheia em tablets
-- ✅ Sistema de conquistas
-- ✅ Avatares personalizados
-- ✅ Power-ups especiais
-- ✅ Efeitos sonoros
+- Desempate por tempo
 
 ## Requisitos
 
@@ -188,7 +155,6 @@ Testado e otimizado para:
 1. **Para melhor experiência em tablet**:
    - Use orientação horizontal (landscape)
    - Adicione à tela inicial para modo tela cheia
-   - Mantenha o brilho adequado para ver as animações
 
 2. **Para resetar dados**:
    - Abra o Console do Navegador (F12)
@@ -199,19 +165,17 @@ Testado e otimizado para:
    - GitHub Pages (recomendado)
    - Netlify
    - Vercel
-   - Firebase Hosting
 
-## Conteúdo Didático
+## Alinhamento Pedagógico
 
-O quiz aborda temas como:
-- **Zodíaco Chinês**: 12 animais e suas características
-- **Cinco Elementos**: madeira, fogo, terra, metal, água
-- **Calendário Lunissolar**: ciclos da lua e do sol
-- **Festas Tradicionais**: Ano Novo Chinês, Festival das Lanternas
-- **Lendas**: A corrida dos animais, origem do zodíaco
-- **Cultura**: símbolos, comidas, tradições
-- **Astronomia Chinesa**: mansões lunares, termos solares
-- **Filosofia**: Yin e Yang, harmonia, equilíbrio
+**Público-alvo**: 5º ano do Ensino Fundamental (10-11 anos)
+
+**Temas educacionais**:
+- História das civilizações
+- Geografia mundial
+- Astronomia (Sol, Lua, ciclos)
+- Matemática (contagem de dias, meses)
+- Diversidade cultural
 
 ## Licença
 
@@ -219,4 +183,4 @@ Este projeto foi criado para fins educacionais.
 
 ---
 
-Desenvolvido com 🐉 para ensinar sobre a cultura chinesa de forma divertida!
+Desenvolvido com ⏰ para ensinar sobre a diversidade cultural de medição do tempo!
