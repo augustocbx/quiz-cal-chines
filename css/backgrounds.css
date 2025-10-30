@@ -4,31 +4,36 @@
 [class*="bg-"] {
     position: relative;
     overflow: hidden;
+    min-height: 100vh;              /* Garante altura mínima de tela cheia */
+    width: 100%;                    /* Largura total */
 }
 
 /* Pseudo-elemento para a imagem de fundo - OCUPA A TELA TODA */
 [class*="bg-"]::after {
     content: '';
-    position: absolute;
+    position: fixed;                 /* Fixed para ocupar tela toda */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-size: cover;          /* Cobre toda a área */
-    background-position: center;      /* Centraliza a imagem */
-    background-repeat: no-repeat;     /* Não repete */
-    background-attachment: fixed;     /* Imagem fixa ao rolar */
+    width: 100vw;                   /* Largura total da viewport */
+    height: 100vh;                  /* Altura total da viewport */
+    background-size: cover;          /* Cobre toda a área sem deformar */
+    background-position: center;     /* Centraliza a imagem */
+    background-repeat: no-repeat;    /* Não repete */
     z-index: -2;
 }
 
 /* Overlay leve APENAS para garantir legibilidade do texto */
 [class*="bg-"]::before {
     content: '';
-    position: absolute;
+    position: fixed;                /* Fixed para ocupar tela toda */
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
+    width: 100vw;                   /* Largura total da viewport */
+    height: 100vh;                  /* Altura total da viewport */
     background: rgba(0, 0, 0, 0.25); /* overlay leve - 25% */
     pointer-events: none;
     z-index: -1;
@@ -124,7 +129,6 @@
    ======================================== */
 
 @media (max-width: 768px) {
-    [class*="bg-"]::after {
-        background-attachment: scroll; /* Remove fixed em mobile para melhor performance */
-    }
+    /* Imagens já estão otimizadas com position: fixed e 100vw/100vh */
+    /* Ocupam a tela toda em qualquer dispositivo sem deformar */
 }
