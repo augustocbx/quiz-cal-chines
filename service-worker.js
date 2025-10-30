@@ -1,6 +1,6 @@
 // Service Worker para Quiz: Calendários do Mundo
 // Aumente este número quando fizer atualizações: v1, v2, v3...
-const CACHE_NAME = 'quiz-calendarios-mundo-v1';
+const CACHE_NAME = 'quiz-calendarios-mundo-v3';
 
 const urlsToCache = [
   '/quiz-cal-chines/',

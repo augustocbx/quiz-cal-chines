@@ -1,6 +1,7 @@
 {
   "name": "Quiz: Calendários do Mundo",
   "short_name": "Quiz Calendários",
+  "version": "3.0.0",
   "description": "Quiz educativo sobre os 12 tipos de calendários mais famosos do mundo",
   "start_url": "/quiz-cal-chines/",
   "display": "standalone",
